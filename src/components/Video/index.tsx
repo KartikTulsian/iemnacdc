@@ -16,7 +16,6 @@ const Video = () => {
           title="We are ready to help"
           paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
           center
-          mb="80px"
         />
 
         <div className="-mx-4 flex flex-wrap">
@@ -51,7 +50,7 @@ const Video = () => {
 
       <ModalVideo
         channel="youtube"
-        autoplay={true}
+        autoplay={false}
         start={true}
         isOpen={isOpen}
         videoId="L61p2uyiMSo"

@@ -14,27 +14,36 @@ const Hero = () => {
                 className="wow fadeInUp mx-auto max-w-[800px] text-center"
                 data-wow-delay=".2s"
               >
-                <h1 className="mb-5 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
-                  Free and Open-Source Next.js Template for Startup & SaaS
+                <h1 className="mb-5 text-4xl font-bold leading-tight text-black dark:text-white sm:text-5xl sm:leading-tight md:text-6xl md:leading-tight">
+                  NACDC 2026
                 </h1>
+                <h3 className="mb-5 text-2xl font-bold leading-tight text-black dark:text-white sm:text-3xl sm:leading-tight md:text-4xl md:leading-tight">
+                  North American Conference on Computational Intelligence, Data Science, and Cloud Computing
+                </h3>
+                <p className="dark:text-body-color-dark mb-12 text-base !leading-relaxed text-body-color sm:text-md md:text-lg">
+                  January 14-16, 2026
+                </p>
                 <p className="dark:text-body-color-dark mb-12 text-base !leading-relaxed text-body-color sm:text-lg md:text-xl">
-                  Startup is free Next.js template for startups and SaaS
-                  business websites comes with all the essential pages,
-                  components, and sections you need to launch a complete
-                  business website, built-with Next 13.x and Tailwind CSS.
+                  Organised by University of British Columbia, Vancouver, Canada
                 </p>
                 <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
                   <Link
-                    href="https://nextjstemplates.com/templates/saas-starter-startup"
-                    className="rounded-sm bg-primary px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
+                    href="/registration"
+                    className="rounded-sm bg-[#4A6CF7] px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-[#4A6CF7]/50"
                   >
-                    🔥 Get Pro
+                    Register Now
                   </Link>
-                  <Link
-                    href="https://github.com/NextJSTemplates/startup-nextjs"
+                  {/* <Link
+                    href="/schedule"
                     className="inline-block rounded-sm bg-black px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-black/90 dark:bg-white/10 dark:text-white dark:hover:bg-white/5"
                   >
-                    Star on GitHub
+                    Schedule
+                  </Link> */}
+                  <Link
+                    href="/schedule"
+                    className="inline-block rounded-sm bg-black px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-black/50"
+                  >
+                    Schedule
                   </Link>
                 </div>
               </div>

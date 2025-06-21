@@ -29,70 +29,95 @@ const menuData: MenuItem[] = [
   },
   {
     id: 33,
-    title: "Blog",
-    path: "/blog",
+    title: "Speakers",
+    path: "/speakers",
     newTab: false,
   },
   {
     id: 3,
-    title: "Support",
-    path: "/contact",
+    title: "Committee",
+    path: "/committee",
     newTab: false,
   },
   {
     id: 4,
-    title: "Pages",
+    title: "NACDC 2026",
     newTab: false,
     submenu: [
       {
         id: 41,
+        title: "Call For Papers",
+        path: "/callForPapers",
+        newTab: false,
+      },
+      {
+        id: 42,
+        title: "Registration",
+        path: "/registration",
+        newTab: false,
+      },
+      {
+        id: 43,
+        title: "Venue",
+        path: "/venue",
+        newTab: false,
+      },
+      {
+        id: 44,
+        title: "Schedule",
+        path: "/schedule",
+        newTab: false,
+      },
+    ],
+  },
+  {
+    id: 5,
+    title: "Contact",
+    path: "/contact",
+    newTab: false,
+  },
+  {
+    id: 6,
+    title: "Pages",
+    newTab: false,
+    submenu: [
+      {
+        id: 61,
         title: "About Page",
         path: "/about",
         newTab: false,
       },
       {
-        id: 42,
+        id: 62,
         title: "Contact Page",
         path: "/contact",
         newTab: false,
       },
       {
-        id: 43,
+        id: 63,
         title: "Blog Grid Page",
         path: "/blog",
         newTab: false,
       },
       {
-        id: 44,
+        id: 64,
         title: "Blog Sidebar Page",
         path: "/blog-sidebar",
         newTab: false,
       },
       {
-        id: 45,
+        id: 65,
         title: "Blog Details Page",
         path: "/blog-details",
         newTab: false,
       },
       {
-        id: 46,
-        title: "Sign In Page",
-        path: "/signin",
-        newTab: false,
-      },
-      {
-        id: 47,
-        title: "Sign Up Page",
-        path: "/signup",
-        newTab: false,
-      },
-      {
-        id: 48,
+        id: 66,
         title: "Error Page",
         path: "/error",
         newTab: false,
       },
-    ],
-  },
+    ]
+  }
 ];
 export default menuData;

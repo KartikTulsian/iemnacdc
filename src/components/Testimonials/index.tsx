@@ -9,8 +9,9 @@ const testimonialData: Testimonial[] = [
     designation: "Founder @TailGrids",
     content:
       "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
-    image: "/images/testimonials/auth-01.png",
-    star: 5,
+    image: "/images/testimonials/speaker-1.png",
+    linkedIn: "",
+    gScholar: "",
   },
   {
     id: 2,
@@ -18,8 +19,9 @@ const testimonialData: Testimonial[] = [
     designation: "Founder @UIdeck",
     content:
       "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
-    image: "/images/testimonials/auth-02.png",
-    star: 5,
+    image: "/images/testimonials/speaker-2.png",
+    linkedIn: "",
+    gScholar: "",
   },
   {
     id: 3,
@@ -27,24 +29,57 @@ const testimonialData: Testimonial[] = [
     designation: "Founder @Lineicons",
     content:
       "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
-    image: "/images/testimonials/auth-03.png",
-    star: 5,
+    image: "/images/testimonials/speaker-3.png",
+    linkedIn: "",
+    gScholar: "",
+  },
+  {
+    id: 4,
+    name: "Musharof Chy",
+    designation: "Founder @TailGrids",
+    content:
+      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
+    image: "/images/testimonials/speaker-4.png",
+    linkedIn: "",
+    gScholar: "",
+  },
+  {
+    id: 5,
+    name: "Devid Weilium",
+    designation: "Founder @UIdeck",
+    content:
+      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
+    image: "/images/testimonials/speaker-5.png",
+    linkedIn: "",
+    gScholar: "",
+  },
+  {
+    id: 6,
+    name: "Lethium Frenci",
+    designation: "Founder @Lineicons",
+    content:
+      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
+    image: "/images/testimonials/speaker-6.png",
+    linkedIn: "",
+    gScholar: "",
   },
 ];
 
 const Testimonials = () => {
   return (
-    <section className="dark:bg-bg-color-dark bg-gray-light relative z-10 py-16 md:py-20 lg:py-28">
+    <section className="dark:bg-bg-color-dark bg-gray-light relative z-10 py-16 md:py-20 lg:py-28 px-4">
       <div className="container">
         <SectionTitle
-          title="What Our Users Says"
+          title="Who's Speaking?"
           paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
           center
         />
 
-        <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 px-6 sm:px-0">
           {testimonialData.map((testimonial) => (
-            <SingleTestimonial key={testimonial.id} testimonial={testimonial} />
+            <div key={testimonial.id} className="px-4">
+              <SingleTestimonial testimonial={testimonial} />
+            </div>
           ))}
         </div>
       </div>
