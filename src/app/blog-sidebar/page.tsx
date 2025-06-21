@@ -17,7 +17,7 @@ const BlogSidebarPage = () => {
     <>
       <section className="overflow-hidden pb-[120px] pt-[180px]">
         <div className="container">
-          <div className="-mx-4 flex flex-wrap">
+          <div className="mx-4 flex flex-wrap">
             <div className="w-full px-4 lg:w-8/12">
               <div>
                 <h1 className="mb-8 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight">

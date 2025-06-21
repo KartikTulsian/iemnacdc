@@ -29,12 +29,19 @@ const getTimeLeft = (expiry: string): TimeCount => {
 };
 
 export default function Timer({ launchDate }: { launchDate: string }) {
-  const [timeLeft, setTimeLeft] = useState<TimeCount>(getTimeLeft(launchDate));
+  const [timeLeft, setTimeLeft] = useState<TimeCount | null>(null);
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
+    // Wait until component is mounted
+    setMounted(true);
+    const updateTimer = () => setTimeLeft(getTimeLeft(launchDate));
+    updateTimer(); // set immediately
+
     const interval = setInterval(() => {
       const time = getTimeLeft(launchDate);
       setTimeLeft(time);
+
       if (
         time.days === "00" &&
         time.hours === "00" &&
@@ -60,12 +67,14 @@ export default function Timer({ launchDate }: { launchDate: string }) {
     const end = new Date(start.getTime() + 60 * 60 * 1000); // +1 hour
 
     const format = (d: Date) =>
-      d.toISOString().replace(/-|:|\.\d\d\d/g, "").slice(0, -1); // YYYYMMDDTHHmmssZ → remove 'Z'
+      d.toISOString().replace(/[-:]/g, "").split(".")[0]; // e.g., 20251201T235959
 
     const gcalUrl = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=Registration+Deadline&dates=${format(start)}/${format(end)}&details=Don%27t+miss+the+event+registration+deadline!`;
 
     window.open(gcalUrl, "_blank");
   };
+
+  if (!mounted || !timeLeft) return null; // Avoid SSR mismatch
 
   return (
     <div className="flex flex-col items-center space-y-8 w-full">

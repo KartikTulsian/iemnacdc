@@ -28,21 +28,20 @@ export default function VerticalTimelineCard() {
         <VerticalTimelineElement
           contentStyle={{
             background: "linear-gradient(135deg, #4A6CF7, #657EFF)",
-            color: "#fff",
           }}
           contentArrowStyle={{ borderRight: "7px solid #4A6CF7" }}
           date="7 October 2025"
-          dateClassName="text-white font-semibold"
+          dateClassName="font-semibold"
           iconStyle={{
             background: "linear-gradient(135deg, #4A6CF7, #657EFF)",
             color: "#fff",
           }}
           icon={<FaRegFileAlt />}
         >
-          <h3 className="vertical-timeline-element-title">
+          <h3 className="vertical-timeline-element-title text-[#fff]">
             Full Paper Submission
           </h3>
-          <h4 className="vertical-timeline-element-subtitle">
+          <h4 className="vertical-timeline-element-subtitle text-[#fff]">
             Submit your original research paper
           </h4>
         </VerticalTimelineElement>

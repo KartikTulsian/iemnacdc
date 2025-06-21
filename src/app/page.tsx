@@ -9,6 +9,7 @@ import Features from "@/components/Features";
 import Hero from "@/components/Hero";
 import Pricing from "@/components/Pricing";
 import Testimonials from "@/components/Testimonials";
+import TracksList from "@/components/Tracks/TracksList";
 import Video from "@/components/Video";
 import { Metadata } from "next";
 
@@ -25,14 +26,16 @@ export default function Home() {
       <Hero />
       <Features />
       <CountDown/>
-      <Video />
+      
       <Brands />
+      <TracksList/>
       <AboutSectionOne />
       <AboutSectionTwo />
       <Testimonials />
-      <Pricing />
+      {/* <Pricing /> */}
+      <Video />
       <Blog />
-      <Contact />
+      {/* <Contact /> */}
     </>
   );
 }

@@ -10,7 +10,7 @@ const Footer = () => {
         data-wow-delay=".1s"
       >
         <div className="container">
-          <div className="-mx-4 flex flex-wrap">
+          <div className="mx-4 flex flex-wrap">
             <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-5/12">
               <div className="mb-12 max-w-[360px] lg:mb-16">
                 <Link href="/" className="mb-8 inline-block">
@@ -29,10 +29,27 @@ const Footer = () => {
                     height={30}
                   />
                 </Link>
-                <p className="dark:text-body-color-dark mb-9 text-base leading-relaxed text-body-color">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Integer lobortis.
+                <p className="mb-4 text-base leading-relaxed text-body-color">
+                  For detailed registration guidelines, submission deadlines, and travel information, please visit the official website:
                 </p>
+
+                {/* Website Link */}
+                <a
+                  href="https://www.nacdc2026.org"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mb-4 block text-base font-medium text-primary hover:underline"
+                >
+                  🌐 www.nacdc2026.org
+                </a>
+
+                {/* Email Link */}
+                <a
+                  href="mailto:nacdc@iem.edu.in"
+                  className="block text-base font-medium text-primary hover:underline"
+                >
+                  📧 Email: nacdc@iem.edu.in
+                </a>
                 <div className="flex items-center">
                   <a
                     href="/"
@@ -200,10 +217,7 @@ const Footer = () => {
           <div className="h-px w-full bg-gradient-to-r from-transparent via-[#D2D8E183] to-transparent dark:via-[#959CB183]"></div>
           <div className="py-8">
             <p className="text-center text-base text-body-color dark:text-white">
-              Template by UIdeck and{" "}
-              <a href="https://nextjstemplates.com" rel="nofollow noopener">
-                Next.js Templates
-              </a>
+              Developed By NACDC 2025 Digital Team
             </p>
           </div>
         </div>
