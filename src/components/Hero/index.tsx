@@ -45,14 +45,14 @@ const slides = [
     cta1: { label: "Workshop Schedule", link: "/schedule" },
     cta2: { label: "Apply to Present", link: "/registration" },
   },
-  {
-    image: "/images/hero/hero_image6.png",
-    title: "Celebrate Excellence",
-    subtitle: "Awards, Networking Gala & Closing Ceremony",
-    date: "Connect, Collaborate & Celebrate",
-    cta1: { label: "View Awards", link: "/awards" },
-    cta2: { label: "Check Schedule", link: "/schedule" },
-  },
+  // {
+  //   image: "/images/hero/hero_image6.png",
+  //   title: "Celebrate Excellence",
+  //   subtitle: "Awards, Networking Gala & Closing Ceremony",
+  //   date: "Connect, Collaborate & Celebrate",
+  //   cta1: { label: "View Awards", link: "/awards" },
+  //   cta2: { label: "Check Schedule", link: "/schedule" },
+  // },
 ];
 
 const Hero = () => {
