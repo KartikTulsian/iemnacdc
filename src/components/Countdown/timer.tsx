@@ -56,7 +56,7 @@ export default function Timer({ launchDate }: { launchDate: string }) {
   }, [launchDate]);
 
   const timerUnit = (value: string, label: string) => (
-    <div className="flex flex-col items-center justify-center w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 rounded-full bg-gradient-to-br from-primary to-blue-600 text-white shadow-lg transition-transform duration-300 transform hover:scale-105">
+    <div className="flex flex-col items-center justify-center w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 rounded-full bg-gradient-to-br from-[#99a9eb] to-blue-600 text-[#fff] shadow-lg transition-transform duration-300 transform hover:scale-105">
       <span className="text-xl sm:text-2xl md:text-4xl font-bold">{value}</span>
       <small className="text-[10px] sm:text-xs uppercase font-medium">{label}</small>
     </div>
@@ -87,7 +87,7 @@ export default function Timer({ launchDate }: { launchDate: string }) {
 
       <button
         onClick={handleGoogleCalendarClick}
-        className="mt-6 rounded-md bg-primary px-6 py-3 text-white font-semibold shadow-md hover:bg-blue-500 transition duration-300"
+        className="mt-6 rounded-md bg-[#758ef0] px-6 py-3 text-[#fff] font-semibold shadow-md hover:bg-blue-500 transition duration-300"
       >
         Add to My Google Calendar
       </button>

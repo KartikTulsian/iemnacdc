@@ -5,32 +5,28 @@ const RelatedPost = ({
   image,
   slug,
   title,
-  date,
 }: {
   image: string;
   slug: string;
   title: string;
-  date: string;
 }) => {
   return (
-    <div className="flex items-center lg:block xl:flex">
-      <div className="mr-5 lg:mb-3 xl:mb-0">
-        <div className="relative h-[60px] w-[70px] overflow-hidden rounded-md sm:h-[75px] sm:w-[85px]">
-          <Image src={image} alt={title} fill />
-        </div>
+    <Link
+      href={slug}
+      className="group flex items-center gap-4 p-2 rounded-md transition-all duration-300 hover:bg-blue-50"
+    >
+      <div className="relative h-[70px] w-[90px] flex-shrink-0 overflow-hidden rounded-lg border border-gray-200">
+        <Image
+          src={image}
+          alt={title}
+          fill
+          className="object-cover transition-transform duration-300 group-hover:scale-105"
+        />
       </div>
-      <div className="w-full">
-        <h5>
-          <Link
-            href={slug}
-            className="mb-[6px] block text-base font-medium leading-snug text-black hover:text-primary dark:text-white dark:hover:text-primary"
-          >
-            {title}
-          </Link>
-        </h5>
-        <p className="text-xs font-medium text-body-color">{date}</p>
-      </div>
-    </div>
+      <h5 className="text-base font-medium text-gray-800 group-hover:text-blue-700 transition-all duration-300">
+        {title}
+      </h5>
+    </Link>
   );
 };
 

@@ -10,7 +10,7 @@ const checkIcon = (
 const AboutSectionOne: React.FC = () => {
   const List = ({ text }: { text: string}) => (
     <p className="mb-5 flex items-center text-lg font-medium text-body-color hover:translate-x-1 transition-transform duration-200">
-      <span className="mr-4 flex h-[30px] w-[30px] items-center justify-center rounded-md bg-primary bg-opacity-10 text-primary">
+      <span className="mr-4 flex h-[30px] w-[30px] items-center justify-center rounded-md bg-primary bg-opacity-10 text-[#4A6CF7]">
         {checkIcon}
       </span>
       {text}
@@ -49,24 +49,20 @@ const AboutSectionOne: React.FC = () => {
               </div>
             </div>
 
-            <div className="w-full px-4 lg:w-1/2">
+            <div className="w-full pl-0 pr-4 lg:w-1/2">
               <div
-                className="wow fadeInUp relative mx-auto aspect-[25/24] max-w-[500px] lg:mr-0"
+                className="wow fadeInUp relative mx-auto lg:mr-0 mt-10 lg:mt-0"
                 data-wow-delay=".2s"
               >
                 <Image
-                  src="/images/about/about-image.svg"
-                  alt="about-image"
-                  fill
-                  className="drop-shadow-three mx-auto max-w-full dark:hidden dark:drop-shadow-none lg:mr-0"
-                />
-                <Image
                   src="/images/about/about-image-dark.svg"
                   alt="about-image"
-                  fill
-                  className="drop-shadow-three mx-auto hidden max-w-full dark:block dark:drop-shadow-none lg:mr-0"
+                  width={600}
+                  height={600}
+                  className="mx-auto hidden dark:block dark:drop-shadow-none lg:ml-0"
                 />
               </div>
+
             </div>
           </div>
         </div>

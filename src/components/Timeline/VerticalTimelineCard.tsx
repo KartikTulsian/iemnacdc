@@ -50,7 +50,6 @@ export default function VerticalTimelineCard() {
         <VerticalTimelineElement
           contentStyle={{
             background: "linear-gradient(135deg, #1D976C, #93F9B9)",
-            color: "#fff",
           }}
           contentArrowStyle={{ borderRight: "7px solid #1D976C" }}
           date="20 November 2025"
@@ -61,10 +60,10 @@ export default function VerticalTimelineCard() {
           }}
           icon={<FaCheckCircle />}
         >
-          <h3 className="vertical-timeline-element-title">
+          <h3 className="vertical-timeline-element-title text-[#fff]">
             Acceptance Notification
           </h3>
-          <h4 className="vertical-timeline-element-subtitle">
+          <h4 className="vertical-timeline-element-subtitle text-[#fff]">
             Receive confirmation of acceptance
           </h4>
         </VerticalTimelineElement>
@@ -73,7 +72,6 @@ export default function VerticalTimelineCard() {
         <VerticalTimelineElement
           contentStyle={{
             background: "linear-gradient(135deg, #FF512F, #DD2476)",
-            color: "#fff",
           }}
           contentArrowStyle={{ borderRight: "7px solid #FF512F" }}
           date="1 December 2025"
@@ -84,8 +82,8 @@ export default function VerticalTimelineCard() {
           }}
           icon={<FaUserCheck />}
         >
-          <h3 className="vertical-timeline-element-title">Registration</h3>
-          <h4 className="vertical-timeline-element-subtitle">
+          <h3 className="vertical-timeline-element-title text-[#fff]">Registration</h3>
+          <h4 className="vertical-timeline-element-subtitle text-[#fff]">
             Complete your conference registration
           </h4>
         </VerticalTimelineElement>
@@ -94,7 +92,6 @@ export default function VerticalTimelineCard() {
         <VerticalTimelineElement
           contentStyle={{
             background: "linear-gradient(135deg, #FFC371, #FF5F6D)",
-            color: "#fff",
           }}
           contentArrowStyle={{ borderRight: "7px solid #FFC371" }}
           date="10 December 2025"
@@ -105,10 +102,10 @@ export default function VerticalTimelineCard() {
           }}
           icon={<FaUpload />}
         >
-          <h3 className="vertical-timeline-element-title">
+          <h3 className="vertical-timeline-element-title text-[#fff]">
             Camera-ready Submission
           </h3>
-          <h4 className="vertical-timeline-element-subtitle">
+          <h4 className="vertical-timeline-element-subtitle text-[#fff]">
             Submit final formatted paper
           </h4>
         </VerticalTimelineElement>
@@ -117,7 +114,6 @@ export default function VerticalTimelineCard() {
         <VerticalTimelineElement
           contentStyle={{
             background: "linear-gradient(135deg, #E91E63, #FF6090)",
-            color: "#fff",
           }}
           contentArrowStyle={{ borderRight: "7px solid #E91E63" }}
           date="4 January 2026"
@@ -128,10 +124,10 @@ export default function VerticalTimelineCard() {
           }}
           icon={<MdOutlineSlideshow />}
         >
-          <h3 className="vertical-timeline-element-title">
+          <h3 className="vertical-timeline-element-title text-[#fff]">
             Presentation Submission
           </h3>
-          <h4 className="vertical-timeline-element-subtitle">
+          <h4 className="vertical-timeline-element-subtitle text-[#fff]">
             Upload your slides or video
           </h4>
         </VerticalTimelineElement>
@@ -140,7 +136,6 @@ export default function VerticalTimelineCard() {
         <VerticalTimelineElement
           contentStyle={{
             background: "linear-gradient(135deg, #3a7bd5, #00d2ff)",
-            color: "#fff",
           }}
           contentArrowStyle={{ borderRight: "7px solid #3a7bd5" }}
           date="14–16 January 2026"
@@ -151,8 +146,8 @@ export default function VerticalTimelineCard() {
           }}
           icon={<MdEventAvailable />}
         >
-          <h3 className="vertical-timeline-element-title">Conference Days</h3>
-          <h4 className="vertical-timeline-element-subtitle">
+          <h3 className="vertical-timeline-element-title text-[#fff]">Conference Days</h3>
+          <h4 className="vertical-timeline-element-subtitle text-[#fff]">
             Attend and present your work
           </h4>
         </VerticalTimelineElement>

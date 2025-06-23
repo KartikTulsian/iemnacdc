@@ -76,48 +76,48 @@ const menuData: MenuItem[] = [
     path: "/contact",
     newTab: false,
   },
-  {
-    id: 6,
-    title: "Pages",
-    newTab: false,
-    submenu: [
-      {
-        id: 61,
-        title: "About Page",
-        path: "/about",
-        newTab: false,
-      },
-      {
-        id: 62,
-        title: "Contact Page",
-        path: "/contact",
-        newTab: false,
-      },
-      {
-        id: 63,
-        title: "Blog Grid Page",
-        path: "/blog",
-        newTab: false,
-      },
-      {
-        id: 64,
-        title: "Blog Sidebar Page",
-        path: "/blog-sidebar",
-        newTab: false,
-      },
-      {
-        id: 65,
-        title: "Blog Details Page",
-        path: "/blog-details",
-        newTab: false,
-      },
-      {
-        id: 66,
-        title: "Error Page",
-        path: "/error",
-        newTab: false,
-      },
-    ]
-  }
+  // {
+  //   id: 6,
+  //   title: "Pages",
+  //   newTab: false,
+  //   submenu: [
+  //     {
+  //       id: 61,
+  //       title: "About Page",
+  //       path: "/about",
+  //       newTab: false,
+  //     },
+  //     {
+  //       id: 62,
+  //       title: "Contact Page",
+  //       path: "/contact",
+  //       newTab: false,
+  //     },
+  //     {
+  //       id: 63,
+  //       title: "Blog Grid Page",
+  //       path: "/blog",
+  //       newTab: false,
+  //     },
+  //     {
+  //       id: 64,
+  //       title: "Blog Sidebar Page",
+  //       path: "/blog-sidebar",
+  //       newTab: false,
+  //     },
+  //     {
+  //       id: 65,
+  //       title: "Blog Details Page",
+  //       path: "/blog-details",
+  //       newTab: false,
+  //     },
+  //     {
+  //       id: 66,
+  //       title: "Error Page",
+  //       path: "/error",
+  //       newTab: false,
+  //     },
+  //   ]
+  // }
 ];
 export default menuData;
