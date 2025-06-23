@@ -76,7 +76,7 @@ const Hero = () => {
 
     timeoutRef.current = setInterval(() => {
       nextSlide();
-    }, 5000);
+    }, 4000);
 
     return () => {
       if (timeoutRef.current) clearInterval(timeoutRef.current);
