@@ -42,22 +42,22 @@ const Footer = () => {
                 </p>
 
                 {/* Website Link */}
-                <a
+                <Link
                   href="https://www.nacdc2026.org"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mb-3 block text-base font-medium text-[#4A6CF7] hover:underline"
                 >
                   🌐 www.nacdc2026.org
-                </a>
+                </Link>
 
                 {/* Email Link */}
-                <a
+                <Link
                   href="mailto:nacdc@iem.edu.in"
                   className="block text-base font-medium text-[#4A6CF7] hover:underline"
                 >
                   📧 Email: nacdc@iem.edu.in
-                </a>
+                </Link>
               </div>
             </div>
 
@@ -69,28 +69,28 @@ const Footer = () => {
                 </h2>
                 <ul>
                   <li>
-                    <a
+                    <Link
                       href="/registration"
                       className="dark:text-body-color-dark mb-4 inline-block text-base text-body-color duration-300 hover:text-[#4A6CF7] dark:hover:text-[#4A6CF7]"
                     >
                       Registration
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       href="/callForPapers"
                       className="dark:text-body-color-dark mb-4 inline-block text-base text-body-color duration-300 hover:text-[#4A6CF7] dark:hover:text-[#4A6CF7]"
                     >
                       Tracks
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       href="/about"
                       className="dark:text-body-color-dark mb-4 inline-block text-base text-body-color duration-300 hover:text-[#4A6CF7] dark:hover:text-[#4A6CF7]"
                     >
                       About
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -103,28 +103,28 @@ const Footer = () => {
                 </h2>
                 <ul>
                   <li>
-                    <a
+                    <Link
                       href="/"
                       className="dark:text-body-color-dark mb-4 inline-block text-base text-body-color duration-300 hover:text-[#4A6CF7] dark:hover:text-primary"
                     >
                       TOS
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       href="/"
                       className="dark:text-body-color-dark mb-4 inline-block text-base text-body-color duration-300 hover:text-[#4A6CF7] dark:hover:text-primary"
                     >
                       Privacy Policy
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       href="/"
                       className="dark:text-body-color-dark mb-4 inline-block text-base text-body-color duration-300 hover:text-[#4A6CF7] dark:hover:text-primary"
                     >
                       Refund Policy
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -137,28 +137,28 @@ const Footer = () => {
                 </h2>
                 <ul>
                   <li>
-                    <a
+                    <Link
                       href="/contact"
                       className="dark:text-body-color-dark mb-4 inline-block text-base text-body-color duration-300 hover:text-[#4A6CF7] dark:hover:text-primary"
                     >
                       Open Support Ticket
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       href="/"
                       className="dark:text-body-color-dark mb-4 inline-block text-base text-body-color duration-300 hover:text-[#4A6CF7] dark:hover:text-primary"
                     >
                       Terms of Use
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       href="/about"
                       className="dark:text-body-color-dark mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:hover:text-primary"
                     >
                       About
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>

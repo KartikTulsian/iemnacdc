@@ -1,9 +1,4 @@
-import AboutSectionOne from "@/components/About/AboutSectionOne";
-import AboutSectionTwo from "@/components/About/AboutSectionTwo";
 import BlogChanging from "@/components/About/BlogChanging";
-import BlogSidebar1 from "@/components/About/BlogSideBar1";
-import BlogSidebar2 from "@/components/About/BlogSideBar2";
-import BlogSidebar3 from "@/components/About/BlogSideBar3";
 import Breadcrumb from "@/components/Common/Breadcrumb";
 
 import { Metadata } from "next";

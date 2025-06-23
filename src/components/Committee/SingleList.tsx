@@ -1,14 +1,16 @@
 import React from "react";
 import countries from "i18n-iso-countries";
-import "i18n-iso-countries/langs/en.json"; // Load English
+import enLocale from "i18n-iso-countries/langs/en.json";
+import Image from "next/image";
 
 interface SingleListProps {
   title: string;
   members: string[];
 }
 
-// Initialize country data
-countries.registerLocale(require("i18n-iso-countries/langs/en.json"));
+
+countries.registerLocale(enLocale);
+
 
 // Fallback mappings for approximate region strings or uncommon values
 const fallbackCountryMap: Record<string, string> = {
@@ -59,9 +61,11 @@ export default function SingleList({ title, members }: SingleListProps) {
               className="flex items-start space-x-3 text-base sm:text-lg text-gray-700 pl-4 hover:text-[#4A6CF7] transition-colors duration-200 cursor-pointer"
             >
               {countryCode ? (
-                <img
+                <Image
                   src={`https://flagcdn.com/w40/${countryCode}.png`}
                   alt={countryRaw}
+                  width={40}
+                  height={30}
                   className="w-6 h-4 self-center rounded-sm object-cover"
                   loading="lazy"
                 />

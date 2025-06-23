@@ -1,6 +1,7 @@
 import { Testimonial } from "@/types/testimonial";
 import Image from "next/image";
-import { FaLinkedinIn, FaTwitter, FaFacebookF, FaBehance } from "react-icons/fa";
+import Link from "next/link";
+import { FaLinkedinIn } from "react-icons/fa";
 import { FaGoogleScholar } from "react-icons/fa6";
 
 const SingleTestimonial = ({ testimonial }: { testimonial: Testimonial }) => {
@@ -29,12 +30,12 @@ const SingleTestimonial = ({ testimonial }: { testimonial: Testimonial }) => {
 
           {/* Top-right: social icons on hover */}
           <div className="absolute top-3 right-3 flex flex-col gap-2 lg:opacity-0 lg:group-hover:opacity-100 opacity-100 md:opacity-100 transition-opacity duration-300 z-10">
-            <a href={gScholar || "#"} className="bg-pink-600 text-[#fff] p-2 rounded-full">
+            <Link href={gScholar || "#"} className="bg-pink-600 text-[#fff] p-2 rounded-full">
               <FaGoogleScholar size={14} />
-            </a>
-            <a href={linkedIn || "#"} className="bg-[#0077B5] text-[#fff] p-2 rounded-full">
+            </Link>
+            <Link href={linkedIn || "#"} className="bg-[#0077B5] text-[#fff] p-2 rounded-full">
               <FaLinkedinIn size={14} />
-            </a>
+            </Link>
           </div>
         </div>
       </div>

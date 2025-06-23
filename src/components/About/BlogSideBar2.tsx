@@ -1,5 +1,6 @@
 import RelatedPost from "@/components/Blog/RelatedPost";
 import Image from "next/image";
+import Link from "next/link";
 
 const BlogSidebar2 = ({ onSelect }: { onSelect: (blog: "blog1" | "blog2" | "blog3") => void }) => {
     return (
@@ -99,64 +100,64 @@ const BlogSidebar2 = ({ onSelect }: { onSelect: (blog: "blog1" | "blog2" | "blog
                                 </h3>
                                 <ul className="px-8 py-6">
                                     <li>
-                                        <a
+                                        <Link
                                             href="https://iem.edu.in/"
                                             target="_blank"
                                             rel="noopener noreferrer"
                                             className="text-base font-medium text-blue-600 hover:underline"
                                         >
                                             IEM: Top Engineering College in Kolkata, West Bengal
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li>
-                                        <a
+                                        <Link
                                             href="http://ieee-iemcon.org/"
                                             target="_blank"
                                             rel="noopener noreferrer"
                                             className="text-base font-medium text-blue-600 hover:underline"
                                         >
                                             IEEE IEMCON
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li>
-                                        <a
+                                        <Link
                                             href="http://ieee-uemcon.org/"
                                             target="_blank"
                                             rel="noopener noreferrer"
                                             className="text-base font-medium text-blue-600 hover:underline"
                                         >
                                             IEEE UEMCON
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li>
-                                        <a
+                                        <Link
                                             href="http://ieee-ccwc.org/"
                                             target="_blank"
                                             rel="noopener noreferrer"
                                             className="text-base font-medium text-blue-600 hover:underline"
                                         >
                                             IEEE CCWC
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li>
-                                        <a
+                                        <Link
                                             href="http://iemantenna.org/"
                                             target="_blank"
                                             rel="noopener noreferrer"
                                             className="text-base font-medium text-blue-600 hover:underline"
                                         >
                                             IEEE IEMANTENNA
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li>
-                                        <a
+                                        <Link
                                             href="http://iemtronics.org/"
                                             target="_blank"
                                             rel="noopener noreferrer"
                                             className="text-base font-medium text-blue-600 hover:underline"
                                         >
                                             IEEE IEMTRONICS
-                                        </a>
+                                        </Link>
                                     </li>
                                 </ul>
                             </div>

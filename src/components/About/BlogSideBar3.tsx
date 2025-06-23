@@ -1,5 +1,6 @@
 import RelatedPost from "@/components/Blog/RelatedPost";
 import Image from "next/image";
+import Link from "next/link";
 
 const BlogSidebar3 = ({ onSelect }: { onSelect: (blog: "blog1" | "blog2" | "blog3") => void }) => {
 
@@ -99,14 +100,14 @@ const BlogSidebar3 = ({ onSelect }: { onSelect: (blog: "blog1" | "blog2" | "blog
                                 </h3>
                                 <ul className="px-8 py-6">
                                 <li>
-                                    <a
+                                    <Link
                                     href="https://www.ubc.ca/"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="text-base font-medium text-blue-600 hover:underline"
                                     >
                                     University of British Columbia Official Website
-                                    </a>
+                                    </Link>
                                 </li>
                                 </ul>
                             </div>

@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image from 'next/image';
 import Link from 'next/link'
 import React from 'react'
 
@@ -75,19 +75,19 @@ export default function PaperDetails() {
           <p className="text-lg text-blue-900 mb-4">
             The conference proceedings will be published in the Springer Book Series:{' '}
             <span className="font-semibold italic text-blue-800">
-              "Lecture Notes in Networks and Systems"
+              &quot;Lecture Notes in Networks and Systems&quot;
             </span>
           </p>
 
           {/* Optional Logo */}
-          {/* <div className="flex justify-center items-center my-6">
+          <div className="flex justify-center items-center my-6">
             <Image
               src="/images/sp.png"
               width={250}
               height={80}
               alt="Springer Logo"
             />
-          </div> */}
+          </div>
 
           <p className="text-base sm:text-lg text-blue-900">
             <strong>Indexing:</strong> SCOPUS, INSPEC, WTI Frankfurt eG, zbMATH, SCImago

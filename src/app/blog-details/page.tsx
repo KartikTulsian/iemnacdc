@@ -3,6 +3,7 @@ import TagButton from "@/components/Blog/TagButton";
 import Image from "next/image";
 
 import { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Blog Details Page | Free Next.js Template for Startup and SaaS",
@@ -94,12 +95,12 @@ const BlogDetailsPage = () => {
                     </div>
                   </div>
                   <div className="mb-5">
-                    <a
+                    <Link
                       href="#0"
                       className="inline-flex items-center justify-center rounded-full bg-primary px-4 py-2 text-sm font-semibold text-white"
                     >
                       Design
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 <div>
