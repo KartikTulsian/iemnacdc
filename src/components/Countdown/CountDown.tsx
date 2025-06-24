@@ -2,6 +2,7 @@ import React from "react";
 import SectionTitle from "../Common/SectionTitle";
 import Timer from "./timer";
 import VerticalTimelineCard from "../Timeline/VerticalTimelineCard";
+import ImpDates from "./ImpDates";
 
 export default function CountDown() {
   return (
@@ -17,6 +18,9 @@ export default function CountDown() {
         </div>
         <div className="pt-8 sm:pt-10 md:pt-12">
             <VerticalTimelineCard/>
+        </div>
+        <div className="pt-12 sm:pt-10 md:pt-12">
+            <ImpDates/>
         </div>
       </div>
     </section>

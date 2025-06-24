@@ -18,7 +18,7 @@ const CreateTable = ({
         {datas.map(({ col1, col2, className }, id) => (
           <tr
             key={id}
-            className="odd:bg-white even:bg-gray-50 border-b border-gray-200 hover:bg-blue-50 hover:scale-[1.01] transition-all duration-300 ease-in-out"
+            className="odd:bg-[#fff] even:bg-gray-50 border-b border-gray-200 hover:bg-blue-50 hover:scale-[1.01] transition-all duration-300 ease-in-out"
           >
             <th
               scope="row"
