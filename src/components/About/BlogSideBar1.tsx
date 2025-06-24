@@ -16,22 +16,19 @@ const BlogSidebar1 = ({ onSelect }: { onSelect: (blog: "blog1" | "blog2" | "blog
 
                                 </div>
                                 <div>
-                                    {/* <p className="mb-10 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
-                    The University of British Columbia is a global centre for teaching, learning and research, consistently ranked among the top public universities in the world.
-                  </p> */}
                                     <div className="mb-10 w-full overflow-hidden rounded">
                                         <div className="relative aspect-[97/60] w-full sm:aspect-[97/44]">
                                             <Image
-                                                src="/images/hero/gurukul_image.png"
+                                                src="/images/blog/NACDC.png"
                                                 alt="image"
                                                 fill
-                                                className="h-full w-full object-fill object-center"
+                                                className="h-full w-full object-contain object-center"
                                             />
                                         </div>
                                     </div>
                                     <p className="mb-8 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
                                         The North American Conference on Computational Intelligence, Data Science, and Cloud Computing (NACDC 2026) is an international conference dedicated to bringing together leading academics,
-                                        researchers, practitioners, and industry experts from across the globe. Hosted by the prestigious University of British Columbia (UBC) in Vancouver, Canada, the conference will be held from January 14 to 16, 2026.
+                                        researchers, practitioners, and industry experts from across the globe. The conference will be held from January 14 to 16, 2026 in Canada.
                                     </p>
                                     <p className="mb-6 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
                                         NACDC 2026 is poised to be a significant platform for the discussion, dissemination, and exchange of the latest trends, innovations, and future directions in Computational Intelligence, Artificial Intelligence (AI), Data Science, Big Data Analytics, Cloud Computing, and Emerging Technologies.
@@ -66,7 +63,7 @@ const BlogSidebar1 = ({ onSelect }: { onSelect: (blog: "blog1" | "blog2" | "blog
                                 <h3 className="border-b border-gray-300 px-8 py-4 text-lg font-semibold text-gray-800">
                                     Explore More
                                 </h3>
-                                <ul className="p-6">
+                                <ul className="px-6 pt-6 pb-0">
                                     <li
                                         onClick={() => onSelect("blog2")}
                                         className="mb-6 pb-6 border-b border-gray-200 cursor-pointer transition-all duration-300 transform hover:scale-[1.02] hover:shadow-lg rounded-lg hover:bg-blue-50"
@@ -77,7 +74,7 @@ const BlogSidebar1 = ({ onSelect }: { onSelect: (blog: "blog1" | "blog2" | "blog
                                             slug="#"
                                         />
                                     </li>
-                                    <li
+                                    {/* <li
                                         onClick={() => onSelect("blog3")}
                                         className="mb-6 pb-6 border-b border-gray-200 cursor-pointer transition-all duration-300 transform hover:scale-[1.02] hover:shadow-lg rounded-lg hover:bg-blue-50"
                                     >
@@ -86,7 +83,7 @@ const BlogSidebar1 = ({ onSelect }: { onSelect: (blog: "blog1" | "blog2" | "blog
                                             image="/images/hero/hero_image7.png"
                                             slug="#"
                                         />
-                                    </li>
+                                    </li> */}
                                 </ul>
                             </div>
 

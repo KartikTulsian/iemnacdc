@@ -70,7 +70,7 @@ const BlogSidebar3 = ({ onSelect }: { onSelect: (blog: "blog1" | "blog2" | "blog
                                 <h3 className="border-b border-gray-300 px-8 py-4 text-lg font-semibold text-gray-800">
                                     Explore More
                                 </h3>
-                                <ul className="p-6">
+                                <ul className="px-6 pt-6 pb-0">
                                     <li
                                         onClick={() => onSelect("blog1")}
                                         className="mb-6 pb-6 border-b border-gray-200 cursor-pointer transition-all duration-300 transform hover:scale-[1.02] hover:shadow-lg rounded-lg hover:bg-blue-50"

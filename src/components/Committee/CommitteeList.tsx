@@ -54,23 +54,36 @@ const committeeList = {
       "Nirmalya Thakur, South Dakota School of Mines and Technology, United States",
       "Raghavan Chellappan, ByteSafe, United States"
     ],
-    "Organizing Committee": [
-      "Moutushi Singh, Institute of Engineering & Management, Kolkata, India",
-      "Baisakhi Das, Institute of Engineering & Management, Kolkata, India",
-      "Sanchita Ghosh, Institute of Engineering & Management, Kolkata, India",
-      "Amit Kumar Das, Institute of Engineering & Management, Kolkata, India",
-      "Sainik Kumar Mahata, Institute of Engineering & Management, Kolkata, India",
-      "Indranil Sen Gupta, City University of New York, United States",
-      "Rupayan Das, Institute of Engineering & Management, Kolkata, India",
-      "Sukanya Mukherjee, Institute of Engineering & Management, Kolkata, India",
-      "Susovan Jana, Institute of Engineering & Management, Kolkata, India",
-      "Avipsita Chatterjee, Institute of Engineering & Management, Kolkata, India",
-      "Anupam Mondal, Institute of Engineering & Management, Kolkata, India",
-      "Darothi Sarkar, Institute of Engineering & Management, Kolkata, India"
-    ],
-    "General Chair":[],
-    "Technical  Program Chair":[],
-    "Publication Chair":[],
+    "Organizing Committee": {
+      "General Chair": [],
+      "Convenor": [
+        "Moutushi Singh, Institute of Engineering & Management, Kolkata, India",
+        "Baisakhi Das, Institute of Engineering & Management, Kolkata, India",
+      ],
+      "Technical Program Chair": [],
+      "Technical Program Co-Chair": [
+        "Sanchita Ghosh, Institute of Engineering & Management, Kolkata, India",
+      ],
+      "Publicity Chair": [
+        "Amit Kumar Das, Institute of Engineering & Management, Kolkata, India",
+        "Sainik Kumar Mahata, Institute of Engineering & Management, Kolkata, India",
+      ],
+      "Publication Chair": [
+        "Indranil Sen Gupta, City University of New York, United States",
+      ],
+      "Publication Co-Chair": [
+        "Rupayan Das, Institute of Engineering & Management, Kolkata, India",
+      ],
+      "Organizing Chair": [
+        "Sukanya Mukherjee, Institute of Engineering & Management, Kolkata, India",
+      ],
+      "Committee Members": [
+        "Susovan Jana, Institute of Engineering & Management, Kolkata, India",
+        "Avipsita Chatterjee, Institute of Engineering & Management, Kolkata, India",
+        "Anupam Mondal, Institute of Engineering & Management, Kolkata, India",
+        "Darothi Sarkar, Institute of Engineering & Management, Kolkata, India"
+      ],
+    },
   }
 };
 
@@ -83,7 +96,7 @@ export default function CommitteeList() {
       <div className="container mx-auto max-w-7xl">
         <SectionTitle title="NACDC 2026 Committee" paragraph="Guiding the Future of Computational Intelligence, Data Science, and Cloud Computing" center/>
 
-        <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10">
+        <div className="mt-10 gap-10">
           {Object.entries(sections).map(([title, members]) => (
             <SingleList key={title} title={title} members={members} />
           ))}

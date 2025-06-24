@@ -125,11 +125,14 @@ const Header = () => {
                   <Link
                     href={menuItem.path}
                     onClick={() => setNavbarOpen(false)}
-                    className={`block py-2 px-4 text-base font-medium transition ${
+                    className={`block py-2 px-4 text-lg font-medium transition ${
                       pathname === menuItem.path
                         ? "text-[#4A6CF7]"
+                        : pathname === "/" && !sticky
+                        ? "text-[#fff] hover:text-[#4A6CF7]"
                         : "text-gray-700 hover:text-[#4A6CF7]"
                     }`}
+
                   >
                     {menuItem.title}
                   </Link>
@@ -137,7 +140,11 @@ const Header = () => {
                   <>
                     <button
                       onClick={() => handleSubmenu(index)}
-                      className="flex w-full items-center justify-between py-2 px-4 text-base font-medium text-gray-700 hover:text-[#4A6CF7] lg:w-auto"
+                      className={`flex w-full items-center justify-between py-2 px-4 text-base font-medium lg:w-auto transition ${
+                        pathname === "/" && !sticky
+                          ? "text-[#fff] hover:text-[#4A6CF7]"
+                          : "text-gray-700 hover:text-[#4A6CF7]"
+                      }`}
                     >
                       {menuItem.title}
                       <svg
@@ -177,7 +184,7 @@ const Header = () => {
                                   setOpenIndex(-1);
                                   setNavbarOpen(false);
                                 }}
-                                className="block py-2 px-4 text-sm text-gray-700 hover:text-[#4A6CF7]"
+                                className="block py-2 px-4 text-md text-gray-700 hover:text-[#4A6CF7]"
                               >
                                 {submenuItem.title}
                               </Link>

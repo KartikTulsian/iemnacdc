@@ -2,56 +2,77 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
+// import { AnimatePresence, motion } from "framer-motion";
+
+// const slides = [
+//   {
+//     image: "/images/hero/hero_image1.png",
+//     title: "NACDC 2026 Begins Here!",
+//     subtitle: "The Premier AI, Data Science, and Cloud Computing Conference",
+//     date: "January 14-16, 2026 · Vancouver, Canada",
+//     cta1: { label: "Register Now", link: "/registration" },
+//     cta2: { label: "View Schedule", link: "/schedule" },
+//   },
+//   {
+//     image: "/images/hero/hero_image2.png",
+//     title: "Explore Vancouver with NACDC",
+//     subtitle: "Where World-Class Innovation Meets Stunning Landscapes",
+//     date: "Don't just attend — experience!",
+//     cta1: { label: "About", link: "/about" },
+//     cta2: { label: "Contact", link: "/contact" },
+//   },
+//   {
+//     image: "/images/hero/hero_image3.png",
+//     title: "Global Minds. One Stage.",
+//     subtitle: "Meet the Leading Researchers and Visionaries in AI & Cloud",
+//     date: "Keynotes from 30+ Industry Experts",
+//     cta1: { label: "Keynote Speakers", link: "/speakers" },
+//     cta2: { label: "Conference Tracks", link: "/callForPapers" },
+//   },
+//   {
+//     image: "/images/hero/hero_image4.png",
+//     title: "Submit Your Breakthroughs",
+//     subtitle: "Call for Papers Now Open – Share Your Research With the World",
+//     date: "Deadline: September 25, 2025",
+//     cta1: { label: "Submit Paper", link: "/registration" },
+//     cta2: { label: "Author Guidelines", link: "/callForPapers" },
+//   },
+//   {
+//     image: "/images/hero/hero_image5.png",
+//     title: "Innovate. Integrate. Impact.",
+//     subtitle: "Workshops & Demos Showcasing the Future of Tech",
+//     date: "Live Hands-on Sessions · Limited Seats",
+//     cta1: { label: "Workshop Schedule", link: "/schedule" },
+//     cta2: { label: "Apply to Present", link: "/registration" },
+//   },
+//   {
+//     image: "/images/hero/hero_image6.png",
+//     title: "Celebrate Excellence",
+//     subtitle: "Awards, Networking Gala & Closing Ceremony",
+//     date: "Connect, Collaborate & Celebrate",
+//     cta1: { label: "View Awards", link: "/awards" },
+//     cta2: { label: "Check Schedule", link: "/schedule" },
+//   },
+// ];
 
 const slides = [
   {
     image: "/images/hero/hero_image1.png",
-    title: "NACDC 2026 Begins Here!",
-    subtitle: "The Premier AI, Data Science, and Cloud Computing Conference",
-    date: "January 14-16, 2026 · Vancouver, Canada",
-    cta1: { label: "Register Now", link: "/registration" },
-    cta2: { label: "View Schedule", link: "/schedule" },
   },
   {
     image: "/images/hero/hero_image2.png",
-    title: "Explore Vancouver with NACDC",
-    subtitle: "Where World-Class Innovation Meets Stunning Landscapes",
-    date: "Don't just attend — experience!",
-    cta1: { label: "About", link: "/about" },
-    cta2: { label: "Contact", link: "/contact" },
   },
   {
     image: "/images/hero/hero_image3.png",
-    title: "Global Minds. One Stage.",
-    subtitle: "Meet the Leading Researchers and Visionaries in AI & Cloud",
-    date: "Keynotes from 30+ Industry Experts",
-    cta1: { label: "Keynote Speakers", link: "/speakers" },
-    cta2: { label: "Conference Tracks", link: "/callForPapers" },
   },
   {
     image: "/images/hero/hero_image4.png",
-    title: "Submit Your Breakthroughs",
-    subtitle: "Call for Papers Now Open – Share Your Research With the World",
-    date: "Deadline: September 25, 2025",
-    cta1: { label: "Submit Paper", link: "/registration" },
-    cta2: { label: "Author Guidelines", link: "/callForPapers" },
   },
   {
     image: "/images/hero/hero_image5.png",
-    title: "Innovate. Integrate. Impact.",
-    subtitle: "Workshops & Demos Showcasing the Future of Tech",
-    date: "Live Hands-on Sessions · Limited Seats",
-    cta1: { label: "Workshop Schedule", link: "/schedule" },
-    cta2: { label: "Apply to Present", link: "/registration" },
   },
   {
     image: "/images/hero/hero_image6.png",
-    title: "Celebrate Excellence",
-    subtitle: "Awards, Networking Gala & Closing Ceremony",
-    date: "Connect, Collaborate & Celebrate",
-    cta1: { label: "View Awards", link: "/awards" },
-    cta2: { label: "Check Schedule", link: "/schedule" },
   },
 ];
 
@@ -97,7 +118,7 @@ const Hero = () => {
     else if (delta < -50) prevSlide();
   };
 
-  const slide = slides[currentSlide];
+  // const slide = slides[currentSlide];
 
   return (
     <section
@@ -121,12 +142,12 @@ const Hero = () => {
             }`}
           />
         ))}
-        <div className="absolute inset-0 bg-[#000]/40" />
+        <div className="absolute inset-0 bg-[#000]/65" />
       </div>
 
       {/* Slide Content */}
       <div className="relative z-10 flex h-full items-center justify-center px-4 text-center">
-        <AnimatePresence mode="wait">
+        {/* <AnimatePresence mode="wait">
           <motion.div
             key={currentSlide}
             initial={{ opacity: 0, x: 50 }}
@@ -136,28 +157,67 @@ const Hero = () => {
             className="max-w-3xl"
           >
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#fff] mb-4">
-              {slide.title}
+              NACDC 2026 
             </h1>
             <h2 className="text-xl sm:text-2xl md:text-3xl font-medium text-[#fff] mb-2">
-              {slide.subtitle}
+              North American Conference on Computational Intelligence, Data Science, and Cloud Computing
             </h2>
             <p className="text-[#fff] mb-8">{slide.date}</p>
             <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
               <Link
-                href={slide.cta1.link}
+                href="/registration"
                 className="bg-[#4A6CF7] hover:bg-[#4A6CF7]/80 text-[#fff] px-6 py-3 rounded shadow font-semibold transition duration-300"
               >
-                {slide.cta1.label}
+                Register Now!
               </Link>
               <Link
-                href={slide.cta2.link}
+                href="/callForPapers"
                 className="bg-[#fff]/20 hover:bg-[#fff]/30 text-[#fff] px-6 py-3 rounded shadow font-semibold transition duration-300"
               >
-                {slide.cta2.label}
+                Call For Papers
               </Link>
             </div>
           </motion.div>
-        </AnimatePresence>
+        </AnimatePresence> */}
+        <div className="max-w-5xl w-full px-4 md:px-6 lg:px-8 mt-6">
+          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-[#fff] leading-tight mb-4 drop-shadow-md">
+            NACDC 2026
+          </h1>
+
+          <h2 className="text-lg sm:text-2xl md:text-3xl text-[#fff] font-medium mb-6 sm:mb-8 leading-relaxed drop-shadow-sm">
+            North American Conference on <br className="hidden sm:inline" />
+            <span className="text-[#bccaff] font-semibold">
+              Computational Intelligence, Data Science, and Cloud Computing
+            </span>
+          </h2>
+
+          <p className="text-[#fff] text-base sm:text-lg md:text-xl mb-6 sm:mb-8 font-light">
+            January 14–16, 2026 · Canada
+          </p>
+
+          <p className="text-[#fff] text-sm sm:text-base md:text-lg leading-relaxed mb-8 max-w-3xl mx-auto font-medium">
+            Organized by <br />
+            <span className="font-bold">
+              Department of Information Technology & Department of Computer Science & Engineering
+            </span> <br />
+            Institute of Engineering & Management, Kolkata, India
+          </p>
+
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-8">
+            <Link
+              href="/registration"
+              className="bg-[#4A6CF7] hover:bg-[#4A6CF7]/90 text-[#fff] px-6 py-3 rounded-full shadow-lg font-semibold text-sm sm:text-base transition"
+            >
+              Register Now
+            </Link>
+            <Link
+              href="/callForPapers"
+              className="border border-[#fff]/60 hover:border-[#fff] text-[#fff] px-6 py-3 rounded-full shadow font-semibold text-sm sm:text-base transition bg-white/10 hover:bg-white/20"
+            >
+              Call For Papers
+            </Link>
+          </div>
+        </div>
       </div>
 
       {/* Arrow Controls (hover only) */}
