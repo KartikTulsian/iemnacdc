@@ -192,10 +192,10 @@ const Hero = () => {
           </h2>
 
           <p className="text-[#fff] text-base sm:text-lg md:text-xl mb-6 sm:mb-8 font-light">
-            January 14–16, 2026 · Canada
+            January 14 – 16, 2026 · Canada
           </p>
 
-          <p className="text-[#fff] text-sm sm:text-base md:text-lg leading-relaxed mb-8 max-w-3xl mx-auto font-medium">
+          <p className="text-[#fff] text-sm sm:text-base md:text-lg leading-relaxed mb-8 max-w-4xl mx-auto font-medium">
             Organized by <br />
             <span className="font-bold">
               Department of Information Technology & Department of Computer Science & Engineering
