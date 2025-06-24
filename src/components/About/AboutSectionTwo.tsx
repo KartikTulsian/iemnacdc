@@ -42,7 +42,7 @@ const AboutSectionTwo = () => {
         <div className="flex flex-col-reverse lg:flex-row items-center gap-11">
           {/* Image */}
           <div className="w-full lg:w-1/2">
-            <div className="relative w-full max-w-[600px] mx-auto lg:mr-0 mt-10 lg:mt-0">
+            <div className="relative w-full max-w-[600px] mx-auto lg:mr-0 mt-6 lg:mt-0">
               <Image
                 src="/images/about/about-image-dark-2.svg"
                 alt="about image"

@@ -51,7 +51,7 @@ const AboutSectionOne: React.FC = () => {
 
             <div className="w-full pl-0 pr-4 lg:w-1/2">
               <div
-                className="wow fadeInUp relative mx-auto lg:mr-0 mt-10 lg:mt-0"
+                className="wow fadeInUp relative mx-auto lg:mr-0 mt-6 lg:mt-0"
                 data-wow-delay=".2s"
               >
                 <Image
@@ -59,7 +59,7 @@ const AboutSectionOne: React.FC = () => {
                   alt="about-image"
                   width={600}
                   height={600}
-                  className="mx-auto hidden dark:block dark:drop-shadow-none lg:ml-0"
+                  className="mx-auto drop-shadow-three lg:ml-0"
                 />
               </div>
 
