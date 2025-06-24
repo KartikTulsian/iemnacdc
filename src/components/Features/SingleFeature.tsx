@@ -6,7 +6,7 @@ const SingleFeature = ({ feature }: { feature: Feature }) => {
   return (
     <div className="w-full">
       <div
-        className="wow fadeInUp group h-full rounded-2xl bg-[#fff] p-6 shadow-md transition-all duration-300 hover:shadow-xl dark:shadow-gray-400"
+        className="wow fadeInUp group h-full rounded-2xl bg-[#fff] p-6 shadow-md transition-all duration-300 hover:shadow-xl"
         data-wow-delay=".15s"
       >
         {/* Icon Bubble */}

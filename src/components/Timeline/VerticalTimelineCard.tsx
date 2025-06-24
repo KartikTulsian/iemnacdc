@@ -18,8 +18,8 @@ import { AiFillStar } from "react-icons/ai";
 
 export default function VerticalTimelineCard() {
   return (
-    <div className="py-12 px-4 sm:px-6 lg:px-16 bg-gray-50 dark:bg-bg-color-dark">
-      <h2 className="text-3xl font-bold text-center text-dark dark:text-white mb-12">
+    <div className="py-12 px-4 sm:px-6 lg:px-16 bg-gray-50 ">
+      <h2 className="text-3xl font-bold text-center mb-12">
         📅 Conference Important Dates
       </h2>
 
@@ -30,7 +30,7 @@ export default function VerticalTimelineCard() {
             background: "linear-gradient(135deg, #4A6CF7, #657EFF)",
           }}
           contentArrowStyle={{ borderRight: "7px solid #4A6CF7" }}
-          date="7 October 2025"
+          date="25 September 2025"
           dateClassName="font-semibold"
           iconStyle={{
             background: "linear-gradient(135deg, #4A6CF7, #657EFF)",

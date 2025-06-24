@@ -5,41 +5,75 @@ import SectionTitle from "../Common/SectionTitle";
 
 const committeeList = {
   Committees: {
-    "Professors": [
-      "Dr. Tom Murad, University of Guelph, Ontario, Canada",
-      "Dr. Subhankar Dhar, San Jose State University, California, United States",
-      "Dr. Kaushik Rajashekara, University of Houston, United States",
-      "Dr. Kouichi Sakurai, Kyushu University in Fukuoka, Japan",
-      "Dr. Cheng-Chi Lee, Fu Jen Catholic University, Taiwan",
-      "Dr. Daniele Giusto, University of Cagliari, Italy",
-      "Dr. Jon G. Hall, The Open University, United Kingdom",
-      "Dr. Michael Sheng, Macquarie University, Sydney, Australia",
-      "Dr. Raghavendra Ramachandra, NTNU, Norway",
-      "Dr. Xiao-Zhi Gao, University of Eastern Finland, Finland",
+    "Advisory Committee": [
+      "Tom Murad, University of Guelph, Ontario, Canada",
+      "Esma Aimeur, University of Montreal, Quebec, Canada",
+      "Rim Cherif Fehri, Algonquin College, Ottawa, Ontario, Canada",
+      "Subhankar Dhar, San Jose State University, California, United States",
+      "John Jose, IIT Guwahati, India",
+      "Blessing Ogbuokiri, Brock University, St. Catharines, ON, Canada",
+      "Kaushik Rajashekara, University of Houston, United States",
+      "Kouichi Sakurai, Kyushu University in Fukuoka, Japan",
+      "João Manuel R. S. Tavares, Universidade do Porto, Portugal",
+      "Cheng-Chi Lee, Fu Jen Catholic University, Taiwan",
+      "Daniele Giusto, University of Cagliari, Italy",
+      "Vikas Malhotra, WOPLLI TECHNOLOGIES, United States",
+      "Mr. Benjamin Ang, RSIS, Singapore",
+      "Jon G. Hall, The Open University, United Kingdom",
+      "A. K. HAGHI, Universidade de Coimbra, Portugal",
+      "Michael Sheng, Macquarie University, Sydney, Australia",
+      "Raghavendra Ramachandra, Norwegian University of Science and Technology (NTNU), Norway",
+      "Xiao-Zhi Gao, University of Eastern Finland, Finland",
+      "Heba Elgazzar, Illinois State University, United States",
+      "Lalit Garg, University of Malta, Malta",
+      "Sameer Malik, Samsara, Massachusetts, United States",
+      "Keshav Singh, National Sun Yat-sen University, Taiwan",
+      "Manuel Rincon, Woxsen University, India",
+      "Sian Lun Lau, Sunway University, Malaysia",
+      "Fabio Fialho, Galp, Brazil",
+      "Ahmed Elngar, Maryam Abacha American University of Nigeria, Cairo, Egypt",
+      "Rong Jin, California State University, United States"
     ],
-    "Associate Professors": [
-      "Dr. John Jose, IIT Guwahati, India",
-      "Dr. Heba Elgazzar, Illinois State University, United States",
-      "Dr. Lalit Garg, University of Malta, Europe, Malta",
-      "Dr. Keshav Singh, National Sun Yat-sen University, Taiwan",
-      "Dr. Ahmed Elngar, Maryam Abacha American University of Nigeria, Cairo, Egypt"
+    "Technical Committee": [
+      "Soumya Ganguly, University of California San Diego, California, United States",
+      "Subhadip Singha, University of Waterloo, Canada",
+      "Thinagaran Perumal, Universiti Putra Malaysia, Malaysia",
+      "Shivani Tyagi, Thompson Rivers University, Canada",
+      "Prateek Shantharama, Mississippi State University, United States",
+      "Sruthi Balammagary, Comcast, Greater Philadelphia, United States",
+      "Shubham Malhotra, Amazon, United States",
+      "Sadegh Aalizadeh, Concordia University, Canada",
+      "Fahad Rahman Amik, McGill University, Montreal, Quebec, Canada",
+      "Arian Khorasani, Tech3Lab, Canada",
+      "Sravani Kurma, Mississippi State University, United States",
+      "Sai Ranganath Mikkilineni, Delaware State University, United States",
+      "Md. Jalil Piran, Sejong University, South Korea",
+      "Muskaan Goyal, Amazon, United States",
+      "Pranav Bhasin, Amazon, United States",
+      "Puru Pahuja, Salesforce, United States",
+      "Nirmalya Thakur, South Dakota School of Mines and Technology, United States",
+      "Raghavan Chellappan, ByteSafe, United States"
     ],
-    "International Committee Members": [
-      "Dr. Esma Aimeur, University of Montreal, Quebec, Canada",
-      "Dr. Rim Cherif Fehri, Algonquin College, Ottawa, Ontario, Canada",
-      "Dr. Blessing Ogbuokiri, Brock University, St. Catharines, ON, Canada",
-      "Dr. Vikas Malhotra, WOPLLI TECHNOLOGIES, (Founder & CEO), United States",
-      "Dr. A. K. HAGHI, Universidade de Coimbra, Portugal",
-      "Dr. Sameer Malik, Samsara, Massachusetts, United States",
-      "Dr. Manuel Rincon, Woxsen University, India",
-      "Dr. George Papakostas, Democritus University of Thrace, Greece",
-      "Dr. Gregory Hudson Garrison, San Francisco Bay Area, (Author) — Keynote, USA",
-      "Dr. Sian Lun Lau, Sunway University, Malaysia",
-      "Dr. Fabio Fialho, Galp, (Industry), Brazil",
-      "Dr. Rong Jin, California State University, United States"
-    ]
+    "Organizing Committee": [
+      "Moutushi Singh, Institute of Engineering & Management, Kolkata, India",
+      "Baisakhi Das, Institute of Engineering & Management, Kolkata, India",
+      "Sanchita Ghosh, Institute of Engineering & Management, Kolkata, India",
+      "Amit Kumar Das, Institute of Engineering & Management, Kolkata, India",
+      "Sainik Kumar Mahata, Institute of Engineering & Management, Kolkata, India",
+      "Indranil Sen Gupta, City University of New York, United States",
+      "Rupayan Das, Institute of Engineering & Management, Kolkata, India",
+      "Sukanya Mukherjee, Institute of Engineering & Management, Kolkata, India",
+      "Susovan Jana, Institute of Engineering & Management, Kolkata, India",
+      "Avipsita Chatterjee, Institute of Engineering & Management, Kolkata, India",
+      "Anupam Mondal, Institute of Engineering & Management, Kolkata, India",
+      "Darothi Sarkar, Institute of Engineering & Management, Kolkata, India"
+    ],
+    "General Chair":[],
+    "Technical  Program Chair":[],
+    "Publication Chair":[],
   }
 };
+
 
 export default function CommitteeList() {
   const sections = committeeList.Committees;

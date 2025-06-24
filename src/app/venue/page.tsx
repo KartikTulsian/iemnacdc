@@ -15,7 +15,7 @@ export default function VenuePage() {
     <div>
       <Breadcrumb 
         pageName='Venue of NACDC 2026'
-        description=''
+        description='Tentative Venue Canada'
       />
       <ComingSoon/>
     </div>

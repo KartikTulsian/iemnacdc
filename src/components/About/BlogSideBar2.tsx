@@ -10,10 +10,10 @@ const BlogSidebar2 = ({ onSelect }: { onSelect: (blog: "blog1" | "blog2" | "blog
                     <div className="mx-4 flex flex-wrap">
                         <div className="w-full px-4 lg:w-8/12">
                             <div>
-                                <h1 className="mb-8 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight">
+                                <h1 className="mb-8 text-3xl font-bold leading-tight text-[#000] sm:text-4xl sm:leading-tight">
                                     Institute Of Engineering & Management, Kolkata, India
                                 </h1>
-                                <div className="mb-10 flex flex-wrap items-center justify-between border-b border-body-color border-opacity-10 pb-4 dark:border-white dark:border-opacity-10">
+                                <div className="mb-10 flex flex-wrap items-center justify-between border-b border-body-color border-opacity-10 pb-4">
 
                                 </div>
                                 <div>
@@ -77,7 +77,7 @@ const BlogSidebar2 = ({ onSelect }: { onSelect: (blog: "blog1" | "blog2" | "blog
                                     >
                                         <RelatedPost
                                             title="NACDC 2026"
-                                            image="/images/blog/post-01.jpg"
+                                            image="/images/blog/NACDC.png"
                                             slug="#"
                                         />
                                     </li>

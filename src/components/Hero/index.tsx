@@ -33,7 +33,7 @@ const slides = [
     image: "/images/hero/hero_image4.png",
     title: "Submit Your Breakthroughs",
     subtitle: "Call for Papers Now Open – Share Your Research With the World",
-    date: "Deadline: October 7, 2025",
+    date: "Deadline: September 25, 2025",
     cta1: { label: "Submit Paper", link: "/registration" },
     cta2: { label: "Author Guidelines", link: "/callForPapers" },
   },

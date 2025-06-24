@@ -75,7 +75,7 @@ export default function ImpDates() {
         <div className="overflow-x-auto rounded-md border border-gray-200 shadow-sm">
           <CreateTable
             datas={[
-              { col1: 'Full Paper Submission:', col2: '7th October 2025' },
+              { col1: 'Full Paper Submission:', col2: '25 September 2025' },
               { col1: 'Acceptance Notification:', col2: '20th November 2025' },
               { col1: 'Final/Camera-ready Paper Submission:', col2: '10th December 2025' },
               { col1: 'Registration:', col2: '1st December 2025' },

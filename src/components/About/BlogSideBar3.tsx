@@ -11,10 +11,10 @@ const BlogSidebar3 = ({ onSelect }: { onSelect: (blog: "blog1" | "blog2" | "blog
                     <div className="mx-4 flex flex-wrap">
                         <div className="w-full px-4 lg:w-8/12">
                             <div>
-                                <h1 className="mb-8 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight">
+                                <h1 className="mb-8 text-3xl font-bold leading-tight text-[#000] sm:text-4xl sm:leading-tight">
                                     The University of British Columbia, Vancouver, Canada
                                 </h1>
-                                <div className="mb-10 flex flex-wrap items-center justify-between border-b border-body-color border-opacity-10 pb-4 dark:border-white dark:border-opacity-10">
+                                <div className="mb-10 flex flex-wrap items-center justify-between border-b border-body-color border-opacity-10 pb-4">
 
                                 </div>
                                 <div>
@@ -38,7 +38,7 @@ const BlogSidebar3 = ({ onSelect }: { onSelect: (blog: "blog1" | "blog2" | "blog
                                     <p className="mb-10 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
                                         UBC’s strategic plan represents a roadmap. It sets out our collective vision, purpose, goals and strategies for the years ahead. It guides our decisions and actions–inspiring the very best in our students, faculty, staff, alumni and partners. We hope you will join us on this journey.
                                     </p>
-                                    <h3 className="font-xl mb-10 font-bold leading-tight text-black dark:text-white sm:text-2xl sm:leading-tight lg:text-xl lg:leading-tight xl:text-2xl xl:leading-tight">
+                                    <h3 className="font-xl mb-10 font-bold leading-tight text-black sm:text-2xl sm:leading-tight lg:text-xl lg:leading-tight xl:text-2xl xl:leading-tight">
                                         UBC Campuses
                                     </h3>
                                     {/* <p className="mb-10 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
@@ -77,7 +77,7 @@ const BlogSidebar3 = ({ onSelect }: { onSelect: (blog: "blog1" | "blog2" | "blog
                                     >
                                         <RelatedPost
                                             title="NACDC 2026"
-                                            image="/images/blog/post-01.jpg"
+                                            image="/images/blog/NACDC.png"
                                             slug="#"
                                         />
                                     </li>

@@ -13,7 +13,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "NACDC 2026",
-  description: "This is Landing for NACDC 2026",
+  description: "Landing Page for NACDC 2026",
   // other metadata
 };
 

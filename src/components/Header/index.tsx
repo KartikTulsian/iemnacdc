@@ -63,22 +63,23 @@ const Header = () => {
     >
       <div className="container mx-auto flex flex-wrap items-center justify-between px-4 py-3 md:py-4 lg:flex-nowrap">
         {/* Left Logos */}
-        <div className="flex items-center gap-3 lg:gap-5 min-h-[11vh]">
+        <div className="flex items-center gap-3 lg:gap-5 min-h-[11vh] pl-4 lg:pl-8">
+
           <Link href="/" className="flex items-center gap-3">
             <Image
-              src="/images/hero/icdc_logo.png"
-              alt="ICDC Logo"
+              src="/images/logo/nacdc_logo_bgr.png"
+              alt="NACDC Logo"
               width={60}
               height={40}
               className="h-[12vh] max-h-[130px] w-auto object-contain"
             />
-            <Image
+            {/* <Image
               src="/images/hero/ubc_logo.png"
               alt="UBC Logo"
               width={60}
               height={40}
               className="h-[11vh] max-h-[80px] w-auto object-contain"
-            />
+            /> */}
           </Link>
         </div>
 
