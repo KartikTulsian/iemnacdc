@@ -62,25 +62,41 @@ const Header = () => {
       }`}
     >
       <div className="container mx-auto flex flex-wrap items-center justify-between px-4 py-3 md:py-4 lg:flex-nowrap">
-        {/* Left Logos */}
-        <div className="flex items-center gap-3 lg:gap-5 min-h-[11vh] pl-4 lg:pl-8">
-
+        {/* Left Logos with NACDC + IEM + UEM on small screens */}
+        <div className="flex items-center gap-2 lg:gap-5 min-h-[11vh] pl-4 lg:pl-8">
           <Link href="/" className="flex items-center gap-3">
             <Image
               src="/images/logo/nacdc_logo_bgr.png"
               alt="NACDC Logo"
-              width={60}
-              height={40}
-              className="h-[12vh] max-h-[130px] w-auto object-contain"
+              width={1500}
+              height={1500}
+              priority
+              quality={100}
+              className="h-[13vh] w-auto object-contain"
             />
-            {/* <Image
-              src="/images/hero/ubc_logo.png"
-              alt="UBC Logo"
-              width={60}
-              height={40}
-              className="h-[11vh] max-h-[80px] w-auto object-contain"
-            /> */}
           </Link>
+
+          {/* Show IEM and UEM logos beside NACDC only on small screens */}
+          <div className="flex lg:hidden items-center gap-2">
+            <Image
+              src="/images/hero/iem-logo.png"
+              alt="IEM Logo"
+              width={1500}
+              height={1003}
+              priority
+              quality={100}
+              className="h-[10vh] w-auto object-contain"
+            />
+            <Image
+              src="/images/hero/uem-logo.png"
+              alt="UEM Logo"
+              width={1500}
+              height={1003}
+              priority
+              quality={100}
+              className="h-[10vh] w-auto object-contain"
+            />
+          </div>
         </div>
 
         {/* Navbar toggle (Mobile) */}
@@ -170,7 +186,7 @@ const Header = () => {
                           : openIndex === index
                           ? "block"
                           : "hidden"
-                      } lg:absolute lg:top-full lg:left-0 lg:mt-2 lg:w-56 lg:rounded lg:bg-gray-50 lg:p-4 lg:shadow-lg`}
+                      } lg:absolute lg:top-full lg:left-0 lg:mt-2 lg:w-45 lg:rounded lg:bg-gray-50 lg:px-1 lg:py-2 lg:shadow-lg`}
                     >
 
                       <div className="flex flex-col lg:gap-2">
@@ -201,22 +217,53 @@ const Header = () => {
 
         {/* Right Logos */}
         
-        <div className="hidden lg:flex items-center gap-1 min-h-[11vh]">
-          <Image
-            src="/images/hero/iem-logo.png"
-            alt="IEM Logo"
-            width={60}
-            height={40}
-            className="h-[10.8vh] max-h-[80px] w-auto object-contain"
-          />
-          <Image
-            src="/images/hero/uem-logo.png"
-            alt="UEM Logo"
-            width={60}
-            height={40}
-            className="h-[13vh] max-h-[80px] w-auto object-contain"
-          />
+        {/* Right Logos on large screens – switch based on sticky */}
+        <div className="hidden lg:flex items-center gap-2 min-h-[11vh]">
+          {pathname === "/" && !sticky ? (
+            <>
+              <Image
+                src="/images/hero/iem-logo-bw.png"
+                alt="IEM Logo BW"
+                width={1500}
+                height={1003}
+                quality={100}
+                priority
+                className="h-[12vh] w-auto object-contain"
+              />
+              <Image
+                src="/images/hero/uem-logo-bw.png"
+                alt="UEM Logo BW"
+                width={1500}
+                height={1003}
+                quality={100}
+                priority
+                className="h-[12vh] w-auto object-contain"
+              />
+            </>
+          ) : (
+            <>
+              <Image
+                src="/images/hero/iem-logo.png"
+                alt="IEM Logo"
+                width={1500}
+                height={1003}
+                quality={100}
+                priority
+                className="h-[12vh] w-auto object-contain"
+              />
+              <Image
+                src="/images/hero/uem-logo.png"
+                alt="UEM Logo"
+                width={1500}
+                height={1003}
+                quality={100}
+                priority
+                className="h-[12vh] w-auto object-contain"
+              />
+            </>
+          )}
         </div>
+
       </div>
     </header>
   );

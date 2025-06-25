@@ -22,7 +22,7 @@ const BlogSidebar2 = ({ onSelect }: { onSelect: (blog: "blog1" | "blog2" | "blog
                                         technical and managerial resource shortage in the new era of dynamic globalisation. The IEM group has risen to fame for its strong foundation in teaching and R&D in multifaceted areas.
                                         It aims to serve the future generation as well as the Nation through its commitment towards self sufficiency and unmatchable excellence.
                                     </p>
-                                    <div className="mb-10 w-full overflow-hidden rounded">
+                                    <div className="mb-10 w-full overflow-hidden rounded-lg shadow-xl">
                                         <div className="relative aspect-[97/60] w-full sm:aspect-[97/44]">
                                             <Image
                                                 src="/images/hero/gurukul_image.png"

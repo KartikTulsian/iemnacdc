@@ -191,8 +191,12 @@ const Hero = () => {
             </span>
           </h2>
 
+          <p className="text-[#fff] text-base sm:text-lg md:text-xl mb-2 sm:mb-3 font-light">
+            January 14 – 16, 2026
+          </p>
+
           <p className="text-[#fff] text-base sm:text-lg md:text-xl mb-6 sm:mb-8 font-light">
-            January 14 – 16, 2026 · Canada
+            Canada
           </p>
 
           <p className="text-[#fff] text-sm sm:text-base md:text-lg leading-relaxed mb-8 max-w-4xl mx-auto font-medium">

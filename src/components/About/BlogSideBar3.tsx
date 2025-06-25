@@ -21,7 +21,7 @@ const BlogSidebar3 = ({ onSelect }: { onSelect: (blog: "blog1" | "blog2" | "blog
                                     <p className="mb-10 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
                                         The University of British Columbia is a global centre for teaching, learning and research, consistently ranked among the top public universities in the world.
                                     </p>
-                                    <div className="mb-10 w-full overflow-hidden rounded">
+                                    <div className="mb-10 w-full overflow-hidden rounded-lg shadow-xl">
                                         <div className="relative aspect-[97/60] w-full sm:aspect-[97/44]">
                                             <Image
                                                 src="/images/hero/hero_image7.png"

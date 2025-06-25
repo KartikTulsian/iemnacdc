@@ -1,6 +1,6 @@
 import SectionTitle from "../Common/SectionTitle";
-import SingleFeature from "./SingleFeature";
-import featuresData from "./featuresData";
+// import SingleFeature from "./SingleFeature";
+// import featuresData from "./featuresData";
 import TracksList from "@/components/Tracks/TracksList";
 
 const Features = () => {
@@ -8,7 +8,7 @@ const Features = () => {
   researchers, practitioners, and industry experts from across the globe. The conference will be held from January 14 to 16, 2026 in Canada.`;
 
   return (
-    <section id="features" className="relative py-16 md:py-20 lg:py-28 bg-[#fff] z-10">
+    <section id="features" className="relative py-16 md:py-20 lg:pt-28 bg-[#fff] z-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Welcome Section */}
         <div className="mb-16">
@@ -27,17 +27,17 @@ const Features = () => {
         </div>
 
         {/* --- Tracks Section --- */}
-        <div className="mb-20 border-t border-gray-200 pt-12">
+        <div className="border-t border-gray-200 pt-12">
           <TracksList/>
         </div>
 
         {/* Objectives Heading */}
-        <div className="text-3xl font-bold text-center text-dark sm:text-4xl md:text-[42px] mb-12 pt-10 pb-5">
+        {/* <div className="text-3xl font-bold text-center text-dark sm:text-4xl md:text-[42px] mb-12 pt-10 pb-5">
           🎯 Conference Objectives
-        </div>
+        </div> */}
 
         {/* Feature Cards Grid */}
-        <div className="flex flex-wrap justify-center gap-8 px-4 sm:px-6 lg:px-0">
+        {/* <div className="flex flex-wrap justify-center gap-8 px-4 sm:px-6 lg:px-0">
           {featuresData.map((feature) => (
             <div
               key={feature.id}
@@ -46,7 +46,7 @@ const Features = () => {
               <SingleFeature feature={feature} />
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
       <div className="absolute right-0 top-0 z-[-1] opacity-30 lg:opacity-100">
         <svg

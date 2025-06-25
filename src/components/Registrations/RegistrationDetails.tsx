@@ -132,7 +132,7 @@ export default function RegistrationDetails() {
 
 
       {/* Indian Payments */}
-      <section
+      {/* <section
         className="w-full max-w-4xl bg-[#fff] p-6 md:p-8 rounded-xl shadow-lg mb-10"
         data-aos="fade-up"
       >
@@ -153,10 +153,10 @@ export default function RegistrationDetails() {
             ]}
           />
         </div>
-      </section>
+      </section> */}
 
       {/* International Payments */}
-      <section
+      {/* <section
         className="w-full max-w-4xl bg-[#fff] p-6 md:p-8 rounded-xl shadow-lg"
         data-aos="fade-up"
       >
@@ -177,7 +177,7 @@ export default function RegistrationDetails() {
             ]}
           />
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }

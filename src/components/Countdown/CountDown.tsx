@@ -9,8 +9,8 @@ export default function CountDown() {
     <section className="relative z-10 py-16 md:py-20 lg:py-28">
       <div className="container mx-auto px-4">
         <SectionTitle
-          title="⏰ Hurry! Registration Closes Soon"
-          paragraph="Set a reminder now and be part of something big. Registration closes soon—don't miss your chance!"
+          title="⏰ Your Journey Awaits"
+          paragraph="Set a reminder now and be part of something big."
           center
         />
         <div className="pt-8 sm:pt-10 md:pt-12">

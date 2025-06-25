@@ -47,23 +47,23 @@ const menuData: MenuItem[] = [
   },
   {
     id: 5,
+    title: "Committee",
+    path: "/committee",
+    newTab: false,
+  },
+  {
+    id: 6,
     title: "NACDC 2026",
     newTab: false,
     submenu: [
       {
-        id: 51,
-        title: "Committee",
-        path: "/committee",
-        newTab: false,
-      },
-      {
-        id: 52,
+        id: 61,
         title: "Venue",
         path: "/venue",
         newTab: false,
       },
       {
-        id: 53,
+        id: 62,
         title: "Schedule",
         path: "/schedule",
         newTab: false,

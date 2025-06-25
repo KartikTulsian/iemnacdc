@@ -1,6 +1,6 @@
 // import AboutSectionOne from "@/components/About/AboutSectionOne";
 import AboutSectionThree from "@/components/About/AboutSectionThree";
-import AboutSectionTwo from "@/components/About/AboutSectionTwo";
+// import AboutSectionTwo from "@/components/About/AboutSectionTwo";
 import Brands from "@/components/Brands";
 import ScrollUp from "@/components/Common/ScrollUp";
 import CountDown from "@/components/Countdown/CountDown";
@@ -26,7 +26,7 @@ export default function Home() {
       <CountDown/>
       <Brands />
       {/* <AboutSectionOne /> */}
-      <AboutSectionTwo />
+      {/* <AboutSectionTwo /> */}
       <AboutSectionThree/>
       <Video />
     </>

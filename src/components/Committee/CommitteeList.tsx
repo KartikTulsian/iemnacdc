@@ -18,7 +18,7 @@ const committeeList = {
       "Cheng-Chi Lee, Fu Jen Catholic University, Taiwan",
       "Daniele Giusto, University of Cagliari, Italy",
       "Vikas Malhotra, WOPLLI TECHNOLOGIES, United States",
-      "Mr. Benjamin Ang, RSIS, Singapore",
+      "Benjamin Ang, RSIS, Singapore",
       "Jon G. Hall, The Open University, United Kingdom",
       "A. K. HAGHI, Universidade de Coimbra, Portugal",
       "Michael Sheng, Macquarie University, Sydney, Australia",
@@ -94,7 +94,7 @@ export default function CommitteeList() {
   return (
     <section className="py-16 px-4">
       <div className="container mx-auto max-w-7xl">
-        <SectionTitle title="NACDC 2026 Committee" paragraph="Guiding the Future of Computational Intelligence, Data Science, and Cloud Computing" center/>
+        <SectionTitle title="NACDC 2026 Committee" paragraph="" center/>
 
         <div className="mt-10 gap-10">
           {Object.entries(sections).map(([title, members]) => (

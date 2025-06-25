@@ -4,171 +4,109 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <>
-      <footer
-        className="wow fadeInUp relative z-10 bg-[#fff] pt-16 md:pt-20 lg:pt-24"
-        data-wow-delay=".1s"
-      >
-        <div className="container">
-          <div className="mx-4 flex flex-wrap">
-            <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-5/12">
-              <div className="mb-12 lg:mb-16 max-w-[360px]">
-                {/* Logos */}
-                <div className="flex items-center gap-6 mb-4">
-                  <Image
-                    src="/images/logo/nacdc_logo_bgr.png"
-                    alt="NACDC Logo"
-                    width={80}
-                    height={60}
-                    className="h-[13vh] max-h-[140px] w-auto object-contain"
-                  />
-                  {/* <Image
-                    src="/images/hero/ubc_logo.png"
-                    alt="UBC Logo"
-                    width={80}
-                    height={60}
-                    className="h-[10vh] max-h-[100px] w-auto object-contain"
-                  /> */}
-                </div>
+    <div className="bg-[#f5f3ff] z-[-10]">
+      <footer className="relative z-10 pt-16 md:pt-20 lg:pt-24 border-t border-gray-200 shadow-sm">
+        <div className="container mx-auto px-6 sm:px-8 lg:px-12">
+          <div className="flex flex-col lg:flex-row justify-between gap-12">
 
-                {/* Title */}
-                <div className="mb-3 text-2xl font-semibold text-[#000]">
-                  NACDC 2026
-                </div>
-
-                {/* Description */}
-                <p className="mb-4 text-base leading-relaxed text-body-color">
-                  For detailed registration guidelines, submission deadlines, and travel information, please visit the official website:
-                </p>
-
-                {/* Website Link */}
-                <Link
-                  href="https://iemnacdc.vercel.app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mb-3 block text-base font-medium text-[#4A6CF7] hover:underline"
-                >
-                  🌐 iemnacdc.vercel.app
-                </Link>
-
-                {/* Email Link */}
-                <Link
-                  href="mailto:nacdc@iem.edu.in"
-                  className="block text-base font-medium text-[#4A6CF7] hover:underline"
-                >
-                  📧 Email: nacdc@iem.edu.in
-                </Link>
+            {/* NACDC Info */}
+            <div className="lg:w-1/3">
+              <div className="flex items-center gap-6 mb-6">
+                <Image
+                  src="/images/logo/nacdc_logo_bgr.png"
+                  alt="NACDC Logo"
+                  width={1500}
+                  height={1500}
+                  priority
+                  quality={100}
+                  className="h-[16vh] w-auto object-contain"
+                />
               </div>
+              <div className="text-2xl font-bold text-[#000] mb-2">NACDC 2026</div>
+              <p className="text-base text-body-color mb-3">
+                For detailed registration guidelines, submission deadlines, and travel information, please visit the official website:
+              </p>
+              <p className="text-base text-body-color">
+                January 14 – 16, 2026<br />
+                Canada
+              </p>
             </div>
 
+            {/* Useful Links + Contact */}
+            <div className="lg:w-2/3 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-5 lg:border-l border-gray-200 pl-6 lg:pl-20 lg:gap-0">
 
-            <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
-              <div className="mb-12 lg:mb-16">
-                <h2 className="mb-10 text-xl font-bold text-[#000]">
-                  Useful Links
-                </h2>
-                <ul>
+              {/* Useful Links */}
+              <div>
+                <h2 className="text-xl font-bold text-[#000] mb-6">Useful Links</h2>
+                <ul className="space-y-4">
                   <li>
                     <Link
                       href="/registration"
-                      className=" mb-4 inline-block text-base text-body-color duration-300 hover:text-[#4A6CF7]"
+                      className="text-base text-body-color hover:text-[#4A6CF7] transition-colors"
                     >
-                      Registration
+                      ➤ Registration
                     </Link>
                   </li>
                   <li>
                     <Link
                       href="/callForPapers"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-[#4A6CF7] "
+                      className="text-base text-body-color hover:text-[#4A6CF7] transition-colors"
                     >
-                      Tracks
+                      ➤ Tracks
                     </Link>
                   </li>
                   <li>
                     <Link
                       href="/about"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-[#4A6CF7] "
+                      className="text-base text-body-color hover:text-[#4A6CF7] transition-colors"
                     >
-                      About
+                      ➤ About
                     </Link>
                   </li>
                 </ul>
               </div>
-            </div>
 
-            <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
-              <div className="mb-12 lg:mb-16">
-                <h2 className="mb-10 text-xl font-bold text-[#000]">
-                  Terms
-                </h2>
-                <ul>
+              {/* Contact */}
+              <div>
+                <h2 className="text-xl font-bold text-[#000] mb-6">Contact</h2>
+                <ul className="space-y-4">
                   <li>
                     <Link
-                      href="/"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-[#4A6CF7] "
+                      href="https://nacdc.in/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-base font-medium text-[#4A6CF7] hover:text-purple-700 transition-colors"
                     >
-                      TOS
+                      🌐 Website: nacdc.in
                     </Link>
                   </li>
                   <li>
                     <Link
-                      href="/"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-[#4A6CF7] "
+                      href="mailto:nacdc@iem.edu.in"
+                      className="text-base font-medium text-[#4A6CF7] hover:text-purple-700 transition-colors"
                     >
-                      Privacy Policy
+                      📧 Email: nacdc@iem.edu.in
                     </Link>
                   </li>
-                  <li>
-                    <Link
-                      href="/"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-[#4A6CF7] "
-                    >
-                      Refund Policy
-                    </Link>
+                  <li className="text-base font-medium text-[#4A6CF7]">
+                    📞 +91 9674032480
+                  </li>
+                  <li className="text-base font-medium text-[#4A6CF7]">
+                    📞 +91 9433495413
                   </li>
                 </ul>
               </div>
-            </div>
 
-            <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-3/12">
-              <div className="mb-12 lg:mb-16">
-                <h2 className="mb-10 text-xl font-bold text-[#000]">
-                  Support & Help
-                </h2>
-                <ul>
-                  <li>
-                    <Link
-                      href="/contact"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-[#4A6CF7] "
-                    >
-                      Open Support Ticket
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-[#4A6CF7] "
-                    >
-                      Terms of Use
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/about"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary "
-                    >
-                      About
-                    </Link>
-                  </li>
-                </ul>
-              </div>
             </div>
           </div>
 
-          <div className="h-px w-full bg-gradient-to-r from-transparent via-[#D2D8E183] to-transparent"></div>
-          <div className="py-8">
-            <p className="text-center text-base text-body-color">
-              Developed By NACDC 2025 Digital Team
+          {/* Divider */}
+          <div className="mt-12 h-px w-full bg-gradient-to-r from-transparent via-[#a6aab0] to-transparent"></div>
+
+          {/* Bottom note */}
+          <div className="py-6 text-center">
+            <p className="text-base text-gray-600">
+              Developed By <span className="font-semibold text-[#4A6CF7]">NACDC 2025 Digital Team</span>
             </p>
           </div>
         </div>
@@ -363,7 +301,7 @@ const Footer = () => {
           </svg>
         </div>
       </footer>
-    </>
+    </div>
   );
 };
 

@@ -66,7 +66,7 @@ export default function PaperTracks() {
             <div
               key={track.id}
               onClick={() => handleNavigateToTrack(track.id)}
-              className="w-full sm:w-[47%] lg:w-[22%] h-[30vh] bg-white text-[#4A6CF7] rounded-xl border-3 border-gray-200 shadow-md hover:shadow-xl hover:border-blue-400 cursor-pointer transition-transform transform duration-300 hover:-translate-y-2 group"
+              className="w-full sm:w-[47%] lg:w-[22%] h-[30vh] bg-[#fff] text-[#4A6CF7] rounded-xl border-3 border-gray-200 shadow-md hover:shadow-xl hover:border-blue-400 cursor-pointer transition-transform transform duration-300 hover:-translate-y-2 group"
             >
               <div className="w-full h-full flex flex-col items-center justify-center p-6 text-center gap-4">
                 <div className="bg-gradient-to-br from-blue-100 to-blue-200 text-blue-600 rounded-full p-4 shadow-md transition duration-300 group-hover:scale-110">

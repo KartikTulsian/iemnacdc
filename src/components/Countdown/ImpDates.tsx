@@ -7,12 +7,12 @@ import { twMerge } from 'tailwind-merge';
 import { CalendarDays, Clock, CheckCircle, Upload, FileCheck2, Users } from 'lucide-react'; // Add icons
 
 const icons = [
-  <Upload key="0" className="w-5 h-5 text-blue-600 mr-2" />,
-  <CheckCircle key="1" className="w-5 h-5 text-green-600 mr-2" />,
-  <FileCheck2 key="2" className="w-5 h-5 text-yellow-600 mr-2" />,
-  <Users key="3" className="w-5 h-5 text-pink-600 mr-2" />,
-  <Clock key="4" className="w-5 h-5 text-indigo-600 mr-2" />,
-  <CalendarDays key="5" className="w-5 h-5 text-purple-600 mr-2" />,
+  <Upload key="0" className="w-5 h-5 text-blue-600 mr-4" />,
+  <CheckCircle key="1" className="w-5 h-5 text-green-600 mr-4" />,
+  <FileCheck2 key="2" className="w-5 h-5 text-yellow-600 mr-4" />,
+  <Users key="3" className="w-5 h-5 text-pink-600 mr-4" />,
+  <Clock key="4" className="w-5 h-5 text-indigo-600 mr-4" />,
+  <CalendarDays key="5" className="w-5 h-5 text-purple-600 mr-4" />,
 ];
 
 const CreateTable = ({
@@ -21,7 +21,7 @@ const CreateTable = ({
   datas: Array<{ col1: string; col2: string; className?: string }>;
 }) => {
   return (
-    <table className="w-full text-sm md:text-base text-left text-gray-700">
+    <table className="w-full text-lg md:text-base text-left text-gray-700">
       <tbody>
         {datas.map(({ col1, col2, className }, id) => (
           <tr
@@ -31,7 +31,7 @@ const CreateTable = ({
             <th
               scope="row"
               className={twMerge(
-                'px-4 py-3 md:px-6 md:py-4 font-semibold text-gray-900 whitespace-normal flex items-center',
+                'px-4 py-3 md:px-6 md:py-4 font-semibold text-gray-900 text-lg whitespace-normal flex items-center',
                 className
               )}
             >
@@ -39,7 +39,7 @@ const CreateTable = ({
               <span>{col1}</span>
             </th>
             <td className="px-4 py-3 md:px-6 md:py-4 text-gray-800 font-medium">
-              <span className="inline-block px-2 py-1 bg-yellow-50 text-yellow-900 rounded-md shadow-sm text-xs md:text-sm">
+              <span className="inline-block px-2 py-1 bg-yellow-50 text-yellow-900 rounded-md shadow-sm text-sm md:text-sm">
                 {col2}
               </span>
             </td>
@@ -60,8 +60,8 @@ export default function ImpDates() {
   }, []);
 
   return (
-    <div className="flex flex-col items-center px-4 md:px-8 lg:px-24">
-      <h1 className="text-3xl md:text-4xl font-bold text-[#4A6CF7] mb-6 text-center">
+    <div className="flex flex-col items-center px-4 md:px-8 lg:px-24 mt-10">
+      <h1 className="text-3xl md:text-4xl font-bold text-[#4A6CF7] mb-10 text-center">
         🗓️ Important Dates
       </h1>
 
@@ -69,10 +69,10 @@ export default function ImpDates() {
         className="w-full max-w-4xl bg-white p-5 sm:p-6 md:p-8 rounded-xl shadow-xl border border-indigo-100"
         data-aos="fade-up"
       >
-        <h2 className="text-lg sm:text-xl md:text-2xl font-semibold mb-4 text-gray-800 text-center">
+        <h2 className="text-lg sm:text-xl md:text-2xl font-semibold mb-6 text-gray-800 text-center">
           📌 Mark Your Calendars for Key Deadlines
         </h2>
-        <div className="overflow-x-auto rounded-md border border-gray-200 shadow-sm">
+        <div className="overflow-x-auto:hidden rounded-md border border-gray-200 shadow-sm">
           <CreateTable
             datas={[
               { col1: 'Full Paper Submission:', col2: '25 September 2025' },
