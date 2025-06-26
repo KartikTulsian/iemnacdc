@@ -1,173 +1,114 @@
 import RelatedPost from "@/components/Blog/RelatedPost";
 import Image from "next/image";
 import Link from "next/link";
+import { FaUniversity, FaGlobe } from "react-icons/fa";
 
 const BlogSidebar2 = ({ onSelect }: { onSelect: (blog: "blog1" | "blog2" | "blog3") => void }) => {
-    return (
-        <>
-            <section className="overflow-hidden pb-[60px] pt-[100px]">
-                <div className="container">
-                    <div className="mx-4 flex flex-wrap">
-                        <div className="w-full px-4 lg:w-8/12">
-                            <div>
-                                <h1 className="mb-8 text-3xl font-bold leading-tight text-[#000] sm:text-4xl sm:leading-tight">
-                                    Institute Of Engineering & Management, Kolkata, India
-                                </h1>
-                                <div className="mb-10 flex flex-wrap items-center justify-between border-b border-body-color border-opacity-10 pb-4">
+  return (
+    <section className="bg-white pt-20 pb-16">
+      <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 
-                                </div>
-                                <div>
-                                    <p className="mb-10 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
-                                        The IEM group is an acclaimed educational group amongst the industry-centred academic training organisations of today. IEM has set sublime standards in addressing the
-                                        technical and managerial resource shortage in the new era of dynamic globalisation. The IEM group has risen to fame for its strong foundation in teaching and R&D in multifaceted areas.
-                                        It aims to serve the future generation as well as the Nation through its commitment towards self sufficiency and unmatchable excellence.
-                                    </p>
-                                    <div className="mb-10 w-full overflow-hidden rounded-lg shadow-xl">
-                                        <div className="relative aspect-[97/60] w-full sm:aspect-[97/44]">
-                                            <Image
-                                                src="/images/hero/gurukul_image.png"
-                                                alt="image"
-                                                fill
-                                                className="h-full w-full object-fill object-center"
-                                            />
-                                        </div>
-                                    </div>
-                                    <p className="mb-8 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
-                                        IEM is one of the top-ranked engineering colleges in Kolkata and Eastern India which provides the best engineering course with 100% job assistance. Contact today to
-                                        know the course details of computer science engineering, mechanical engineering, electrical and electronics engineering, electronics and communication engineering.For more information, visit here!
-                                    </p>
-                                    <p className="mb-10 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
-                                        Since its inception, the IEM group has surpassed innumerable benchmarks of achievements and accreditations. Today IEM flaunts a colossal network of expansive
-                                        operations led by an awe-inspiring student force who are the torchbearers of a better tomorrow.
-                                    </p>
-                                    <h3 className="font-xl mb-10 font-bold leading-tight text-black sm:text-2xl sm:leading-tight lg:text-xl lg:leading-tight xl:text-2xl xl:leading-tight">
-                                        IEM is successfully organizing international conferences for the last few years as mentioned below:
-                                    </h3>
-                                    <ul className="mb-10 list-inside list-disc text-body-color">
-                                        <li className="mb-2 text-base font-medium text-body-color sm:text-lg lg:text-base xl:text-lg">
-                                            IEEE IEMCON at University of British Columbia, Vancouver, Canada (http://ieee-iemcon.org/) since 2015
-                                        </li>
-                                        <li className="mb-2 text-base font-medium text-body-color sm:text-lg lg:text-base xl:text-lg">
-                                            IEEE UEMCON at Columbia University, New York, USA (http://ieee-uemcon.org/) since 2016
-                                        </li>
-                                        <li className="mb-2 text-base font-medium text-body-color sm:text-lg lg:text-base xl:text-lg">
-                                            IEEE CCWC, University of Nevada, Las Vegas (http://ieee-ccwc.org/) since 2017
-                                        </li>
-                                        <li className="mb-2 text-base font-medium text-body-color sm:text-lg lg:text-base xl:text-lg">
-                                            IEEE IEMANTENNA, University of British Columbia, Vancouver, Canada (http://iemantenna.org/) in 2019
-                                        </li>
-                                        <li className="mb-2 text-base font-medium text-body-color sm:text-lg lg:text-base xl:text-lg">
-                                            IEEE IEMTRONICS at University of British Columbia, Vancouver, Canada (https://iemtronics.org/) since 2020
-                                        </li>
-                                    </ul>
+        {/* Heading */}
+        <div className="text-center mb-12">
+          <h1 className="text-3xl sm:text-4xl font-extrabold text-gray-900 leading-tight mb-4">
+            Institute Of Engineering & Management, Kolkata, India
+          </h1>
+          <div className="w-50 h-1 mx-auto bg-gradient-to-r from-[#4A6CF7] via-indigo-400 to-[#4A6CF7] rounded shadow-md" />
+        </div>
 
-                                </div>
-                            </div>
-                        </div>
-                        <div className="w-full px-4 lg:w-4/12">
+        {/* Content Layout */}
+        <div className="flex flex-col lg:flex-row gap-10">
 
-                            <div className="shadow-lg mb-10 rounded-xl bg-[#fff] border border-gray-100">
-                                <h3 className="border-b border-gray-300 px-8 py-4 text-lg font-semibold text-gray-800">
-                                    Explore More
-                                </h3>
-                                <ul className="px-6 pt-6 pb-0">
-                                    <li
-                                        onClick={() => onSelect("blog1")}
-                                        className="mb-6 pb-6 border-b border-gray-200 cursor-pointer transition-all duration-300 transform hover:scale-[1.02] hover:shadow-lg rounded-lg hover:bg-blue-50"
-                                    >
-                                        <RelatedPost
-                                            title="NACDC 2026"
-                                            image="/images/blog/NACDC.png"
-                                            slug="#"
-                                        />
-                                    </li>
-                                    {/* <li
-                                        onClick={() => onSelect("blog3")}
-                                        className="mb-6 pb-6 border-b border-gray-200 cursor-pointer transition-all duration-300 transform hover:scale-[1.02] hover:shadow-lg rounded-lg hover:bg-blue-50"
-                                    >
-                                        <RelatedPost
-                                            title="University of British Columbia"
-                                            image="/images/hero/hero_image7.png"
-                                            slug="#"
-                                        />
-                                    </li> */}
-                                </ul>
-                            </div>
+          {/* Left Column: Main Content */}
+          <div className="lg:w-8/12 space-y-8">
+            <p className="text-lg text-gray-700 leading-relaxed">
+              The IEM group is an acclaimed educational group amongst the industry-centred academic training organisations of today. IEM has set sublime standards in addressing the technical and managerial resource shortage in the new era of dynamic globalisation.
+            </p>
 
-                            <div className="shadow-md rounded-xl bg-white border border-gray-100">
-                                <h3 className="border-b border-gray-200 px-8 py-4 text-lg font-semibold text-gray-800">
-                                    Reference
-                                </h3>
-                                <ul className="px-8 py-6">
-                                    <li>
-                                        <Link
-                                            href="https://iem.edu.in/"
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="text-base font-medium text-blue-600 hover:underline"
-                                        >
-                                            IEM: Top Engineering College in Kolkata, West Bengal
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link
-                                            href="http://ieee-iemcon.org/"
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="text-base font-medium text-blue-600 hover:underline"
-                                        >
-                                            IEEE IEMCON
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link
-                                            href="http://ieee-uemcon.org/"
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="text-base font-medium text-blue-600 hover:underline"
-                                        >
-                                            IEEE UEMCON
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link
-                                            href="http://ieee-ccwc.org/"
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="text-base font-medium text-blue-600 hover:underline"
-                                        >
-                                            IEEE CCWC
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link
-                                            href="http://iemantenna.org/"
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="text-base font-medium text-blue-600 hover:underline"
-                                        >
-                                            IEEE IEMANTENNA
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link
-                                            href="http://iemtronics.org/"
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="text-base font-medium text-blue-600 hover:underline"
-                                        >
-                                            IEEE IEMTRONICS
-                                        </Link>
-                                    </li>
-                                </ul>
-                            </div>
+            <div className="overflow-hidden rounded-lg shadow-lg bg-white">
+              <div className="relative aspect-[97/60] sm:aspect-[97/44] w-full">
+                <Image
+                  src="/images/hero/gurukul_image.png"
+                  alt="IEM Kolkata"
+                  fill
+                  className="object-fill object-center"
+                />
+              </div>
+            </div>
 
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </>
-    );
+            <p className="text-lg text-gray-700 leading-relaxed">
+              IEM is one of the top-ranked engineering colleges in Kolkata and Eastern India, known for 100% job assistance and industry-aligned curriculum across disciplines like CSE, ME, ECE, and EE.
+            </p>
+
+            <p className="text-lg text-gray-700 leading-relaxed">
+              Since its inception, the IEM group has surpassed numerous benchmarks in research, industry collaboration, and student success, powered by a vision of self-sufficiency and educational excellence.
+            </p>
+
+            <h3 className="text-2xl font-semibold text-gray-900 mt-10">Major International Conferences by IEM</h3>
+            <ul className="list-disc list-inside space-y-3 text-gray-700 text-base">
+              <li>IEEE IEMCON – UBC, Vancouver (2015–)</li>
+              <li>IEEE UEMCON – Columbia University, New York (2016–)</li>
+              <li>IEEE CCWC – University of Nevada, Las Vegas (2017–)</li>
+              <li>IEEE IEMANTENNA – UBC, Vancouver (2019)</li>
+              <li>IEEE IEMTRONICS – UBC, Vancouver (2020–)</li>
+            </ul>
+          </div>
+
+          {/* Right Column: Sidebar */}
+          <aside className="lg:w-4/12 space-y-8">
+
+            {/* Explore More */}
+            <div className="bg-white border border-gray-200 rounded-xl shadow-md p-6">
+              <h2 className="text-lg font-semibold text-gray-800 border-b pb-3 mb-5">
+                Explore More
+              </h2>
+              <ul>
+                <li
+                  onClick={() => onSelect("blog1")}
+                  className="border-b border-gray-100 cursor-pointer transition-all duration-300 transform hover:scale-[1.02] hover:shadow-lg rounded-lg hover:bg-blue-50"
+                >
+                  <RelatedPost
+                    title="NACDC 2026"
+                    image="/images/blog/NACDC.png"
+                    slug="#"
+                  />
+                </li>
+              </ul>
+            </div>
+
+            {/* Institution Quick Info */}
+            <div className="bg-gradient-to-br from-[#EEF2FF] to-[#F5F3FF] border border-gray-200 rounded-xl shadow p-6">
+              <h3 className="text-lg font-semibold text-gray-800 mb-4">Quick Info</h3>
+              <ul className="space-y-4 text-gray-700">
+                <li className="flex items-center gap-3">
+                  <FaUniversity className="text-[#4A6CF7]" />
+                  <span>Established in 1989</span>
+                </li>
+                <li className="flex items-center gap-3">
+                  <FaGlobe className="text-[#4A6CF7]" />
+                  <span>Kolkata, India</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* References */}
+            <div className="bg-white border border-gray-200 rounded-xl shadow-md p-6">
+              <h3 className="text-lg font-semibold text-gray-800 mb-4">Reference Links</h3>
+              <ul className="list-disc list-inside text-blue-600 text-sm space-y-2">
+                <li><Link href="https://iem.edu.in/" target="_blank">IEM Official Website</Link></li>
+                <li><Link href="http://ieee-iemcon.org/" target="_blank">IEEE IEMCON</Link></li>
+                <li><Link href="http://ieee-uemcon.org/" target="_blank">IEEE UEMCON</Link></li>
+                <li><Link href="http://ieee-ccwc.org/" target="_blank">IEEE CCWC</Link></li>
+                <li><Link href="http://iemantenna.org/" target="_blank">IEEE IEMANTENNA</Link></li>
+                <li><Link href="http://iemtronics.org/" target="_blank">IEEE IEMTRONICS</Link></li>
+              </ul>
+            </div>
+
+          </aside>
+        </div>
+      </div>
+    </section>
+  );
 };
 
 export default BlogSidebar2;

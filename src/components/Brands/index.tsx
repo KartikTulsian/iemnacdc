@@ -10,7 +10,7 @@ const Brands = () => {
       <div className="container">
         <SectionTitle
           title="🤝 Our Technical Partners"
-          paragraph="We are proud to collaborate with globally recognized institutions and innovators."
+          paragraph=""
           center
         />
         <div className="flex flex-wrap justify-center items-center gap-6 sm:gap-8 md:gap-10 px-4 pt-10 pb-6">

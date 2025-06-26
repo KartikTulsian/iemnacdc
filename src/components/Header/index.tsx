@@ -58,13 +58,13 @@ const Header = () => {
   return (
     <div>
       <header
-        className={`header z-40 w-full items-center transition-all duration-500 ease-in-out transform ${
+        className={`header z-40 w-full overflow-x-visible items-center transition-all duration-500 ease-in-out transform ${
           sticky
             ? "fixed top-0 translate-y-0 bg-opacity-100 shadow-md backdrop-blur-sm"
             : "fixed top-0 translate-y-0 bg-[#ffffff30]"
         }`}
       >
-        <div className="container mx-auto flex flex-wrap items-center justify-between px-4 py-1 md:py-1 lg:flex-nowrap">
+        <div className="w-full max-w-screen-2xl mx-auto flex flex-wrap items-center justify-between px-4 py-2 md:py-2 lg:flex-nowrap gap-y-2 min-w-0 overflow-hidden">
           {/* Left Logos with NACDC + IEM + UEM on small screens */}
           <div className="flex items-center gap-4 lg:gap-8 xl:gap-10 pr-2">
             <Link href="/" className="flex items-center gap-2">
@@ -75,7 +75,7 @@ const Header = () => {
                 height={1500}
                 priority
                 quality={100}
-                className="h-[12vh] sm:h-[12vh] md:h-[15vh] lg:h-[17vh] w-auto max-w-[12rem] xl:max-w-[14rem] object-contain"
+                className="h-[12vh] lg:h-[16vh] w-auto max-w-[11rem] md:max-w-[12rem] lg:max-w-[14rem] xl:max-w-[14rem] object-contain"
               />
             </Link>
 
@@ -138,7 +138,7 @@ const Header = () => {
           >
             <ul 
               ref={menuRef}
-              className="flex flex-col gap-2 lg:flex-row lg:items-center lg:gap-6 lg:space-x-1 whitespace-nowrap"
+              className="flex flex-col gap-2 lg:flex-row lg:items-center lg:gap-2 xl:gap-4 lg:space-x-1"
             >
               {menuData.map((menuItem, index) => (
                 <li key={index} className="relative group">
@@ -146,7 +146,7 @@ const Header = () => {
                     <Link
                       href={menuItem.path}
                       onClick={() => setNavbarOpen(false)}
-                      className={`block py-2 px-4 text-md font-medium transition whitespace-nowrap ${
+                      className={`block py-2 px-4 text-lg font-medium transition text-center ${
                         pathname === menuItem.path
                           ? "text-[#4A6CF7]"
                           : pathname === "/" && !sticky && !navbarOpen
@@ -155,7 +155,10 @@ const Header = () => {
                       }`}
 
                     >
-                      {menuItem.title}
+                      <span className="break-words max-w-[7.5rem] text-center leading-snug">
+                        {menuItem.title}
+                      </span>
+
                     </Link>
                   ) : (
                     <>
@@ -167,9 +170,12 @@ const Header = () => {
                             : "text-gray-700 hover:text-[#4A6CF7]"
                         }`}
                       >
-                        {menuItem.title}
+                        <span className="break-words max-w-[7.5rem] text-center leading-snug">
+                          {menuItem.title}
+                        </span>
+
                         <svg
-                          className={`ml-2 h-4 w-4 transform transition-transform duration-300 ${
+                          className={`ml-1 h-4 w-4 transform transition-transform duration-300 ${
                             openIndex === index ? "rotate-180" : ""
                           }`}
                           fill="currentColor"
@@ -224,7 +230,7 @@ const Header = () => {
           {/* Right Logos */}
           
           {/* Right Logos on large screens – switch based on sticky */}
-          <div className="hidden lg:flex items-center gap-2 min-h-[11vh]">
+          <div className="hidden lg:flex items-center gap-1 xl:gap-3 pr-2 min-w-0 flex-shrink justify-end">
             {pathname === "/" && !sticky ? (
               <>
                 <Image
@@ -234,7 +240,7 @@ const Header = () => {
                   height={1003}
                   quality={100}
                   priority
-                  className="h-12 sm:h-14 md:h-16 lg:h-[11vh] w-auto object-contain"
+                  className="h-[6vh] sm:h-[6.5vh] md:h-[7vh] lg:h-[8vh] xl:h-[9vh] w-auto object-contain max-w-[6rem] sm:max-w-[7rem] md:max-w-[8rem] lg:max-w-[8.5rem]"
                 />
                 <Image
                   src="/images/hero/uem-logo-bw.png"
@@ -243,7 +249,7 @@ const Header = () => {
                   height={1003}
                   quality={100}
                   priority
-                  className="h-12 sm:h-14 md:h-16 lg:h-[11vh] w-auto object-contain"
+                  className="h-[6vh] sm:h-[6.5vh] md:h-[7vh] lg:h-[8vh] xl:h-[9vh] w-auto object-contain max-w-[6rem] sm:max-w-[7rem] md:max-w-[8rem] lg:max-w-[8.5rem]"
                 />
               </>
             ) : (
@@ -255,7 +261,7 @@ const Header = () => {
                   height={1003}
                   quality={100}
                   priority
-                  className="h-12 sm:h-14 md:h-16 lg:h-[11vh] w-auto object-contain"
+                  className="h-[6vh] sm:h-[6.5vh] md:h-[7vh] lg:h-[8vh] xl:h-[9vh] w-auto object-contain max-w-[6rem] sm:max-w-[7rem] md:max-w-[8rem] lg:max-w-[8.5rem]"
                 />
                 <Image
                   src="/images/hero/uem-logo.png"
@@ -264,7 +270,7 @@ const Header = () => {
                   height={1003}
                   quality={100}
                   priority
-                  className="h-12 sm:h-14 md:h-16 lg:h-[11vh] w-auto object-contain"
+                  className="h-[6vh] sm:h-[6.5vh] md:h-[7vh] lg:h-[8vh] xl:h-[9vh] w-auto object-contain max-w-[6rem] sm:max-w-[7rem] md:max-w-[8rem] lg:max-w-[8.5rem]"
                 />
               </>
             )}

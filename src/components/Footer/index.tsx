@@ -5,40 +5,44 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <div className="bg-[#f5f3ff] z-[-10]">
-      <footer className="relative z-10 pt-16 md:pt-20 lg:pt-24 border-t border-gray-200 shadow-sm">
-        <div className="container mx-auto px-6 sm:px-8 lg:px-12">
-          <div className="flex flex-col lg:flex-row justify-between gap-12">
+      <footer className="relative z-10 pt-10 md:pt-14 lg:pt-16 border-t border-gray-200 shadow-sm">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-10">
+          
+          {/* Row 1: Logo */}
+          <div className="flex justify-start">
+            <Image
+              src="/images/logo/nacdc_logo_bgr.png"
+              alt="NACDC Logo"
+              width={1500}
+              height={1500}
+              priority
+              quality={100}
+              className="h-[16vh] w-auto object-contain"
+            />
+          </div>
 
-            {/* NACDC Info */}
+          {/* Row 2: Details & Links */}
+          <div className="flex flex-col lg:flex-row justify-between gap-10">
+            
+            {/* Column 1: NACDC Details */}
             <div className="lg:w-1/3">
-              <div className="flex items-center gap-6 mb-6">
-                <Image
-                  src="/images/logo/nacdc_logo_bgr.png"
-                  alt="NACDC Logo"
-                  width={1500}
-                  height={1500}
-                  priority
-                  quality={100}
-                  className="h-[16vh] w-auto object-contain"
-                />
-              </div>
-              <div className="text-2xl font-bold text-[#000] mb-2">NACDC 2026</div>
-              <p className="text-base text-body-color mb-3">
+              <div className="text-2xl font-bold text-[#000] mb-3">NACDC 2026</div>
+              <p className="text-base text-body-color mb-4">
                 For detailed registration guidelines, submission deadlines, and travel information, please visit the official website.
               </p>
               <p className="text-base text-body-color">
-                📅 January 14 – 16, 2026<br />
+                📅 January 14 – 16, 2026<br /><br />
                 📍 Canada
               </p>
             </div>
 
-            {/* Useful Links + Contact */}
-            <div className="lg:w-2/3 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-5 lg:border-l border-gray-200 pl-6 lg:pl-20 lg:gap-0">
-
+            {/* Column 2: Useful Links + Contact */}
+            <div className="lg:w-2/3 flex flex-col sm:flex-row lg:justify-around md:justify-start gap-8 md:gap-25 lg:border-l border-gray-200 lg:pl-20">
+              
               {/* Useful Links */}
               <div>
-                <h2 className="text-xl font-bold text-[#000] mb-6">Useful Links</h2>
-                <ul className="space-y-4">
+                <h2 className="text-xl font-bold text-[#000] mb-5">Useful Links</h2>
+                <ul className="space-y-3">
                   <li>
                     <Link
                       href="/registration"
@@ -68,8 +72,8 @@ const Footer = () => {
 
               {/* Contact */}
               <div>
-                <h2 className="text-xl font-bold text-[#000] mb-6">Contact</h2>
-                <ul className="space-y-4">
+                <h2 className="text-xl font-bold text-[#000] mb-5">Contact</h2>
+                <ul className="space-y-3">
                   <li>
                     <Link
                       href="https://nacdc.in/"
@@ -100,12 +104,12 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Divider */}
-          <div className="mt-12 h-px w-full bg-gradient-to-r from-transparent via-[#a6aab0] to-transparent"></div>
+          {/* Divider with no extra bottom margin */}
+          <div className="h-px w-full bg-gradient-to-r from-transparent via-[#a6aab0] to-transparent" />
 
-          {/* Bottom note */}
-          <div className="py-6 text-center">
-            <p className="text-base text-gray-600">
+          {/* Bottom Note (tight spacing) */}
+          <div className="pt-4 pb-8 text-center ">
+            <p className="text-base text-gray-600 ">
               Developed By <span className="font-semibold text-[#4A6CF7]">NACDC 2025 Digital Team</span>
             </p>
           </div>

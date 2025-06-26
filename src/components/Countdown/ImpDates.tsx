@@ -92,7 +92,7 @@ export default function ImpDates() {
       </h1> */}
 
       <section
-        className="w-full max-w-4xl bg-[#fff] p-5 sm:p-6 md:p-8 rounded-xl shadow-xl border border-indigo-100 mt-4 md:mt-6"
+        className="w-full max-w-4xl bg-[#fff] p-5 sm:p-6 md:p-8 rounded-xl shadow-xl border border-indigo-100"
         data-aos="fade-up"
       >
         <div className="overflow-x-auto:hidden rounded-md border border-gray-200 shadow-sm">

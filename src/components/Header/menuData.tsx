@@ -28,12 +28,6 @@ const menuData: MenuItem[] = [
     newTab: false,
   },
   {
-    id: 33,
-    title: "Speakers",
-    path: "/speakers",
-    newTab: false,
-  },
-  {
     id: 3,
     title: "Call For Papers",
     path: "/callForPapers",
@@ -56,14 +50,15 @@ const menuData: MenuItem[] = [
     title: "NACDC 2026",
     newTab: false,
     submenu: [
+      
       {
-        id: 61,
+        id: 62,
         title: "Venue",
         path: "/venue",
         newTab: false,
       },
       {
-        id: 62,
+        id: 63,
         title: "Schedule",
         path: "/schedule",
         newTab: false,
