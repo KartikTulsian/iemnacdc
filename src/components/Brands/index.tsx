@@ -6,7 +6,7 @@ import SectionTitle from "../Common/SectionTitle";
 
 const Brands = () => {
   return (
-    <section className="flex fle-col justify-center pt-16 pb-10 bg-white mx-auto">
+    <section className="flex fle-col justify-center pt-16 pb-10 bg-[#fff] mx-auto">
       <div className="container">
         <SectionTitle
           title="🤝 Our Technical Partners"
