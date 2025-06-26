@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
+import SectionTitle from "../Common/SectionTitle";
 
 interface TimeCount {
   days: string;
@@ -56,9 +57,18 @@ export default function Timer({ launchDate }: { launchDate: string }) {
   }, [launchDate]);
 
   const timerUnit = (value: string, label: string) => (
-    <div className="flex flex-col items-center justify-center w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 rounded-full bg-gradient-to-br from-[#99a9eb] to-blue-600 text-[#fff] shadow-lg transition-transform duration-300 transform hover:scale-105">
-      <span className="text-xl sm:text-2xl md:text-4xl font-bold">{value}</span>
-      <small className="text-[10px] sm:text-xs uppercase font-medium">{label}</small>
+    <div className="flex flex-col items-center justify-center w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 rounded-2xl bg-gradient-to-br from-[#ebf0ff] to-[#d7e0ff] shadow-lg border border-indigo-200 hover:scale-105 transition-transform duration-300 group relative">
+      {/* Glowing pulse ring */}
+      <div className="absolute -inset-1 rounded-2xl bg-gradient-to-r from-blue-400 to-indigo-500 blur opacity-10 group-hover:opacity-20 transition-all duration-300"></div>
+
+      {/* Value */}
+      <span className="relative text-3xl sm:text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-800 drop-shadow">
+        {value}
+      </span>
+      {/* Label */}
+      <small className="relative text-xs md:text-sm font-medium text-gray-700 uppercase tracking-wider mt-1">
+        {label}
+      </small>
     </div>
   );
 
@@ -77,8 +87,14 @@ export default function Timer({ launchDate }: { launchDate: string }) {
   if (!mounted || !timeLeft) return null; // Avoid SSR mismatch
 
   return (
-    <div className="flex flex-col items-center space-y-8 w-full">
-      <div className="flex flex-wrap justify-center gap-4 sm:gap-6 w-full max-w-4xl">
+    <div className="flex flex-col items-center gap-12 w-full mt-8 sm:mt-10 lg:mt-12 px-4">
+      <SectionTitle
+        title="⏰ Your Journey Awaits"
+        paragraph="Set a reminder now and be part of something big."
+        center
+      />
+
+      <div className="flex flex-wrap justify-center gap-5 sm:gap-6 w-full max-w-4xl bg-[#fff]/10 p-6 sm:p-8 rounded-2xl shadow-xl border border-[#fff]/20 backdrop-blur-md">
         {timerUnit(timeLeft.days, "Days")}
         {timerUnit(timeLeft.hours, "Hours")}
         {timerUnit(timeLeft.minutes, "Minutes")}
@@ -87,9 +103,9 @@ export default function Timer({ launchDate }: { launchDate: string }) {
 
       <button
         onClick={handleGoogleCalendarClick}
-        className="mt-6 rounded-md bg-[#758ef0] px-6 py-3 text-[#fff] font-semibold shadow-md hover:bg-blue-500 transition duration-300"
+        className="mt-4 sm:mt-6 rounded-lg bg-gradient-to-br from-blue-500 to-indigo-600 px-6 py-3 text-[#fff] font-semibold shadow-lg hover:shadow-xl hover:brightness-110 transition duration-300"
       >
-        Add to My Google Calendar
+        📅 Add to My Google Calendar
       </button>
     </div>
   );
