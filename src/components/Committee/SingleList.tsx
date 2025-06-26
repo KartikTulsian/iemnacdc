@@ -60,7 +60,7 @@ const renderMemberList = (list: string[]) => (
           animate={inView ? { scale: 1, opacity: 1 } : {}}
           transition={{ duration: 0.5, ease: "easeOut" }}
           key={idx}
-          className="flex items-start space-x-3 text-base sm:text-lg text-gray-700 pl-4 hover:text-[#4A6CF7] hover:scale-[1.02] transition-all duration-200 ease-in-out cursor-default"
+          className="flex items-start space-x-3 text-base sm:text-lg text-gray-700 pl-4 hover:text-[#4A6CF7] cursor-default"
         >
           {countryCode ? (
             <Image

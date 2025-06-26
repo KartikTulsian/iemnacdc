@@ -7,7 +7,7 @@ import CountDown from "@/components/Countdown/CountDown";
 import Features from "@/components/Features";
 import Hero from "@/components/Hero";
 // import Testimonials from "@/components/Testimonials";
-import Video from "@/components/Video";
+// import Video from "@/components/Video";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -28,7 +28,7 @@ export default function Home() {
       {/* <AboutSectionOne /> */}
       {/* <AboutSectionTwo /> */}
       <AboutSectionThree/>
-      <Video />
+      {/* <Video /> */}
     </>
   );
 }

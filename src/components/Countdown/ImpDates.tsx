@@ -39,7 +39,7 @@ const CreateTable = ({
               <span className="text-lg lg:text-2xl">Events</span>
             </div>
           </th>
-          <th className="w-[40%]">
+          <th className="px-4 py-6 md:px-6 md:py-3 font-semibold text-indigo-700 text-left w-[40%]">
             <div className="inline-flex items-center gap-2">
               <CalendarPlus className="w-6 h-6 text-indigo-600" />
               <span className="text-lg lg:text-2xl">Dates</span>

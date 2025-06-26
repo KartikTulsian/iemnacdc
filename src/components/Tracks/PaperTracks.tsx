@@ -105,7 +105,7 @@ export default function PaperTracks() {
                     ))}
                 </div>
             </div>
-            <div className="absolute top-50 right-0 z-[-1] opacity-30 lg:opacity-100">
+            {/* <div className="absolute top-50 right-0 z-[-1] opacity-30 lg:opacity-100">
                 <svg width="450" height="450" viewBox="0 0 450 450" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <defs>
                         <radialGradient id="bg1" cx="50%" cy="50%" r="50%">
@@ -131,7 +131,7 @@ export default function PaperTracks() {
                     <circle cx="100" cy="300" r="30" fill="#4A6CF7" opacity="0.1" />
                     <circle cx="350" cy="150" r="20" fill="#4A6CF7" opacity="0.1" />
                 </svg>
-            </div>
+            </div> */}
 
         </section>
     );

@@ -75,7 +75,7 @@ const Header = () => {
                 height={1500}
                 priority
                 quality={100}
-                className="h-[17vh] sm:h-[14vh] md:h-[16vh] lg:h-[17.5vh] w-auto max-w-[12rem] xl:max-w-[14rem] object-contain"
+                className="h-[12vh] sm:h-[12vh] md:h-[15vh] lg:h-[17vh] w-auto max-w-[12rem] xl:max-w-[14rem] object-contain"
               />
             </Link>
 
@@ -149,7 +149,7 @@ const Header = () => {
                       className={`block py-2 px-4 text-md font-medium transition whitespace-nowrap ${
                         pathname === menuItem.path
                           ? "text-[#4A6CF7]"
-                          : pathname === "/" && !sticky && !isMobile
+                          : pathname === "/" && !sticky && !navbarOpen
                           ? "text-[#fff] hover:text-[#4A6CF7]"
                           : "text-gray-700 hover:text-[#4A6CF7]"
                       }`}
@@ -162,7 +162,7 @@ const Header = () => {
                       <button
                         onClick={() => handleSubmenu(index)}
                         className={`flex w-full items-center justify-between py-2 px-4 text-base font-medium lg:w-auto transition ${
-                          pathname === "/" && !sticky && !isMobile
+                          pathname === "/" && !sticky && !navbarOpen
                             ? "text-[#fff] hover:text-[#4A6CF7]"
                             : "text-gray-700 hover:text-[#4A6CF7]"
                         }`}
@@ -191,7 +191,8 @@ const Header = () => {
                             : openIndex === index
                             ? "block"
                             : "hidden"
-                        } lg:absolute lg:top-full lg:left-0 lg:mt-2 lg:w-45 lg:rounded lg:bg-gray-50 lg:px-1 lg:py-2 lg:shadow-lg`}
+                          }  ${!isMobile && openIndex === index ? "lg:absolute lg:block" : ""} 
+                            lg:top-full lg:left-0 lg:mt-2 lg:w-45 lg:rounded lg:bg-gray-50 lg:px-1 lg:py-2 lg:shadow-lg`}
                       >
 
                         <div className="flex flex-col lg:gap-2">
@@ -233,7 +234,7 @@ const Header = () => {
                   height={1003}
                   quality={100}
                   priority
-                  className="h-12 sm:h-14 md:h-16 lg:h-[12vh] w-auto object-contain"
+                  className="h-12 sm:h-14 md:h-16 lg:h-[11vh] w-auto object-contain"
                 />
                 <Image
                   src="/images/hero/uem-logo-bw.png"
@@ -242,7 +243,7 @@ const Header = () => {
                   height={1003}
                   quality={100}
                   priority
-                  className="h-12 sm:h-14 md:h-16 lg:h-[12vh] w-auto object-contain"
+                  className="h-12 sm:h-14 md:h-16 lg:h-[11vh] w-auto object-contain"
                 />
               </>
             ) : (
@@ -254,7 +255,7 @@ const Header = () => {
                   height={1003}
                   quality={100}
                   priority
-                  className="h-12 sm:h-14 md:h-16 lg:h-[12vh] w-auto object-contain"
+                  className="h-12 sm:h-14 md:h-16 lg:h-[11vh] w-auto object-contain"
                 />
                 <Image
                   src="/images/hero/uem-logo.png"
@@ -263,7 +264,7 @@ const Header = () => {
                   height={1003}
                   quality={100}
                   priority
-                  className="h-12 sm:h-14 md:h-16 lg:h-[12vh] w-auto object-contain"
+                  className="h-12 sm:h-14 md:h-16 lg:h-[11vh] w-auto object-contain"
                 />
               </>
             )}

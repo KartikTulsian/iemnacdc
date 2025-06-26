@@ -25,11 +25,11 @@ const AboutSectionThree: React.FC = () => {
 
 
   return (
-    <section id="about" className="pt-16 md:pt-20 lg:pt-28 px-5">
-      <div className="container">
-        <div className="border-b border-body-color/[.15] pb-16 md:pb-20 lg:pb-28">
-          <div className="mx-4 flex flex-wrap items-center">
-            <div className="w-full pr-4 pl-6 lg:w-1/2">
+    <section id="about" className="pt-16 md:pt-20 lg:pt-28 px-4 sm:px-6 lg:px-8">
+      <div className="container mx-auto">
+        <div className="pb-16 md:pb-20 lg:pb-28">
+          <div className="flex flex-col lg:flex-row items-center justify-center gap-12">
+            <div className="w-full max-w-xl">
               <SectionTitle
                 title="🏆 Publication & Awards"
                 paragraph="All accepted and peer-reviewed papers will be published in the conference proceedings with an ISBN and indexed in reputed Springer nature digital libraries approval awaiting)."
@@ -37,22 +37,20 @@ const AboutSectionThree: React.FC = () => {
               />
 
               <div
-                className="wow fadeInUp mb-12 max-w-[570px] lg:mb-0 mt-6"
+                className="wow fadeInUp mt-6"
                 data-wow-delay=".15s"
               >
                 <p className="pb-5">Awards will be presented for:</p>
-                <div className="mx-auto lg:mx-0 mt-2">
-                  <div className="grid gap-y-4 sm:grid-cols-1 pl-4">
+                  <div className="pl-2">
                     <List text="Best Paper" />
                     <List text="Most Innovative Research Presentation" />
                   </div>
-                </div>
               </div>
             </div>
 
-            <div className="w-full pl-4 pr-4 lg:w-1/2">
+            <div className="w-full max-w-xl flex justify-center">
               <div
-                className="wow fadeInUp relative mx-auto lg:mr-0 mt-6 lg:mt-0"
+                className="wow fadeInUp relative"
                 data-wow-delay=".2s"
               >
                 <Image
@@ -60,7 +58,7 @@ const AboutSectionThree: React.FC = () => {
                   alt="about-image"
                   width={600}
                   height={600}
-                  className="mx-auto drop-shadow-three lg:ml-0"
+                  className="drop-shadow-three"
                 />
               </div>
 

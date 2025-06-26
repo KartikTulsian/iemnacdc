@@ -24,11 +24,11 @@ const Footer = () => {
               </div>
               <div className="text-2xl font-bold text-[#000] mb-2">NACDC 2026</div>
               <p className="text-base text-body-color mb-3">
-                For detailed registration guidelines, submission deadlines, and travel information, please visit the official website:
+                For detailed registration guidelines, submission deadlines, and travel information, please visit the official website.
               </p>
               <p className="text-base text-body-color">
-                January 14 – 16, 2026<br />
-                Canada
+                📅 January 14 – 16, 2026<br />
+                📍 Canada
               </p>
             </div>
 

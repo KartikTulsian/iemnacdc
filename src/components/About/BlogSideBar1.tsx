@@ -16,7 +16,7 @@ const BlogSidebar1 = ({ onSelect }: { onSelect: (blog: "blog1" | "blog2" | "blog
 
                                 </div>
                                 <div>
-                                    <div className="mb-10 w-full overflow-hidden rounded-lg shadow-xl">
+                                    <div className="mb-10 w-full overflow-hidden rounded-lg shadow-xl bg-[#fff]">
                                         <div className="relative aspect-[97/60] w-full sm:aspect-[97/44]">
                                             <Image
                                                 src="/images/blog/NACDC.png"
