@@ -69,7 +69,7 @@ const BlogSidebar1 = ({ onSelect }: { onSelect: (blog: "blog1" | "blog2" | "blog
                     slug="#"
                   />
                 </li>
-                <li
+                {/* <li
                   onClick={() => onSelect("blog3")}
                   className="border-b border-gray-100 cursor-pointer transition-all duration-300 transform hover:scale-[1.02] hover:shadow-lg rounded-lg hover:bg-blue-50"
                 >
@@ -78,7 +78,7 @@ const BlogSidebar1 = ({ onSelect }: { onSelect: (blog: "blog1" | "blog2" | "blog
                     image="/images/hero/gurukul_image.png"
                     slug="#"
                   />
-                </li>
+                </li> */}
               </ul>
             </div>
 

@@ -8,7 +8,7 @@ const Features = () => {
   researchers, practitioners, and industry experts from across the globe. The conference will be held from January 14 to 16, 2026 in Canada.`;
 
   return (
-    <section id="features" className="relative py-16 md:py-20 lg:pt-28 bg-[#fff] z-10">
+    <section id="features" className="relative pt-16 pb-6 md:pt-20 md:pb-8 lg:pt-28 bg-[#fff] z-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Welcome Section */}
         <div className="mb-16">
