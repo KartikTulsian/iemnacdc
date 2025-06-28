@@ -56,13 +56,16 @@ const CreateTable = ({
             <th
               scope="row"
               className={twMerge(
-                'px-3 py-2 sm:px-4 sm:py-3 font-semibold text-gray-900 text-base sm:text-sm flex items-start gap-2 flex-wrap break-words whitespace-normal',
+                'px-3 py-2 sm:px-4 sm:py-3 font-semibold text-gray-900 text-base sm:text-sm break-words whitespace-normal',
                 className
               )}
             >
-              {icons[id % icons.length]}
-              <span>{col1}</span>
+              <div className="flex flex-col xs:flex-row sm:flex-row items-start gap-2 sm:gap-2">
+                {icons[id % icons.length]}
+                <span className="text-left">{col1}</span>
+              </div>
             </th>
+
             <td className="px-3 py-2 sm:px-4 sm:py-3 text-gray-800 font-medium text-sm break-words whitespace-normal">
               <span className="inline-block px-2 py-1 bg-yellow-50 text-yellow-900 rounded-md shadow-sm">
                 {col2}
@@ -92,7 +95,7 @@ export default function ImpDates() {
       </h1> */}
 
       <section
-        className="w-full max-w-4xl bg-[#fff] p-5 sm:p-6 md:p-8 rounded-xl shadow-xl border border-indigo-100"
+        className="w-full max-w-4xl bg-[#fff] p-3 lg:p-6 md:p-8 rounded-xl shadow-xl border border-indigo-100"
         data-aos="fade-up"
       >
         <div className="overflow-x-auto:hidden rounded-md border border-gray-200 shadow-sm">
