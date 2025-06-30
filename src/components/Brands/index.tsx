@@ -26,7 +26,7 @@ const Brands = () => {
 export default Brands;
 
 const SingleBrand = ({ brand }: { brand: Brand }) => {
-  const { href, image, imageLight, name } = brand;
+  const { href, image, name } = brand;
 
   return (
     <Link
@@ -35,8 +35,7 @@ const SingleBrand = ({ brand }: { brand: Brand }) => {
       className="group transition-all duration-300 hover:scale-105"
     >
       <div className="relative w-28 h-28 sm:w-36 sm:h-36 md:w-42 md:h-42 lg:w-50 lg:h-50">
-        {/* Colored logo for small & medium screens */}
-        <div className="block lg:hidden relative w-full h-full">
+        <div className="relative w-full h-full">
           <Image
             src={image}
             alt={name}
@@ -44,28 +43,6 @@ const SingleBrand = ({ brand }: { brand: Brand }) => {
             priority
             quality={100}
             className="object-contain"
-          />
-        </div>
-
-        {/* Grayscale (light) logo for large screens */}
-        <div className="hidden lg:block relative w-full h-full">
-          {/* Grayscale (default) */}
-          <Image
-            src={imageLight || image}
-            alt={name}
-            fill
-            priority
-            quality={100}
-            className="object-contain opacity-90 grayscale group-hover:opacity-0 transition-opacity duration-300"
-          />
-          {/* Colored (on hover) */}
-          <Image
-            src={image}
-            alt={`${name} color`}
-            fill
-            priority
-            quality={100}
-            className="object-contain opacity-0 group-hover:opacity-100 absolute top-0 left-0 transition-opacity duration-200"
           />
         </div>
       </div>
