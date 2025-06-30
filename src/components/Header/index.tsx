@@ -66,8 +66,8 @@ const Header = () => {
       >
         <div className="w-full max-w-screen-2xl mx-auto flex flex-wrap items-center justify-between lg:justify-around px-2 py-2 md:py-2 lg:flex-nowrap gap-y-2 min-w-0 overflow-visible relative">
           {/* Left Logos with NACDC + IEM + UEM on small screens */}
-          <div className="flex items-center gap-2 lg:gap-8 xl:gap-10 pr-2">
-            <Link href="/" className="flex items-center gap-2">
+          <div className="flex items-center lg:gap-6 xl:gap-10 gap-1 sm:gap-0 lg:pr-2">
+            <Link href="/" className="flex items-center xl:gap-4 lg-gap-2">
               <Image
                 src={pathname === "/" && !sticky ? "/images/logo/nacdc_logo_bgr_white.png" : "/images/logo/nacdc_logo_bgr.png"}
                 alt="NACDC Logo"
@@ -75,12 +75,22 @@ const Header = () => {
                 height={1500}
                 priority
                 quality={100}
-                className="h-[11vh] lg:h-[13vh] w-auto max-w-[11rem] md:max-w-[10rem] lg:max-w-[12rem] xl:max-w-[14rem] object-contain"
+                className="h-[11vh] lg:h-[13vh] w-auto max-w-[9rem] md:max-w-[10rem] lg:max-w-[10rem] xl:max-w-[14rem] object-contain"
               />
+              <Image
+                src="/images/logo/smart_society_logo.png"
+                alt="Smart Society USA Logo"
+                width={1500}
+                height={580}
+                priority
+                quality={100}
+                className="h-[3vh] sm:h-[3.5vh] md:h-[4vh] lg:h-[4.8vh] xl:h-[5.5vh] w-auto max-w-[5rem] sm:max-w-[6rem] md:max-w-[6.5rem] lg:max-w-[7rem] xl:max-w-[8rem] object-contain rounded-lg"
+              />
+
             </Link>
 
             {/* Show IEM and UEM logos beside NACDC on small and medium screens */}
-            <div className="flex lg:hidden items-center gap-2 sm:gap-3 pl-1 flex-shrink-0">
+            <div className="flex lg:hidden items-center gap-1 sm:gap-1 pl-1 flex-shrink-0">
               {pathname === "/" && !sticky ? (
                 <>
                   <Image
@@ -128,7 +138,7 @@ const Header = () => {
           </div>
 
           {/* Navbar toggle (Mobile) */}
-          <div className="lg:hidden ml-auto pl-2">
+          <div className="lg:hidden ml-auto pl-1">
             <button
               onClick={navbarToggleHandler}
               className="block rounded p-2 focus:outline-none focus:ring-2 focus:ring-[#4A6CF7]"
@@ -171,7 +181,7 @@ const Header = () => {
                     <Link
                       href={menuItem.path}
                       onClick={() => setNavbarOpen(false)}
-                      className={`block py-2 px-3 text-lg font-medium transition lg:text-center ${
+                      className={`block py-2 px-3 text-[1.08rem] font-medium transition lg:text-center ${
                         pathname === menuItem.path
                           ? "text-[#4A6CF7]"
                           : pathname === "/" && !sticky && !navbarOpen
@@ -265,7 +275,7 @@ const Header = () => {
                   height={1003}
                   quality={100}
                   priority
-                  className="h-[8vh] lg:h-[10vh] xl:h-[10vh] w-auto object-contain max-w-[7rem] lg:max-w-[9rem]"
+                  className="h-[8vh] lg:h-[9vh] xl:h-[10vh] w-auto object-contain max-w-[7rem] lg:max-w-[8rem]"
                 />
                 <Image
                   src="/images/hero/uem-logo-bw.png"
@@ -274,7 +284,7 @@ const Header = () => {
                   height={1003}
                   quality={100}
                   priority
-                  className="h-[8vh] lg:h-[10vh] xl:h-[10vh] w-auto object-contain max-w-[7rem] lg:max-w-[9rem]"
+                  className="h-[8vh] lg:h-[9vh] xl:h-[10vh] w-auto object-contain max-w-[7rem] lg:max-w-[8rem]"
                 />
               </>
             ) : (
@@ -286,7 +296,7 @@ const Header = () => {
                   height={1003}
                   quality={100}
                   priority
-                  className="h-[8vh] lg:h-[10vh] xl:h-[10vh] w-auto object-contain max-w-[7rem] lg:max-w-[9rem]"
+                  className="h-[8vh] lg:h-[9vh] xl:h-[10vh] w-auto object-contain max-w-[7rem] lg:max-w-[8rem]"
                 />
                 <Image
                   src="/images/hero/uem-logo.png"
@@ -295,7 +305,7 @@ const Header = () => {
                   height={1003}
                   quality={100}
                   priority
-                  className="h-[8vh] lg:h-[10vh] xl:h-[10vh] w-auto object-contain max-w-[7rem] lg:max-w-[9rem]"
+                  className="h-[8vh] lg:h-[9vh] xl:h-[10vh] w-auto object-contain max-w-[7rem] lg:max-w-[8rem]"
                 />
               </>
             )}

@@ -31,7 +31,7 @@ const BlogSidebar1 = ({ onSelect }: { onSelect: (blog: "blog1" | "blog2" | "blog
 
             <p className="text-lg text-gray-700 leading-relaxed">
               The North American Conference on Computational Intelligence, Data Science, and Cloud Computing (NACDC 2026) is an international conference dedicated to bringing together leading academics,
-              researchers, practitioners, and industry experts from across the globe. The conference will be held from January 14 to 16, 2026 in Canada.
+              researchers, practitioners, and industry experts from across the globe. The conference will be held in hybrid mode from January 14 to 16, 2026 in Canada..
             </p>
 
             <p className="text-lg text-gray-700 leading-relaxed">
