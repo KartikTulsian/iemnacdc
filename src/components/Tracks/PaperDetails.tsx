@@ -58,12 +58,12 @@ export default function PaperDetails() {
             </li>
           </ul>
 
-          <div className="mt-6 p-4 bg-red-100 border-l-4 border-red-500 rounded-md">
+          {/* <div className="mt-6 p-4 bg-red-100 border-l-4 border-red-500 rounded-md">
             <strong className="text-red-700 text-base sm:text-lg">
               ⚠ Note:
             </strong>{' '}
             Papers should have <strong>preferably 10 pages</strong>. No short papers will be accepted.
-          </div>
+          </div> */}
         </div>
 
         {/* Publication Section */}
