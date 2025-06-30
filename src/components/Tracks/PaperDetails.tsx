@@ -18,12 +18,12 @@ export default function PaperDetails() {
               <Link
                 className="text-blue-600 hover:text-blue-800 underline transition duration-200"
                 target="_blank"
-                href="https://easychair.org/conferences/?conf=iemicdc2025"
+                href="https://easychair.org/conferences?conf=nacdc2026"
               >
                 here
               </Link>
             </li>
-            <li>
+            {/* <li>
               Springer Paper Submission Guidelines{' '}
               <Link
                 className="text-blue-600 hover:text-blue-800 underline transition duration-200"
@@ -52,7 +52,7 @@ export default function PaperDetails() {
               >
                 here
               </Link>
-            </li>
+            </li> */}
             <li>
               <span className="font-semibold">Awards:</span> Best Paper Award will be provided.
             </li>
@@ -67,7 +67,7 @@ export default function PaperDetails() {
         </div>
 
         {/* Publication Section */}
-        <div className="bg-blue-100/50 p-8 rounded-xl shadow-lg border border-blue-200 text-center">
+        {/* <div className="bg-blue-100/50 p-8 rounded-xl shadow-lg border border-blue-200 text-center">
           <h2 className="text-xl sm:text-2xl font-semibold text-blue-800 mb-4 uppercase tracking-wide">
             📝 Publication & Indexing Details
           </h2>
@@ -79,7 +79,6 @@ export default function PaperDetails() {
             </span>
           </p>
 
-          {/* Optional Logo */}
           <div className="flex justify-center items-center my-6">
             <Image
               src="/images/sp.png"
@@ -92,7 +91,7 @@ export default function PaperDetails() {
           <p className="text-base sm:text-lg text-blue-900">
             <strong>Indexing:</strong> SCOPUS, INSPEC, WTI Frankfurt eG, zbMATH, SCImago
           </p>
-        </div>
+        </div> */}
       </div>
     </section>
   );

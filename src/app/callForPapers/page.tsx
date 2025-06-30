@@ -1,10 +1,8 @@
-// app/callForPapers/page.tsx
-
 import React, { Suspense } from "react";
 import { Metadata } from "next";
 import Breadcrumb from "@/components/Common/Breadcrumb";
 import PaperTracks from "@/components/Tracks/PaperTracks";
-// import PaperDetails from "@/components/Tracks/PaperDetails";
+import PaperDetails from "@/components/Tracks/PaperDetails";
 import SmoothScrollWrapper from "@/components/Tracks/SmoothScrollWrapper";
 
 export const metadata: Metadata = {
@@ -23,7 +21,7 @@ export default function CallForPaperspage() {
         pageName="Call For the Papers"
         description="North American Conference on Computational Intelligence, Data Science, and Cloud Computing (NACDC 2026)"
       />
-      {/* <PaperDetails /> */}
+      <PaperDetails />
       <PaperTracks />
     </div>
   );
