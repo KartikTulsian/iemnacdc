@@ -21,7 +21,7 @@ export default function CountDown() {
         <ImpDates />
 
         {/* Timer with built-in spacing */}
-        <Timer launchDate="2025-12-01T23:59:59" />
+        <Timer launchDate="2025-11-07T23:59:59" />
       </div>
     </section>
 

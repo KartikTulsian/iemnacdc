@@ -7,7 +7,7 @@ import SmoothScrollWrapper from "@/components/Tracks/SmoothScrollWrapper";
 
 export const metadata: Metadata = {
   title: "Call For Papers",
-  description: "This is the Page for Papers of NACDC 2026",
+  description: "This is the Page for Papers of NACDC 2025",
 };
 
 export default function CallForPaperspage() {
@@ -19,7 +19,7 @@ export default function CallForPaperspage() {
       
       <Breadcrumb
         pageName="Call For the Papers"
-        description="North American Conference on Computational Intelligence, Data Science, and Cloud Computing (NACDC 2026)"
+        description="NexGen Asian Conference on Intelligent Computing, Data Science and Cloud Computing (NACDC 2025)"
       />
       <PaperDetails />
       <PaperTracks />

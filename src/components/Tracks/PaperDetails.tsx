@@ -18,7 +18,7 @@ export default function PaperDetails() {
               <Link
                 className="text-blue-600 hover:text-blue-800 underline transition duration-200"
                 target="_blank"
-                href="https://easychair.org/conferences?conf=nacdc2026"
+                href="https://easychair.org/conferences?conf=nacdc2025"
               >
                 here
               </Link>

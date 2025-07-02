@@ -6,7 +6,7 @@ import RegistrationDetails from '@/components/Registrations/RegistrationDetails'
 
 export const metadata: Metadata = {
   title: "Registration NACDC",
-  description: "This is Registration Page for NACDC 2026",
+  description: "This is Registration Page for NACDC 2025",
   // other metadata
 };
 
@@ -15,7 +15,7 @@ export default function RegistrationPage() {
     <div>
       
       <Breadcrumb 
-        pageName='Registration NACDC 2026'
+        pageName='Registration NACDC 2025'
         description='Grab the oppertunity of experiencing the interdisciplinary collaborations with renowned researchers'
       />
       {/* <ComingSoon/> */}

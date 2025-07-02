@@ -9,7 +9,7 @@ const BlogSidebar1 = ({ onSelect }: { onSelect: (blog: "blog1" | "blog2" | "blog
         {/* Heading */}
         <div className="text-center mb-12">
           <h1 className="text-3xl sm:text-4xl font-extrabold text-gray-900 leading-tight mb-4">
-            North American Conference on Computational Intelligence, Data Science, and Cloud Computing
+            NexGen Asian Conference on Intelligent Computing, Data Science and Cloud Computing
           </h1>
           <div className="w-50 h-1 mx-auto bg-gradient-to-r from-[#4A6CF7] via-indigo-400 to-[#4A6CF7] rounded shadow-md" />
         </div>
@@ -30,12 +30,12 @@ const BlogSidebar1 = ({ onSelect }: { onSelect: (blog: "blog1" | "blog2" | "blog
             </div>
 
             <p className="text-lg text-gray-700 leading-relaxed">
-              The North American Conference on Computational Intelligence, Data Science, and Cloud Computing (NACDC 2026) is an international conference dedicated to bringing together leading academics,
-              researchers, practitioners, and industry experts from across the globe. The conference will be held in hybrid mode from January 14 to 16, 2026 in Canada..
+              The NexGen Asian Conference on Intelligent Computing, Data Science and Cloud Computing (NACDC 2025) is an international conference dedicated to bringing together leading academics,
+              researchers, practitioners, and industry experts from across the globe. The conference will be held in hybrid mode from December 8-10, 2025 in Japan..
             </p>
 
             <p className="text-lg text-gray-700 leading-relaxed">
-              NACDC 2026 is poised to be a significant platform for the discussion, dissemination, and exchange of the latest trends, innovations, and future directions in Computational Intelligence, Artificial Intelligence (AI), Data Science, Big Data Analytics, Cloud Computing, and Emerging Technologies.
+              NACDC 2025 is poised to be a significant platform for the discussion, dissemination, and exchange of the latest trends, innovations, and future directions in Computational Intelligence, Artificial Intelligence (AI), Data Science, Big Data Analytics, Cloud Computing, and Emerging Technologies.
             </p>
 
             <p className="text-lg text-gray-700 leading-relaxed">
@@ -88,11 +88,11 @@ const BlogSidebar1 = ({ onSelect }: { onSelect: (blog: "blog1" | "blog2" | "blog
               <ul className="space-y-4 text-gray-700">
                 <li className="flex items-center gap-3">
                   <FaCalendarAlt className="text-[#4A6CF7]" />
-                  <span>January 14–16, 2026</span>
+                  <span>December 8-10, 2025</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <FaMapMarkerAlt className="text-[#4A6CF7]" />
-                  <span>Canada (Venue TBA)</span>
+                  <span>Japan (Venue TBA)</span>
                 </li>
                 {/* <li className="flex items-center gap-3">
                   <FaClock className="text-[#4A6CF7]" />

@@ -5,7 +5,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "About NACDC ",
-  description: "This is About Page for NACDC 2026",
+  description: "This is About Page for NACDC 2025",
   // other metadata
 };
 
@@ -14,7 +14,7 @@ const AboutPage = () => {
     <>
       <Breadcrumb
         pageName="About NACDC"
-        description="North American Conference on Computational Intelligence, Data Science, and Cloud Computing (NACDC 2026)"
+        description="NexGen Asian Conference on Intelligent Computing, Data Science and Cloud Computing (NACDC 2025)"
       />
       <BlogChanging/>
     </>

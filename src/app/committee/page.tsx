@@ -6,7 +6,7 @@ import CommitteeList from '@/components/Committee/CommitteeList';
 
 export const metadata: Metadata = {
   title: "Committee NACDC ",
-  description: "This is Committee Page for NACDC 2026",
+  description: "This is Committee Page for NACDC 2025",
   // other metadata
 };
 
@@ -15,7 +15,7 @@ export default function CommitteePage() {
     <div>
       <Breadcrumb
         pageName="Committee of NACDC"
-        description="North American Conference on Computational Intelligence, Data Science, and Cloud Computing (NACDC 2026) Committee List"
+        description="NexGen Asian Conference on Intelligent Computing, Data Science and Cloud Computing (NACDC 2025) Committee List"
       />
       <CommitteeList/>
     </div>

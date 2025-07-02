@@ -116,7 +116,7 @@ export default function VerticalTimelineCard() {
             background: "linear-gradient(135deg, #E91E63, #FF6090)",
           }}
           contentArrowStyle={{ borderRight: "7px solid #E91E63" }}
-          date="4 January 2026"
+          date="4 January 2025"
           dateClassName="text-white font-semibold"
           iconStyle={{
             background: "linear-gradient(135deg, #E91E63, #FF6090)",
@@ -138,7 +138,7 @@ export default function VerticalTimelineCard() {
             background: "linear-gradient(135deg, #3a7bd5, #00d2ff)",
           }}
           contentArrowStyle={{ borderRight: "7px solid #3a7bd5" }}
-          date="14–16 January 2026"
+          date="14–16 January 2025"
           dateClassName="text-white font-semibold"
           iconStyle={{
             background: "linear-gradient(135deg, #3a7bd5, #00d2ff)",

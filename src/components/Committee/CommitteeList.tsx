@@ -53,15 +53,20 @@ const committeeList = {
       "Pranav Bhasin, Amazon, United States",
       "Puru Pahuja, Salesforce, United States",
       "Nirmalya Thakur, South Dakota School of Mines and Technology, United States",
-      "Raghavan Chellappan, ByteSafe, United States"
+      "Raghavan Chellappan, ByteSafe, United States",
+      "Beepa Bose, Slalom,Minnesota, United States"
     ],
     "Organizing Committee": {
-      "General Chair": [],
+      "General Chair": [
+        "Satyajit Chakrabarti, Institute of Engineering & Management, Kolkata, India",
+      ],
       "Convenor": [
         "Moutushi Singh, Institute of Engineering & Management, Kolkata, India",
         "Baisakhi Das, Institute of Engineering & Management, Kolkata, India",
       ],
-      "Technical Program Chair": [],
+      "Technical Program Chair": [
+        "Rajashree Paul, Institute of Engineering & Management, Kolkata, India"
+      ],
       "Technical Program Co-Chair": [
         "Sanchita Ghosh, Institute of Engineering & Management, Kolkata, India",
       ],
@@ -95,7 +100,7 @@ export default function CommitteeList() {
   return (
     <section className="py-16 px-4">
       <div className="container mx-auto max-w-7xl">
-        <SectionTitle title="NACDC 2026 Committee" paragraph="" center/>
+        <SectionTitle title="NACDC 2025 Committee" paragraph="" center/>
 
         <div className="mt-10 gap-10">
           {Object.entries(sections).map(([title, members]) => (

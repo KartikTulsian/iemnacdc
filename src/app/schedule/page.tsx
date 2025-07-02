@@ -6,7 +6,7 @@ import ComingSoon from '@/components/Common/CommingSoon';
 
 export const metadata: Metadata = {
   title: "Schedule NACDC",
-  description: "This is Schedule Page for NACDC 2026",
+  description: "This is Schedule Page for NACDC 2025",
   // other metadata
 };
 
@@ -14,8 +14,8 @@ export default function SchedulePage() {
   return (
     <div>
       <Breadcrumb 
-        pageName='Schedule of NACDC 2026'
-        description='The Pragramme of NACDC 2026'
+        pageName='Schedule of NACDC 2025'
+        description='The Pr0gramme of NACDC 2025'
       />
       <ComingSoon/>
     </div>

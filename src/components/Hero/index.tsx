@@ -7,9 +7,9 @@ import { useEffect, useRef, useState } from "react";
 // const slides = [
 //   {
 //     image: "/images/hero/hero_image1.png",
-//     title: "NACDC 2026 Begins Here!",
+//     title: "NACDC 2025 Begins Here!",
 //     subtitle: "The Premier AI, Data Science, and Cloud Computing Conference",
-//     date: "January 14-16, 2026 · Vancouver, Canada",
+//     date: "January 14-16, 2025 · Vancouver, Japan",
 //     cta1: { label: "Register Now", link: "/registration" },
 //     cta2: { label: "View Schedule", link: "/schedule" },
 //   },
@@ -157,10 +157,10 @@ const Hero = () => {
             className="max-w-3xl"
           >
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#fff] mb-4">
-              NACDC 2026 
+              NACDC 2025 
             </h1>
             <h2 className="text-xl sm:text-2xl md:text-3xl font-medium text-[#fff] mb-2">
-              North American Conference on Computational Intelligence, Data Science, and Cloud Computing
+              NexGen Asian Conference on Intelligent Computing, Data Science and Cloud Computing
             </h2>
             <p className="text-[#fff] mb-8">{slide.date}</p>
             <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
@@ -182,28 +182,28 @@ const Hero = () => {
         <div className="flex-1 flex items-center justify-center">
           <div className="max-w-5xl w-full px-4 md:px-6 lg:px-8 pt-20 pb-10 sm:pt-20 sm:pb-6 md:pt-16 md:pb-10 lg:pt-17 lg:pb-14">
             <h1 className="text-4xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#fff] leading-tight mb-4 drop-shadow-md">
-              NACDC 2026
+              NACDC 2025
             </h1>
 
             <h2 className="text-lg sm:text-2xl md:text-3xl text-[#fff] font-medium mb-4 sm:mb-6 leading-relaxed drop-shadow-sm">
-              North American Conference on <br className="hidden sm:inline" />
+              NexGen Asian Conference on  <br className="hidden sm:inline" />
               <span className="text-[#bccaff] font-semibold">
-                Computational Intelligence, Data Science, and Cloud Computing
+                Intelligent Computing, Data Science and Cloud Computing
               </span>
             </h2>
 
             <p className="text-[#fff] text-base sm:text-lg md:text-xl mb-2 sm:mb-3 font-light">
-              January 14 – 16, 2026
+              December 8-10, 2025
             </p>
 
             <p className="text-[#fff] text-base sm:text-lg md:text-xl mb-4 sm:mb-6 font-light">
-              Canada
+              Japan
             </p>
 
             <p className="text-[#fff] text-sm sm:text-base md:text-lg leading-relaxed mb-8 max-w-4xl mx-auto font-medium">
               Organized by <br />
               <span className="font-bold">
-                Department of Information Technology & Department of Computer Science & Engineering
+                Department of Computer Science and Engineering and Information Technology
               </span> <br />
               Institute of Engineering & Management, Kolkata, India
             </p>
