@@ -68,7 +68,7 @@ const BlogSidebar3 = ({ onSelect }: { onSelect: (blog: "blog1" | "blog2" | "blog
                 >
                   <RelatedPost
                     title="NACDC 2025"
-                    image="/images/blog/NACDC.png"
+                    image="/images/blog/NACDC_1.png"
                     slug="#"
                   />
                 </li>

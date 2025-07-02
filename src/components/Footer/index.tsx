@@ -11,7 +11,7 @@ const Footer = () => {
           {/* Row 1: Logo */}
           <div className="flex justify-start">
             <Image
-              src="/images/logo/nacdc_logo_bgr.png"
+              src="/images/logo/nacdc_logo_bgr_1.png"
               alt="NACDC Logo"
               width={1500}
               height={1500}

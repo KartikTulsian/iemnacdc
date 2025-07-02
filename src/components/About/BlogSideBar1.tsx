@@ -21,7 +21,7 @@ const BlogSidebar1 = ({ onSelect }: { onSelect: (blog: "blog1" | "blog2" | "blog
             <div className="overflow-hidden rounded-lg shadow-lg bg-white">
               <div className="relative aspect-[97/60] sm:aspect-[97/44] w-full">
                 <Image
-                  src="/images/blog/NACDC.png"
+                  src="/images/blog/NACDC_1.png"
                   alt="NACDC"
                   fill
                   className="object-contain object-center"
@@ -31,7 +31,7 @@ const BlogSidebar1 = ({ onSelect }: { onSelect: (blog: "blog1" | "blog2" | "blog
 
             <p className="text-lg text-gray-700 leading-relaxed">
               The NexGen Asian Conference on Intelligent Computing, Data Science and Cloud Computing (NACDC 2025) is an international conference dedicated to bringing together leading academics,
-              researchers, practitioners, and industry experts from across the globe. The conference will be held in hybrid mode from December 8-10, 2025 in Japan..
+              researchers, practitioners, and industry experts from across the globe. The conference will be held in hybrid mode from December 8-10, 2025 in Japan.
             </p>
 
             <p className="text-lg text-gray-700 leading-relaxed">
