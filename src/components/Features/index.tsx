@@ -4,7 +4,7 @@ import SectionTitle from "../Common/SectionTitle";
 import TracksList from "@/components/Tracks/TracksList";
 
 const Features = () => {
-  const para = `The NexGen Asian Conference on Intelligent Computing, Data Science and Cloud Computing (NACDC 2025) is an international conference dedicated to bringing together leading academics, 
+  const para = `The International Conference on NextGeneration Advances in Computational Intelligence, Data Science and Cloud Computing (NACDC 2025) is an international conference dedicated to bringing together leading academics, 
   researchers, practitioners, and industry experts from across the globe. The conference will be held in hybrid mode from December 8 to 10, 2025 in Japan.`;
 
   return (

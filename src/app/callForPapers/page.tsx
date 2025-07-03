@@ -19,7 +19,7 @@ export default function CallForPaperspage() {
       
       <Breadcrumb
         pageName="Call For the Papers"
-        description="NexGen Asian Conference on Intelligent Computing, Data Science and Cloud Computing (NACDC 2025)"
+        description="International Conference on NextGeneration Advances in Computational Intelligence, Data Science and Cloud Computing (NACDC 2025)"
       />
       <PaperDetails />
       <PaperTracks />

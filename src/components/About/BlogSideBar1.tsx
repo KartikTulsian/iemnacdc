@@ -9,7 +9,7 @@ const BlogSidebar1 = ({ onSelect }: { onSelect: (blog: "blog1" | "blog2" | "blog
         {/* Heading */}
         <div className="text-center mb-12">
           <h1 className="text-3xl sm:text-4xl font-extrabold text-gray-900 leading-tight mb-4">
-            NexGen Asian Conference on Intelligent Computing, Data Science and Cloud Computing
+            International Conference on NextGeneration Advances in Computational Intelligence, Data Science and Cloud Computing
           </h1>
           <div className="w-50 h-1 mx-auto bg-gradient-to-r from-[#4A6CF7] via-indigo-400 to-[#4A6CF7] rounded shadow-md" />
         </div>
@@ -30,7 +30,7 @@ const BlogSidebar1 = ({ onSelect }: { onSelect: (blog: "blog1" | "blog2" | "blog
             </div>
 
             <p className="text-lg text-gray-700 leading-relaxed">
-              The NexGen Asian Conference on Intelligent Computing, Data Science and Cloud Computing (NACDC 2025) is an international conference dedicated to bringing together leading academics,
+              The International Conference on NextGeneration Advances in Computational Intelligence, Data Science and Cloud Computing (NACDC 2025) is an international conference dedicated to bringing together leading academics,
               researchers, practitioners, and industry experts from across the globe. The conference will be held in hybrid mode from December 8-10, 2025 in Japan.
             </p>
 

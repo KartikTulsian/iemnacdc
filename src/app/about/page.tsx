@@ -14,7 +14,7 @@ const AboutPage = () => {
     <>
       <Breadcrumb
         pageName="About NACDC"
-        description="NexGen Asian Conference on Intelligent Computing, Data Science and Cloud Computing (NACDC 2025)"
+        description="International Conference on NextGeneration Advances in Computational Intelligence, Data Science and Cloud Computing (NACDC 2025)"
       />
       <BlogChanging/>
     </>

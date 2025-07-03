@@ -160,7 +160,7 @@ const Hero = () => {
               NACDC 2025 
             </h1>
             <h2 className="text-xl sm:text-2xl md:text-3xl font-medium text-[#fff] mb-2">
-              NexGen Asian Conference on Intelligent Computing, Data Science and Cloud Computing
+              International Conference on NextGeneration Advances in Computational Intelligence, Data Science and Cloud Computing
             </h2>
             <p className="text-[#fff] mb-8">{slide.date}</p>
             <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
@@ -186,9 +186,9 @@ const Hero = () => {
             </h1>
 
             <h2 className="text-lg sm:text-2xl md:text-3xl text-[#fff] font-medium mb-4 sm:mb-6 leading-relaxed drop-shadow-sm">
-              NexGen Asian Conference on  <br className="hidden sm:inline" />
+              International Conference on NextGeneration Advances in  <br className="hidden sm:inline" />
               <span className="text-[#bccaff] font-semibold">
-                Intelligent Computing, Data Science and Cloud Computing
+                Computational Intelligence, Data Science and Cloud Computing
               </span>
             </h2>
 

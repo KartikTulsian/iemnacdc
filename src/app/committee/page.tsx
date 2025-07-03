@@ -15,7 +15,7 @@ export default function CommitteePage() {
     <div>
       <Breadcrumb
         pageName="Committee of NACDC"
-        description="NexGen Asian Conference on Intelligent Computing, Data Science and Cloud Computing (NACDC 2025) Committee List"
+        description="International Conference on NextGeneration Advances in Computational Intelligence, Data Science and Cloud Computing (NACDC 2025) Committee List"
       />
       <CommitteeList/>
     </div>
