@@ -6,6 +6,7 @@ import SectionTitle from "../Common/SectionTitle";
 const committeeList = {
   Committees: {
     "Advisory Committee": [
+      "Kouichi Sakurai, Kyushu University in Fukuoka, Japan",
       "Tom Murad, University of Guelph, Ontario, Canada",
       "Esma Aimeur, University of Montreal, Quebec, Canada",
       "Rim Cherif Fehri, Algonquin College, Ottawa, Ontario, Canada",
@@ -13,7 +14,6 @@ const committeeList = {
       "John Jose, IIT Guwahati, India",
       "Blessing Ogbuokiri, Brock University, St. Catharines, ON, Canada",
       "Kaushik Rajashekara, University of Houston, United States",
-      "Kouichi Sakurai, Kyushu University in Fukuoka, Japan",
       "João Manuel R. S. Tavares, Universidade do Porto, Portugal",
       "Cheng-Chi Lee, Fu Jen Catholic University, Taiwan",
       "Daniele Giusto, University of Cagliari, Italy",
