@@ -6,7 +6,6 @@ import SectionTitle from "../Common/SectionTitle";
 const committeeList = {
   Committees: {
     "Advisory Committee": [
-      "Kouichi Sakurai, Kyushu University in Fukuoka, Japan",
       "Tom Murad, University of Guelph, Ontario, Canada",
       "Esma Aimeur, University of Montreal, Quebec, Canada",
       "Rim Cherif Fehri, Algonquin College, Ottawa, Ontario, Canada",
@@ -58,7 +57,8 @@ const committeeList = {
     ],
     "Organizing Committee": {
       "General Chair": [
-        "Satyajit Chakrabarti, Institute of Engineering & Management, Kolkata, India",
+        "Kouichi Sakurai, Kyushu University in Fukuoka, Japan",
+        "Dr. Satyajit Chakrabarti, Institute of Engineering & Management, Kolkata, India",
       ],
       "Convenor": [
         "Moutushi Singh, Institute of Engineering & Management, Kolkata, India",
