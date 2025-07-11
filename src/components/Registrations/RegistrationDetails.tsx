@@ -90,9 +90,9 @@ export default function RegistrationDetails() {
         <div className="overflow-x-auto:hidden rounded-md border border-gray-200">
           <CreateTable
             datas={[
-              { col1: 'Academic Authors', col2: '500 CAD' },
-              { col1: 'Additional Page Charges (per page)', col2: '50 CAD' },
-              { col1: 'Industry Participants', col2: '600 CAD' },
+              { col1: 'Academic Authors', col2: '500 USD' },
+              { col1: 'Additional Page Charges (per page)', col2: '50 USD' },
+              { col1: 'Industry Participants', col2: '600 USD' },
             ]}
           />
         </div>
@@ -117,12 +117,12 @@ export default function RegistrationDetails() {
               },
               {
                 col1: 'Single Author with Two Accepted Papers',
-                col2: '600 CAD',
+                col2: '600 USD',
                 className: 'font-semibold',
               },
               {
                 col1: 'Single Author with Three Accepted Papers',
-                col2: '700 CAD',
+                col2: '700 USD',
                 className: 'font-semibold',
               },
             ]}
