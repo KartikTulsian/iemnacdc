@@ -5,40 +5,6 @@ import SectionTitle from "../Common/SectionTitle";
 
 const committeeList = {
   Committees: {
-    "Organizing Committee": {
-      "General Chair": [
-        "Dr. Satyajit Chakrabarti, Institute of Engineering & Management, Kolkata, India",
-      ],
-      "Convenor": [
-        "Moutushi Singh, Institute of Engineering & Management, Kolkata, India",
-        "Baisakhi Das, Institute of Engineering & Management, Kolkata, India",
-      ],
-      "Technical Program Chair": [
-        "Rajashree Paul, Institute of Engineering & Management, Kolkata, India"
-      ],
-      "Technical Program Co-Chair": [
-        "Sanchita Ghosh, Institute of Engineering & Management, Kolkata, India",
-      ],
-      "Publicity Chair": [
-        "Amit Kumar Das, Institute of Engineering & Management, Kolkata, India",
-        "Sainik Kumar Mahata, Institute of Engineering & Management, Kolkata, India",
-      ],
-      "Publication Chair": [
-        "Indranil Sen Gupta, City University of New York, United States",
-      ],
-      "Publication Co-Chair": [
-        "Rupayan Das, Institute of Engineering & Management, Kolkata, India",
-      ],
-      "Organizing Chair": [
-        "Sukanya Mukherjee, Institute of Engineering & Management, Kolkata, India",
-      ],
-      "Committee Members": [
-        "Susovan Jana, Institute of Engineering & Management, Kolkata, India",
-        "Avipsita Chatterjee, Institute of Engineering & Management, Kolkata, India",
-        "Anupam Mondal, Institute of Engineering & Management, Kolkata, India",
-        "Darothi Sarkar, Institute of Engineering & Management, Kolkata, India"
-      ],
-    },
     "Advisory Committee": [
       "Dr. Hareesh Pillai, University of Tokyo, Japan",
       "Kouichi Sakurai, Kyushu University in Fukuoka, Japan",
@@ -91,7 +57,40 @@ const committeeList = {
       "Raghavan Chellappan, ByteSafe, United States",
       "Beepa Bose, Slalom,Minnesota, United States"
     ],
-    
+    "Organizing Committee": {
+      "General Chair": [
+        "Dr. Satyajit Chakrabarti, Institute of Engineering & Management, Kolkata, India",
+      ],
+      "Convenor": [
+        "Moutushi Singh, Institute of Engineering & Management, Kolkata, India",
+        "Baisakhi Das, Institute of Engineering & Management, Kolkata, India",
+      ],
+      "Technical Program Chair": [
+        "Rajashree Paul, Institute of Engineering & Management, Kolkata, India"
+      ],
+      "Technical Program Co-Chair": [
+        "Sanchita Ghosh, Institute of Engineering & Management, Kolkata, India",
+      ],
+      "Publicity Chair": [
+        "Amit Kumar Das, Institute of Engineering & Management, Kolkata, India",
+        "Sainik Kumar Mahata, Institute of Engineering & Management, Kolkata, India",
+      ],
+      "Publication Chair": [
+        "Indranil Sen Gupta, City University of New York, United States",
+      ],
+      "Publication Co-Chair": [
+        "Rupayan Das, Institute of Engineering & Management, Kolkata, India",
+      ],
+      "Organizing Chair": [
+        "Sukanya Mukherjee, Institute of Engineering & Management, Kolkata, India",
+      ],
+      "Committee Members": [
+        "Susovan Jana, Institute of Engineering & Management, Kolkata, India",
+        "Avipsita Chatterjee, Institute of Engineering & Management, Kolkata, India",
+        "Anupam Mondal, Institute of Engineering & Management, Kolkata, India",
+        "Darothi Sarkar, Institute of Engineering & Management, Kolkata, India"
+      ],
+    },
   }
 };
 
