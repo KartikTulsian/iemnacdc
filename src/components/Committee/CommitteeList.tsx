@@ -6,7 +6,7 @@ import SectionTitle from "../Common/SectionTitle";
 const committeeList = {
   Committees: {
     "Advisory Committee": [
-      "Dr. Hareesh Pillai, University of Tokyo, Japan",
+      "Takako Hashimoto, Chiba University, Japan",
       "Kouichi Sakurai, Kyushu University in Fukuoka, Japan",
       "Tom Murad, University of Guelph, Ontario, Canada",
       "Esma Aimeur, University of Montreal, Quebec, Canada",
