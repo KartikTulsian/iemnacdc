@@ -35,7 +35,9 @@ const committeeList = {
       "Fabio Fialho, Galp, Brazil",
       "Ahmed Elngar, Maryam Abacha American University of Nigeria, Cairo, Egypt",
       "Rong Jin, California State University, United States",
-      "Biplab Sikdar,  National University of Singapore, Singapore"
+      "Biplab Sikdar,  National University of Singapore, Singapore",
+      "Arindam Biswas, Kazi Nazrul University, India",
+      "Debasis Dey, MAKAUT, India",
     ],
     "Technical Committee": [
       "Soumya Ganguly, University of California San Diego, California, United States",
