@@ -62,7 +62,7 @@ const committeeList = {
     ],
     "Organizing Committee": {
       "General Chair": [
-        "Dr. Satyajit Chakrabarti, Institute of Engineering & Management, Kolkata, India",
+        "Satyajit Chakrabarti, Institute of Engineering & Management, Kolkata, India",
       ],
       "Convenor": [
         "Moutushi Singh, Institute of Engineering & Management, Kolkata, India",
