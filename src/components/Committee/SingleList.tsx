@@ -88,7 +88,7 @@ export default function SingleList({ title, members }: SingleListProps) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.6 }}
-      className="group relative bg-[#fff] w-full lg:w-[70%] border border-gray-200 rounded-xl shadow-md hover:shadow-2xl transition-shadow duration-300 p-6 mb-10 mx-auto"
+      className="group relative bg-[#f5feff] w-full lg:w-[70%] border border-gray-200 rounded-xl shadow-md hover:shadow-2xl transition-shadow duration-300 p-6 mb-10 mx-auto"
     >
       <h3 className="text-3xl font-bold text-[#4A6CF7] mb-6 group-hover:text-pink-600 transition-colors duration-300">
         {title}
