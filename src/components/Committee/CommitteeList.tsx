@@ -6,7 +6,8 @@ import SectionTitle from "../Common/SectionTitle";
 const committeeList = {
   Committees: {
     "Advisory Committee": [
-      "Takako Hashimoto,  Chiba University, Japan",
+      "Yukari Shirota, Gakushuin University, Japan",
+      "Takako Hashimoto, Chiba University, Japan",
       "Hareesh Pillai, University of Tokyo, Japan",
       "Kouichi Sakurai, Kyushu University in Fukuoka, Japan",
       "Tom Murad, University of Guelph, Ontario, Canada",
@@ -19,7 +20,7 @@ const committeeList = {
       "João Manuel R. S. Tavares, Universidade do Porto, Portugal",
       "Cheng-Chi Lee, Fu Jen Catholic University, Taiwan",
       "Daniele Giusto, University of Cagliari, Italy",
-      "Vikas Malhotra, WOPLLI TECHNOLOGIES, United States",
+      "Vikas Malhotra, Woplli Technologies, United States",
       "Benjamin Ang, RSIS, Singapore",
       "Jon G. Hall, The Open University, United Kingdom",
       "A. K. HAGHI, Universidade de Coimbra, Portugal",
