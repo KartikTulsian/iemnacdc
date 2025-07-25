@@ -6,7 +6,6 @@ import SectionTitle from "../Common/SectionTitle";
 const committeeList = {
   Committees: {
     "Advisory Committee": [
-      "Yukari Shirota, Gakushuin University, Japan",
       "Takako Hashimoto, Chiba University, Japan",
       "Hareesh Pillai, University of Tokyo, Japan",
       "Kouichi Sakurai, Kyushu University in Fukuoka, Japan",
