@@ -105,7 +105,7 @@ export default function ImpDates() {
               { col1: 'Acceptance Notification:', col2: '20th June 2026' },
               { col1: 'Deadline for Paper Registration:', col2: '30th June 2026' },
               { col1: 'Final/Camera-ready Paper Submission:', col2: '10th July 2026' },
-              { col1: 'Presentation Submission:', col2: '31th July 2026' },
+              { col1: 'Presentation Submission:', col2: '31st July 2026' },
               { col1: 'Conference:', col2: '10 - 12 August 2026' },
             ]}
           />
