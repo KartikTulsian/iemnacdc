@@ -16,7 +16,6 @@ const committeeList = {
       "Heba Elgazzar, Illinois State University, United States",
       "Sameer Malik, Samsara, Massachusetts, United States",
       "Rong Jin, California State University, United States",
-      "Takako Hashimoto, Chiba University, Japan",
       "John Jose, IIT Guwahati, India",
       "João Manuel R. S. Tavares, Universidade do Porto, Portugal",
       "Cheng-Chi Lee, Fu Jen Catholic University, Taiwan",
