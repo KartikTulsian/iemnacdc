@@ -11,7 +11,7 @@ const BlogSidebar3 = ({ onSelect }: { onSelect: (blog: "blog1" | "blog2" | "blog
         {/* Header */}
         <div className="text-center mb-12">
           <h1 className="text-3xl sm:text-4xl font-extrabold text-gray-900 leading-tight mb-4">
-            The University of British Columbia, Vancouver, Japan
+            The University of British Columbia, Vancouver, Canada
           </h1>
           <div className="w-50 h-1 mx-auto bg-gradient-to-r from-[#4A6CF7] via-indigo-400 to-[#4A6CF7] rounded shadow-md" />
         </div>
@@ -68,7 +68,7 @@ const BlogSidebar3 = ({ onSelect }: { onSelect: (blog: "blog1" | "blog2" | "blog
                 >
                   <RelatedPost
                     title="NACDC 2025"
-                    image="/images/blog/NACDC_1.png"
+                    image="/images/blog/NACDC_2.png"
                     slug="#"
                   />
                 </li>

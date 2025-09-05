@@ -7,7 +7,7 @@ import ComingSoon from '@/components/Common/CommingSoon';
 
 export const metadata: Metadata = {
   title: "Speakers NACDC",
-  description: "This is Speakers Page for NACDC 2025",
+  description: "This is Speakers Page for NACDC 2026",
   // other metadata
 };
 

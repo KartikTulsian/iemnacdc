@@ -11,8 +11,8 @@ import Hero from "@/components/Hero";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "NACDC 2025",
-  description: "Landing Page for NACDC 2025",
+  title: "NACDC 2026",
+  description: "Landing Page for NACDC 2026",
   // other metadata
 };
 

@@ -47,7 +47,7 @@ const menuData: MenuItem[] = [
   },
   {
     id: 6,
-    title: "NACDC 2025",
+    title: "NACDC 2026",
     newTab: false,
     submenu: [
       {

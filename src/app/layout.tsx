@@ -39,9 +39,9 @@ export default function RootLayout({
         head.js. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head>
-        <title>NACDC 2025</title>
+        <title>NACDC 2026</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="International Conference on NextGeneration Advances in Computational Intelligence, Data Science and Cloud Computing 2025" />
+        <meta name="description" content="North American Conference on Computational Intelligence, Data Science and Cloud Computing 2026" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />

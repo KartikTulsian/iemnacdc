@@ -9,7 +9,7 @@ const BlogSidebar1 = ({ onSelect }: { onSelect: (blog: "blog1" | "blog2" | "blog
         {/* Heading */}
         <div className="text-center mb-12">
           <h1 className="text-3xl sm:text-4xl font-extrabold text-gray-900 leading-tight mb-4">
-            International Conference on NextGeneration Advances in Computational Intelligence, Data Science and Cloud Computing
+            North American Conference on Computational Intelligence, Data Science and Cloud Computing
           </h1>
           <div className="w-50 h-1 mx-auto bg-gradient-to-r from-[#4A6CF7] via-indigo-400 to-[#4A6CF7] rounded shadow-md" />
         </div>
@@ -21,7 +21,7 @@ const BlogSidebar1 = ({ onSelect }: { onSelect: (blog: "blog1" | "blog2" | "blog
             <div className="overflow-hidden rounded-lg shadow-lg bg-white">
               <div className="relative aspect-[97/60] sm:aspect-[97/44] w-full">
                 <Image
-                  src="/images/blog/NACDC_1.png"
+                  src="/images/blog/NACDC_2.png"
                   alt="NACDC"
                   fill
                   className="object-contain object-center"
@@ -30,12 +30,12 @@ const BlogSidebar1 = ({ onSelect }: { onSelect: (blog: "blog1" | "blog2" | "blog
             </div>
 
             <p className="text-lg text-gray-700 leading-relaxed">
-              The International Conference on NextGeneration Advances in Computational Intelligence, Data Science and Cloud Computing (NACDC 2025) is an international conference dedicated to bringing together leading academics,
-              researchers, practitioners, and industry experts from across the globe. The conference will be held in hybrid mode from December 8-10, 2025 in Japan.
+              The North American Conference on Computational Intelligence, Data Science and Cloud Computing (NACDC 2026) is an international conference dedicated to bringing together leading academics,
+              researchers, practitioners, and industry experts from across the globe. The conference will be held in hybrid mode from August 10-12, 2026 in Canada.
             </p>
 
             <p className="text-lg text-gray-700 leading-relaxed">
-              NACDC 2025 is poised to be a significant platform for the discussion, dissemination, and exchange of the latest trends, innovations, and future directions in Computational Intelligence, Artificial Intelligence (AI), Data Science, Big Data Analytics, Cloud Computing, and Emerging Technologies.
+              NACDC 2026 is poised to be a significant platform for the discussion, dissemination, and exchange of the latest trends, innovations, and future directions in Computational Intelligence, Artificial Intelligence (AI), Data Science, Big Data Analytics, Cloud Computing, and Emerging Technologies.
             </p>
 
             <p className="text-lg text-gray-700 leading-relaxed">
@@ -88,11 +88,11 @@ const BlogSidebar1 = ({ onSelect }: { onSelect: (blog: "blog1" | "blog2" | "blog
               <ul className="space-y-4 text-gray-700">
                 <li className="flex items-center gap-3">
                   <FaCalendarAlt className="text-[#4A6CF7]" />
-                  <span>December 8-10, 2025</span>
+                  <span>August 10-12, 2026</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <FaMapMarkerAlt className="text-[#4A6CF7]" />
-                  <span>Japan (Venue TBA)</span>
+                  <span>Canada (Venue TBA)</span>
                 </li>
                 {/* <li className="flex items-center gap-3">
                   <FaClock className="text-[#4A6CF7]" />

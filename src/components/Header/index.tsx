@@ -69,7 +69,7 @@ const Header = () => {
           <div className="flex items-center lg:gap-6 xl:gap-10 gap-1 sm:gap-0 lg:pr-2">
             <Link href="/" className="flex items-center xl:gap-4 lg-gap-2">
               <Image
-                src={pathname === "/" && !sticky ? "/images/logo/nacdc_logo_bgr_white_1.png" : "/images/logo/nacdc_logo_bgr_1.png"}
+                src={pathname === "/" && !sticky ? "/images/logo/nacdc_logo_bgr_white.png" : "/images/logo/nacdc_logo_bgr.png"}
                 alt="NACDC Logo"
                 width={1500}
                 height={1500}

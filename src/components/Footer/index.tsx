@@ -11,7 +11,7 @@ const Footer = () => {
           {/* Row 1: Logo */}
           <div className="flex justify-start">
             <Image
-              src="/images/logo/nacdc_logo_bgr_1.png"
+              src="/images/logo/nacdc_logo_bgr.png"
               alt="NACDC Logo"
               width={1500}
               height={1500}
@@ -26,13 +26,13 @@ const Footer = () => {
             
             {/* Column 1: NACDC Details */}
             <div className="lg:w-1/3">
-              <div className="text-2xl font-bold text-[#000] mb-3">NACDC 2025</div>
+              <div className="text-2xl font-bold text-[#000] mb-3">NACDC 2026</div>
               <p className="text-base text-body-color mb-4">
                 For detailed registration guidelines, submission deadlines, and travel information, please visit the official website.
               </p>
               <p className="text-base text-body-color">
-                📅 December 8-10, 2025<br /><br />
-                📍 Japan
+                📅 August 10-12, 2026<br /><br />
+                📍 Canada
               </p>
             </div>
 
@@ -110,7 +110,7 @@ const Footer = () => {
           {/* Bottom Note (tight spacing) */}
           <div className="pt-4 pb-8 text-center ">
             <p className="text-base text-gray-600 ">
-              Developed By <span className="font-semibold text-[#4A6CF7]">NACDC 2025 Digital Team</span>
+              Developed By <span className="font-semibold text-[#4A6CF7]">NACDC 2026 Digital Team</span>
             </p>
           </div>
         </div>

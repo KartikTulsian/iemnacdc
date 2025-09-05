@@ -182,22 +182,22 @@ const Hero = () => {
         <div className="flex-1 flex items-center justify-center">
           <div className="max-w-5xl w-full px-4 md:px-6 lg:px-8 pt-20 pb-10 sm:pt-20 sm:pb-6 md:pt-16 md:pb-10 lg:pt-17 lg:pb-14">
             <h1 className="text-4xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#fff] leading-tight mb-4 drop-shadow-md">
-              NACDC 2025
+              NACDC 2026
             </h1>
 
             <h2 className="text-lg sm:text-2xl md:text-3xl text-[#fff] font-medium mb-4 sm:mb-6 leading-relaxed drop-shadow-sm">
-              International Conference on NextGeneration Advances in  <br className="hidden sm:inline" />
+              North American Conference on  <br className="hidden sm:inline" />
               <span className="text-[#bccaff] font-semibold">
                 Computational Intelligence, Data Science and Cloud Computing
               </span>
             </h2>
 
             <p className="text-[#fff] text-base sm:text-lg md:text-xl mb-2 sm:mb-3 font-light">
-              December 8-10, 2025
+              August 10-12, 2026
             </p>
 
             <p className="text-[#fff] text-base sm:text-lg md:text-xl mb-4 sm:mb-6 font-light">
-              Japan
+              Canada
             </p>
 
             <p className="text-[#fff] text-sm sm:text-base md:text-lg leading-relaxed mb-8 max-w-4xl mx-auto font-medium">

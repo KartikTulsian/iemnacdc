@@ -4,8 +4,8 @@ import SectionTitle from "../Common/SectionTitle";
 import TracksList from "@/components/Tracks/TracksList";
 
 const Features = () => {
-  const para = `The International Conference on NextGeneration Advances in Computational Intelligence, Data Science and Cloud Computing (NACDC 2025) is an international conference dedicated to bringing together leading academics, 
-  researchers, practitioners, and industry experts from across the globe. The conference will be held in hybrid mode from December 8 to 10, 2025 in Japan.`;
+  const para = `The North American Conference on Computational Intelligence, Data Science and Cloud Computing (NACDC 2026) is an international conference dedicated to bringing together leading academics, 
+  researchers, practitioners, and industry experts from across the globe. The conference will be held in hybrid mode from August 10 to 12, 2026 in Canada.`;
 
   return (
     <section id="features" className="relative pt-16 pb-6 md:pt-20 md:pb-8 lg:pt-28 bg-[#fff] z-10">
@@ -13,13 +13,13 @@ const Features = () => {
         {/* Welcome Section */}
         <div className="mb-16">
           <SectionTitle
-            title="Welcome to NACDC 2025"
+            title="Welcome to NACDC 2026"
             paragraph={para}
             center
             width="1100px"
           />
           <p className="text-base text-body-color md:text-lg py-3 text-center max-w-6xl mx-auto">
-            NACDC 2025 is poised to be a significant platform for the discussion, dissemination, and exchange of the latest trends, innovations, and future directions in Computational Intelligence, Artificial Intelligence (AI), Data Science, Big Data Analytics, Cloud Computing, and Emerging Technologies.
+            NACDC 2026 is poised to be a significant platform for the discussion, dissemination, and exchange of the latest trends, innovations, and future directions in Computational Intelligence, Artificial Intelligence (AI), Data Science, Big Data Analytics, Cloud Computing, and Emerging Technologies.
           </p>
           <p className="text-base text-body-color md:text-lg py-3 text-center max-w-6xl mx-auto">
             In an era where intelligent computing and data-driven technologies are rapidly reshaping industries, the conference offers a unique venue for bridging the gap between theoretical advancements and real-world applications.
