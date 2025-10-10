@@ -132,6 +132,23 @@ export default function RegistrationDetails() {
         </div>
       </section>
 
+      <section
+        className="w-full max-w-4xl bg-[#fff] p-6 md:p-8 rounded-xl shadow-lg mb-10"
+        data-aos="fade-up"
+      >
+        <h2 className="text-xl md:text-2xl font-semibold mb-6 text-gray-800">
+          💰 Attendee's Registration Fees
+        </h2>
+        <div className="overflow-x-auto:hidden rounded-md border border-gray-200">
+          <CreateTable1
+            datas={[
+              { col1: 'Category', col2: 'Early Bird (Before & on 25th April 2026)', col3: 'Regular (After 25th April 2026)' },
+              { col1: 'Student Non-Member', col2: '200 CAD', col3: '400 CAD' },
+              { col1: 'General Attendee', col2: '200 CAD', col3: '400 CAD' },
+            ]}
+          />
+        </div>
+      </section>
 
       <section
         className="w-full max-w-4xl bg-[#fff] p-6 md:p-8 rounded-xl shadow-lg mb-10"
