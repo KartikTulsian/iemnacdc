@@ -5,7 +5,38 @@ import { twMerge } from 'tailwind-merge';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-const CreateTable = ({
+const CreateTable1 = ({
+  datas,
+}: {
+  datas: Array<{ col1: string; col2: string; col3: string; className?: string }>;
+}) => {
+  return (
+    <table className="w-full text-md text-left text-gray-700">
+      <tbody>
+        {datas.map(({ col1, col2, col3, className }, id) => (
+          <tr
+            key={id}
+            className="odd:bg-[#fff] even:bg-gray-50 border-b border-gray-200 hover:bg-blue-50 hover:scale-[1.01] transition-all duration-300 ease-in-out"
+          >
+            <th
+              scope="row"
+              className={twMerge(
+                'px-6 py-4 font-medium text-gray-900 md:text-base text-md whitespace-normal',
+                className
+              )}
+            >
+              {col1}
+            </th>
+            <td className="px-6 py-4 md:text-base text-md">{col2}</td>
+            <td className="px-6 py-4 md:text-base text-md">{col3}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  );
+};
+
+const CreateTable2 = ({
   datas,
 }: {
   datas: Array<{ col1: string; col2: string; className?: string }>;
@@ -88,13 +119,16 @@ export default function RegistrationDetails() {
           💰 Standard Registration Fees (Per Accepted Paper)
         </h2>
         <div className="overflow-x-auto:hidden rounded-md border border-gray-200">
-          <CreateTable
+          <CreateTable1
             datas={[
-              { col1: 'Academic Authors', col2: '500 USD' },
-              { col1: 'Additional Page Charges (per page)', col2: '50 USD' },
-              { col1: 'Industry Participants', col2: '600 USD' },
+              { col1: 'Category', col2: 'Early Bird (Before & on 25th April 2026)', col3: 'Regular (After 25th April 2026)' },
+              { col1: 'Academic Authors', col2: '500 CAD', col3: '600 CAD' },
+              { col1: 'Industry Participants', col2: '500 CAD', col3: '600 CAD' },
             ]}
           />
+        </div>
+        <div className="mt-4 bg-gray-50 border-l-4 border-blue-500 p-4 rounded-md text-gray-700 italic text-sm md:text-base font-bold">
+          Additional Page Charges (per page) : 50 USD
         </div>
       </section>
 
@@ -106,23 +140,26 @@ export default function RegistrationDetails() {
         <h2 className="text-xl md:text-2xl font-semibold mb-6 text-gray-800">
           🧾 Discounted Fees for Multiple Accepted Papers (Same Author)
         </h2>
+        <div className="mb-4 bg-gray-50 border-l-4 border-blue-500 p-4 rounded-md text-gray-700 italic text-sm md:text-base font-bold">
+          *Authors affiliated with academic institutions MUST register under the "Academic Authors" category.*
+        </div>
         <div className="overflow-x-auto:hidden rounded-md border border-gray-200">
-          <CreateTable
+          <CreateTable2
             datas={[
-              {
-                col1:
-                  '*Authors affiliated with academic institutions MUST register under the "Academic Authors" category.*',
-                col2: '',
-                className: 'font-bold text-sm text-gray-700',
-              },
+              // {
+              //   col1:
+              //     '*Authors affiliated with academic institutions MUST register under the "Academic Authors" category.*',
+              //   col2: '',
+              //   className: 'font-bold text-sm text-gray-700',
+              // },
               {
                 col1: 'Single Author with Two Accepted Papers',
-                col2: '600 USD',
+                col2: '600 CAD',
                 className: 'font-semibold',
               },
               {
                 col1: 'Single Author with Three Accepted Papers',
-                col2: '700 USD',
+                col2: '700 CAD',
                 className: 'font-semibold',
               },
             ]}

@@ -14,11 +14,11 @@ export default function PaperDetails() {
 
           <ul className="list-disc pl-6 space-y-4 text-gray-700 text-base sm:text-lg">
             <li>
-              EasyChair submission link{' '}
+              EDAS submission link{' '}
               <Link
                 className="text-blue-600 hover:text-blue-800 underline transition duration-200"
                 target="_blank"
-                href="https://easychair.org/conferences?conf=nacdc2025"
+                href="https://edas.info/N34454"
               >
                 here
               </Link>

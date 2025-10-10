@@ -6,6 +6,7 @@ import SectionTitle from "../Common/SectionTitle";
 const committeeList = {
   Committees: {
     "Advisory Committee": [
+      "Ramon Lawrence, The University of British Columbia, Kelowna, Canada",
       "Tom Murad, University of Guelph, Ontario, Canada",
       "Esma Aimeur, University of Montreal, Quebec, Canada",
       "Rim Cherif Fehri, Algonquin College, Ottawa, Ontario, Canada",
@@ -71,7 +72,7 @@ const committeeList = {
         "Rajashree Paul, Institute of Engineering & Management, Kolkata, India"
       ],
       "Technical Program Co-Chair": [
-        "Sanchita Ghosh, Institute of Engineering & Management, Kolkata, India",
+        "Anupam Mondal , Institute of Engineering & Management, Kolkata, India",
       ],
       "Publicity Chair": [
         "Amit Kumar Das, Institute of Engineering & Management, Kolkata, India",
@@ -81,16 +82,19 @@ const committeeList = {
         
       ],
       "Publication Co-Chair": [
-        "Rupayan Das, Institute of Engineering & Management, Kolkata, India",
+        "Susovan Jana, Institute of Engineering & Management, Kolkata, India",
       ],
       "Organizing Chair": [
         "Sukanya Mukherjee, Institute of Engineering & Management, Kolkata, India",
       ],
       "Committee Members": [
-        "Susovan Jana, Institute of Engineering & Management, Kolkata, India",
-        "Avipsita Chatterjee, Institute of Engineering & Management, Kolkata, India",
-        "Anupam Mondal, Institute of Engineering & Management, Kolkata, India",
-        "Darothi Sarkar, Institute of Engineering & Management, Kolkata, India"
+        "Darothi Sarkar, Institute of Engineering & Management, Kolkata, India",
+        "Prithwineel Paul, Institute of Engineering and Management, Kolkata, India",
+        "Rupayan Das, Institute of Engineering and Management, Kolkata, India",
+        "Soumyendu Sekhar Bandhopadhyay, Institute of Engineering and Management, Kolkata, India",
+        "Soma Das, Institute of Engineering and Management, Kolkata, India",
+        "Bavrabi Ghosh, Institute of Engineering and Management, Kolkata, India",
+        "Monalisa De, Institute of Engineering and Management, Kolkata, India",
       ],
     },
   }
