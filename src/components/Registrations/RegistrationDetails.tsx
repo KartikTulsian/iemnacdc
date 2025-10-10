@@ -27,8 +27,8 @@ const CreateTable1 = ({
             >
               {col1}
             </th>
-            <td className="px-6 py-4 md:text-base text-md">{col2}</td>
-            <td className="px-6 py-4 md:text-base text-md">{col3}</td>
+            <td className={twMerge('px-6 py-4 md:text-base text-md', className)}>{col2}</td>
+            <td className={twMerge('px-6 py-4 md:text-base text-md', className)}>{col3}</td>
           </tr>
         ))}
       </tbody>
@@ -76,10 +76,13 @@ export default function RegistrationDetails() {
   }, []);
 
   return (
-    <div className="flex flex-col items-center px-4 py-10 md:px-12 lg:px-24 bg-gray-50">
-      <h1 className="text-3xl md:text-4xl font-bold text-[#4A6CF7] mb-8 text-center">
+    <div className="flex flex-col items-center px-4 py-10 md:px-10 lg:px-16 bg-gray-50">
+      <h1 className="text-3xl md:text-4xl font-bold text-[#4A6CF7] mb-4 text-center">
         Registration Details
       </h1>
+
+      <div className="mt-4 mb-7 bg-gray-50 px-4 md:px-12 lg:px-20 py-4 rounded-md text-gray-700 text-md md:text-base font-bold text-center">*Registration will be handled electronically via EDAS. It will be updated soon. At least one author of each paper must register at the Author registration rate.
+        For a single paper, a single author registration is required. A attendee/student registration is not an author regsitration.*</div>
 
       {/* Registration Form */}
       {/* <section
@@ -116,18 +119,18 @@ export default function RegistrationDetails() {
         data-aos="fade-up"
       >
         <h2 className="text-xl md:text-2xl font-semibold mb-6 text-gray-800">
-          💰 Standard Registration Fees (Per Accepted Paper)
+          Standard Registration Fees (Per Accepted Paper)
         </h2>
-        <div className="overflow-x-auto:hidden rounded-md border border-gray-200">
+        <div className="overflow-x-auto rounded-md border border-gray-200 w-full">
           <CreateTable1
             datas={[
-              { col1: 'Category', col2: 'Early Bird (Before & on 25th April 2026)', col3: 'Regular (After 25th April 2026)' },
+              { col1: 'Category', col2: 'Early Bird (Before & on 25th April 2026)', col3: 'Regular (After 25th April 2026)', className: 'font-semibold' },
               { col1: 'Academic Authors', col2: '500 CAD', col3: '600 CAD' },
               { col1: 'Industry Participants', col2: '500 CAD', col3: '600 CAD' },
             ]}
           />
         </div>
-        <div className="mt-4 bg-gray-50 border-l-4 border-blue-500 p-4 rounded-md text-gray-700 italic text-sm md:text-base font-bold">
+        <div className="mt-4 bg-gray-50 border-l-4 border-blue-500 p-4 rounded-md text-gray-700 italic text-sm md:text-base font-semibold">
           Additional Page Charges (per page) : 50 USD
         </div>
       </section>
@@ -137,12 +140,12 @@ export default function RegistrationDetails() {
         data-aos="fade-up"
       >
         <h2 className="text-xl md:text-2xl font-semibold mb-6 text-gray-800">
-          💰 Attendee&apos;s Registration Fees
+          Attendee&apos;s Registration Fees
         </h2>
-        <div className="overflow-x-auto:hidden rounded-md border border-gray-200">
+        <div className="overflow-x-auto rounded-md border border-gray-200 w-full">
           <CreateTable1
             datas={[
-              { col1: 'Category', col2: 'Early Bird (Before & on 25th April 2026)', col3: 'Regular (After 25th April 2026)' },
+              { col1: 'Category', col2: 'Early Bird (Before & on 25th April 2026)', col3: 'Regular (After 25th April 2026)', className: 'font-bold' },
               { col1: 'Student Non-Member', col2: '200 CAD', col3: '400 CAD' },
               { col1: 'General Attendee', col2: '200 CAD', col3: '400 CAD' },
             ]}
@@ -155,12 +158,12 @@ export default function RegistrationDetails() {
         data-aos="fade-up"
       >
         <h2 className="text-xl md:text-2xl font-semibold mb-6 text-gray-800">
-          🧾 Discounted Fees for Multiple Accepted Papers (Same Author)
+          Discounted Fees for Multiple Accepted Papers (Same Author)
         </h2>
         <div className="mb-4 bg-gray-50 border-l-4 border-blue-500 p-4 rounded-md text-gray-700 italic text-sm md:text-base font-bold">
           Authors affiliated with academic institutions MUST register under the &quot;Academic Authors&quot; category.*
         </div>
-        <div className="overflow-x-auto:hidden rounded-md border border-gray-200">
+        <div className="overflow-x-auto rounded-md border border-gray-200 w-full">
           <CreateTable2
             datas={[
               {
@@ -178,6 +181,70 @@ export default function RegistrationDetails() {
         </div>
       </section>
 
+      {/* Information and Cancellation Section */}
+      <section
+        className="w-full max-w-4xl bg-[#fff] p-6 md:p-8 rounded-xl shadow-lg mb-10"
+        data-aos="fade-up"
+      >
+        <h2 className="text-xl md:text-2xl font-semibold mb-6 text-gray-800">
+          Important Information & Cancellation Policy
+        </h2>
+
+        <div className="space-y-4 text-gray-700 text-sm md:text-base leading-relaxed">
+          <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-md shadow-sm">
+            <p className="font-semibold text-gray-800">Note:</p>
+            <ul className="list-disc list-inside mt-2 space-y-1">
+              <li>All Fees are in <b>CAD</b> and include all applicable taxes.</li>
+              <li>
+                The minimum page length of each accepted paper is <b>10 pages</b> in
+                LNNS format.
+              </li>
+            </ul>
+          </div>
+
+          <div className="bg-red-50 border-l-4 border-red-500 p-4 rounded-md shadow-sm">
+            <p className="font-semibold text-gray-800">Cancellation Policy:</p>
+            <p className="mt-2 italic">
+              There will be <b>no cancellation or refund</b> after registration.
+            </p>
+          </div>
+        </div>
+      </section>
+
+
+      <section
+        className="w-full max-w-4xl bg-[#fff] p-6 md:p-8 rounded-xl shadow-lg mb-10"
+        data-aos="fade-up"
+      >
+        <h2 className="text-xl md:text-2xl font-semibold mb-6 text-gray-800">
+          Sponsorship Notes
+        </h2>
+        {/* <div className="mb-4 bg-gray-50 border-l-4 border-blue-500 p-4 rounded-md text-gray-700 italic text-sm md:text-base font-bold">
+          Authors affiliated with academic institutions MUST register under the &quot;Academic Authors&quot; category.*
+        </div> */}
+        <div className="overflow-x-auto rounded-md border border-gray-200 w-full">
+          <CreateTable2
+            datas={[
+              {
+                col1: 'Silver Partner',
+                col2: '4000 CAD',
+                className: 'font-semibold',
+              },
+              {
+                col1: 'Gold Partner',
+                col2: '6000 CAD',
+                className: 'font-semibold',
+              },
+              {
+                col1: 'Diamond Partner',
+                col2: '8000 CAD',
+                className: 'font-semibold',
+              },
+            ]}
+          />
+        </div>
+      </section>
+
 
       {/* Indian Payments */}
       {/* <section
@@ -187,7 +254,7 @@ export default function RegistrationDetails() {
         <h2 className="text-xl md:text-2xl font-semibold mb-6 text-gray-800">
           Bank Details for Indian Payments
         </h2>
-        <div className="overflow-x-auto:hidden rounded-md border border-gray-200">
+        <div className="overflow-x-auto rounded-md border border-gray-200 w-full">
           <CreateTable
             datas={[
               {
@@ -211,7 +278,7 @@ export default function RegistrationDetails() {
         <h2 className="text-xl md:text-2xl font-semibold mb-6 text-gray-800">
           Bank Details for International Payments
         </h2>
-        <div className="overflow-x-auto:hidden rounded-md border border-gray-200">
+        <div className="overflow-x-auto rounded-md border border-gray-200 w-full">
           <CreateTable
             datas={[
               {

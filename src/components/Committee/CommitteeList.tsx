@@ -88,6 +88,7 @@ const committeeList = {
         "Sukanya Mukherjee, Institute of Engineering & Management, Kolkata, India",
       ],
       "Committee Members": [
+        "Sanchita Ghosh, Institute of Engineering & Management, Kolkata, India",
         "Darothi Sarkar, Institute of Engineering & Management, Kolkata, India",
         "Prithwineel Paul, Institute of Engineering and Management, Kolkata, India",
         "Rupayan Das, Institute of Engineering and Management, Kolkata, India",
