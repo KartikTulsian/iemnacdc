@@ -141,7 +141,7 @@ export default function RegistrationDetails() {
           🧾 Discounted Fees for Multiple Accepted Papers (Same Author)
         </h2>
         <div className="mb-4 bg-gray-50 border-l-4 border-blue-500 p-4 rounded-md text-gray-700 italic text-sm md:text-base font-bold">
-          *Authors affiliated with academic institutions MUST register under the "Academic Authors" category.*
+          Authors affiliated with academic institutions MUST register under the &quot;Academic Authors&quot; category.*
         </div>
         <div className="overflow-x-auto:hidden rounded-md border border-gray-200">
           <CreateTable2
