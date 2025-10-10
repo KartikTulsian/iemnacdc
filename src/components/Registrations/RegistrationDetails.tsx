@@ -146,12 +146,6 @@ export default function RegistrationDetails() {
         <div className="overflow-x-auto:hidden rounded-md border border-gray-200">
           <CreateTable2
             datas={[
-              // {
-              //   col1:
-              //     '*Authors affiliated with academic institutions MUST register under the "Academic Authors" category.*',
-              //   col2: '',
-              //   className: 'font-bold text-sm text-gray-700',
-              // },
               {
                 col1: 'Single Author with Two Accepted Papers',
                 col2: '600 CAD',
