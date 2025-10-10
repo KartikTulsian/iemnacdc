@@ -137,7 +137,7 @@ export default function RegistrationDetails() {
         data-aos="fade-up"
       >
         <h2 className="text-xl md:text-2xl font-semibold mb-6 text-gray-800">
-          💰 Attendee's Registration Fees
+          💰 Attendee&apos;s Registration Fees
         </h2>
         <div className="overflow-x-auto:hidden rounded-md border border-gray-200">
           <CreateTable1
