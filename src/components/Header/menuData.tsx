@@ -68,6 +68,12 @@ const menuData: MenuItem[] = [
         path: "/schedule",
         newTab: false,
       },
+      {
+        id: 63,
+        title: "Ethics & Malpractice Statement",
+        path: "/ethics",
+        newTab: false,
+      },
     ],
   },
   // {
