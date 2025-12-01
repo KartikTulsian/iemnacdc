@@ -24,12 +24,12 @@ export default function EthicsBlock({ icon, title, children }: EthicsBlockProps)
         <div className="bg-blue-100 text-blue-600 rounded-full p-3 shadow-inner">
           {icon}
         </div>
-        <h2 className="text-3xl lg:text-2xl xl:text-2xl font-bold text-[#4A6CF7] tracking-wide">
+        <h2 className="text-xl md:text-2xl lg:text-2xl xl:text-2xl font-bold text-[#4A6CF7] tracking-wide">
           {title}
         </h2>
       </div>
 
-      <ul className="space-y-5 xl:text[18px] lg:text-[18px] text-lg text-gray-800">
+      <ul className="space-y-5 xl:text[18px] lg:text-[18px] text-md text-gray-800">
         {children}
       </ul>
     </motion.div>

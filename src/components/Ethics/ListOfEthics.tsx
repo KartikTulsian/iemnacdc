@@ -26,7 +26,7 @@ export default function ListOfEthics() {
                     viewport={{ once: true }}
                     transition={{ duration: 0.7, ease: "easeOut" }}
                     className="bg-white shadow-lg rounded-2xl border border-blue-200 p-6 sm:p-8 mt-10
-                     xl:text-[18px] lg:text-[17px] text-xl leading-[1.8] text-gray-800 tracking-wide"
+                     xl:text-[18px] lg:text-[17px] text-[15px] leading-[1.8] text-gray-800 tracking-wide"
                 >
                     <p>
                         The North American Conference on Computational Intelligence, Data Science and Cloud Computing (NACDC 2026)
@@ -37,7 +37,7 @@ export default function ListOfEthics() {
                 </motion.div>
 
                 {/* AUTHORS */}
-                <EthicsBlock icon={<ShieldCheck size={36} />} title="1. Ethical Responsibilities of Authors">
+                <EthicsBlock icon={<ShieldCheck size={32} />} title="1. Ethical Responsibilities of Authors">
                     {ethicsData.authorsEthics.map((item, idx) => (
                         <EthicsPoint key={idx} icon={<CheckCircle size={20} className="text-blue-600" />}>
                             <strong>{item.title}:</strong> {item.description}
@@ -46,7 +46,7 @@ export default function ListOfEthics() {
                 </EthicsBlock>
 
                 {/* REVIEWERS */}
-                <EthicsBlock icon={<Users size={36} />} title="2. Ethical Responsibilities of Reviewers">
+                <EthicsBlock icon={<Users size={32} />} title="2. Ethical Responsibilities of Reviewers">
                     {ethicsData.reviewersEthics.map((item, idx) => (
                         <EthicsPoint key={idx} icon={<UserCheck size={20} className="text-blue-600" />}>
                             <strong>{item.title}:</strong> {item.description}
@@ -55,7 +55,7 @@ export default function ListOfEthics() {
                 </EthicsBlock>
 
                 {/* COMMITTEE */}
-                <EthicsBlock icon={<BookCheck size={36} />} title="3. Ethical Responsibilities of the Editorial / Organizing Committee">
+                <EthicsBlock icon={<BookCheck size={32} />} title="3. Ethical Responsibilities of the Editorial / Organizing Committee">
                     {ethicsData.committeeEthics.map((item, idx) => (
                         <EthicsPoint key={idx} icon={<BadgeCheck size={20} className="text-blue-600" />}>
                             <strong>{item.title}:</strong> {item.description}
@@ -64,14 +64,14 @@ export default function ListOfEthics() {
                 </EthicsBlock>
 
                 {/* PLAGIARISM */}
-                <EthicsBlock icon={<AlertOctagon size={36} />} title="4. Plagiarism & Misconduct Policy">
+                <EthicsBlock icon={<AlertOctagon size={32} />} title="4. Plagiarism & Misconduct Policy">
                     <EthicsPoint icon={<ShieldAlert size={20} className="text-red-600" />}>
                         {ethicsData.plagiarismPolicy}
                     </EthicsPoint>
                 </EthicsBlock>
 
                 {/* POST-PUBLICATION */}
-                <EthicsBlock icon={<BookCheck size={36} />} title="5. Post-Publication Responsibilities">
+                <EthicsBlock icon={<BookCheck size={32} />} title="5. Post-Publication Responsibilities">
                     <EthicsPoint icon={<RefreshCcw size={20} className="text-blue-600" />}>
                         {ethicsData.postPublicationPolicy}
                     </EthicsPoint>
