@@ -7,6 +7,33 @@ const Brands = () => {
     <section className="py-16 bg-gray-50/50">
       <div className="container mx-auto px-4">
 
+        {/* Co-Partners Section */}
+        <div className="w-full max-w-7xl mx-auto flex flex-col items-center">
+          <SectionTitle
+            title="Technical Co-Partners"
+            paragraph=""
+            center
+          />
+          <div className="flex flex-wrap justify-center items-center gap-6">
+            {coBrandsData.map((brand) => (
+              <div
+                key={brand.id}
+                className="group flex items-center justify-center bg-white p-5 md:p-6 rounded-2xl shadow-md border border-gray-100 transition-all duration-300 hover:shadow-lg w-[140px] md:w-[180px]"
+              >
+                <div className="relative w-full aspect-square flex items-center justify-center">
+                  <Image
+                    src={brand.image}
+                    alt={brand.name}
+                    width={130}
+                    height={130}
+                    className="object-contain max-h-[55px] md:max-h-[80px] w-auto group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
         {/* Technical Partners Section */}
         <div className="w-full max-w-7xl mx-auto flex flex-col items-center">
           <SectionTitle
@@ -49,32 +76,7 @@ const Brands = () => {
           <div className="h-[1px] w-full max-w-[300px] bg-gradient-to-r from-transparent via-gray-300 to-transparent"></div>
         </div>
 
-        {/* Co-Partners Section */}
-        <div className="w-full max-w-7xl mx-auto flex flex-col items-center">
-          <SectionTitle
-            title="Technical Co-Partners"
-            paragraph=""
-            center
-          />
-          <div className="flex flex-wrap justify-center items-center gap-6">
-            {coBrandsData.map((brand) => (
-              <div
-                key={brand.id}
-                className="group flex items-center justify-center bg-white p-5 md:p-6 rounded-2xl shadow-md border border-gray-100 transition-all duration-300 hover:shadow-lg w-[140px] md:w-[180px]"
-              >
-                <div className="relative w-full aspect-square flex items-center justify-center">
-                  <Image
-                    src={brand.image}
-                    alt={brand.name}
-                    width={130}
-                    height={130}
-                    className="object-contain max-h-[55px] md:max-h-[80px] w-auto group-hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
+        
       </div>
     </section>
   );
