@@ -6,7 +6,7 @@ import ScrollUp from "@/components/Common/ScrollUp";
 import CountDown from "@/components/Countdown/CountDown";
 import Features from "@/components/Features";
 import Hero from "@/components/Hero";
-// import Testimonials from "@/components/Testimonials";
+import SpeakerDetails from "@/components/Speakers/SpeakerDetails";
 // import Video from "@/components/Video";
 import { Metadata } from "next";
 
@@ -22,7 +22,7 @@ export default function Home() {
       <ScrollUp />
       <Hero />
       <Features />
-      {/* <Testimonials /> */}
+      <SpeakerDetails/>
       <CountDown/>
       <Brands />
       {/* <AboutSectionOne /> */}

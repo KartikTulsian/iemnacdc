@@ -8,35 +8,37 @@ const Breadcrumb = ({
   description: string;
 }) => {
   return (
-    <div className="bg-violet-50 z-[-10]">
-      <section className="relative z-10 overflow-hidden pt-[10rem] pb-6 lg:pb-2 sm:pt-[12rem] lg:pt-[11rem]">
-        <div className="container">
-          <div className="mx-4 flex flex-wrap items-center">
-            <div className="w-full px-4 md:w-8/12 lg:w-7/12">
-              <div className="mb-8 max-w-[570px] md:mb-0 lg:mb-12">
-                <h1 className="mb-5 font-bold text-[#000] text-[2.7rem] sm:text-[3rem] md:text-[3rem] lg:text-[3.1rem] leading-tight">
-                  {pageName}
-                </h1>
-                <p className="text-lg font-medium leading-relaxed text-body-color">
-                  {description}
-                </p>
-              </div>
+      <section className="relative z-10 overflow-hidden bg-gradient-to-b from-violet-200 to-[#fff] pt-[140px] pb-[60px] md:pt-[160px] lg:pt-[180px]">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-wrap items-center justify-between">
+            {/* Left Content: Title and Description */}
+          <div className="w-full px-4 md:w-8/12 lg:w-7/12">
+            <div className="mb-8 max-w-[600px] md:mb-0">
+              <h1 className="mb-5 text-3xl font-extrabold text-[#1D2144] sm:text-4xl md:text-5xl leading-tight tracking-tight">
+                {pageName}
+              </h1>
+              <p className="text-base font-medium leading-relaxed text-[#606060] md:text-lg">
+                {description}
+              </p>
             </div>
+          </div>
+
+          {/* Right Content: Breadcrumb Links */}
             <div className="w-full px-4 md:w-4/12 lg:w-5/12">
-              <div className="text-end">
-                <ul className="flex items-center md:justify-end">
+              <div className="md:text-right">
+                <ul className="flex items-center md:justify-end space-x-3">
                   <li className="flex items-center">
                     <Link
                       href="/"
-                      className="pr-2 text-lg font-medium text-body-color hover:text-[#4A6CF7]"
+                      className="text-base font-semibold text-[#606060] hover:text-blue-600 transition-colors"
                     >
                       Home
                     </Link>
-                    <span className="mr-3 block h-3 w-3 rotate-45 border-r-2 border-t-2 border-body-color"></span>
-                  </li>
-                  <li className="text-lg font-medium text-[#4A6CF7]">
-                    {pageName}
-                  </li>
+                    <span className="ml-3 inline-block h-2 w-2 rotate-45 border-r-2 border-t-2 border-[#959CB1]"></span>
+                </li>
+                <li className="text-base font-semibold text-blue-600">
+                  {pageName}
+                </li>
                 </ul>
               </div>
             </div>
@@ -118,7 +120,6 @@ const Breadcrumb = ({
           </span>
         </div>
       </section>
-    </div>
   );
 };
 
