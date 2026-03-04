@@ -25,35 +25,6 @@ const cards = [
     isDownload: false
   },
   {
-    title: "Best Paper Award",
-    description: "Outstanding research contributions will be recognized with prestigious awards.",
-    icon: <Trophy className="w-8 h-8" />,
-    cardBg: "bg-[#fff1f2]",
-    iconBg: "bg-[#f43f5e]",
-    hasButton: false,
-  },
-  {
-    title: "10 Pages Minimum",
-    description: "Full-length papers only. Submissions must adhere to the minimum page requirements.",
-    icon: <FileStack className="w-8 h-8" />,
-    cardBg: "bg-[#fffbeb]",
-    iconBg: "bg-[#f59e0b]",
-    hasButton: false,
-  },
-  {
-    title: "Submission Guidelines",
-    description: "Comprehensive guide for authors regarding formatting, citations, and rules.",
-    icon: <BookOpen className="w-8 h-8" />,
-    btnGradient: "from-[#2563eb] to-[#1d4ed8]",
-    cardBg: "bg-[#eff6ff]",
-    iconBg: "bg-[#3b82f6]",
-    link: "https://novapublishers.com/authors-central/",
-    buttonText: "Read Guidelines",
-    hasButton: true,
-    isExternal: true,
-    isDownload: false
-  },
-  {
     title: "Paper Submission Guidelines",
     description: "Detailed instructions for authors on how to prepare and submit their manuscripts for review.",
     icon: <BookOpen className="w-8 h-8" />,
@@ -65,7 +36,36 @@ const cards = [
     hasButton: true,
     isExternal: false,
     isDownload: false
-  }
+  },
+  //{
+  //   title: "10 Pages Minimum",
+  //   description: "Full-length papers only. Submissions must adhere to the minimum page requirements.",
+  //   icon: <FileStack className="w-8 h-8" />,
+  //   cardBg: "bg-[#fffbeb]",
+  //   iconBg: "bg-[#f59e0b]",
+  //   hasButton: false,
+  // },
+  {
+    title: "Sample Chapter Format",
+    description: "Authors can refer to the sample chapter format provided by Nova Publishers for manuscript preparation.",
+    icon: <BookOpen className="w-8 h-8" />,
+    btnGradient: "from-[#2563eb] to-[#1d4ed8]",
+    cardBg: "bg-[#eff6ff]",
+    iconBg: "bg-[#3b82f6]",
+    link: "https://drive.google.com/drive/folders/1DovMlftK37ptRtWAyJYTdZJQ0i_GWxIV?usp=drive_link",
+    buttonText: "Download Sample Format",
+    hasButton: true,
+    isExternal: true,
+    isDownload: false
+  },
+  {
+    title: "Best Paper Award",
+    description: "Outstanding research contributions will be recognized with prestigious awards.",
+    icon: <Trophy className="w-8 h-8" />,
+    cardBg: "bg-[#fff1f2]",
+    iconBg: "bg-[#f43f5e]",
+    hasButton: false,
+  },
 ];
 
 export default function PaperDetails() {
