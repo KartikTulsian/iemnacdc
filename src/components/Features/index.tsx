@@ -5,7 +5,7 @@ import TracksList from "@/components/Tracks/TracksList";
 
 const Features = () => {
   const para = `The North American Conference on Computational Intelligence, Data Science and Cloud Computing (NACDC 2026) is an international conference dedicated to bringing together leading academics, 
-  researchers, practitioners, and industry experts from across the globe. The conference will be held in hybrid mode from August 10 to 12, 2026 in Canada.`;
+  researchers, practitioners, and industry experts from across the globe. The conference will be held in hybrid mode from August 10 to 12, 2026 in University of British Columbia, Vancouver, Canada.`;
 
   return (
     <section id="features" className="relative pt-16 pb-6 md:pt-20 md:pb-8 lg:pt-28 bg-[#fff] z-10">

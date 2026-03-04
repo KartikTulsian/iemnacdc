@@ -73,6 +73,16 @@ const BlogSidebar2 = ({ onSelect }: { onSelect: (blog: "blog1" | "blog2" | "blog
                     slug="#"
                   />
                 </li>
+                <li
+                  onClick={() => onSelect("blog3")}
+                  className="border-b border-gray-100 cursor-pointer transition-all duration-300 transform hover:scale-[1.02] hover:shadow-lg rounded-lg hover:bg-blue-50"
+                >
+                  <RelatedPost
+                    title="University of British Columbia"
+                    image="/images/hero/hero_image7.png"
+                    slug="#"
+                  />
+                </li>
               </ul>
             </div>
 

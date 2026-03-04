@@ -7,23 +7,57 @@ const Footer = () => {
     <div className="bg-[#f5f3ff] z-[-10]">
       <footer className="relative z-10 pt-10 md:pt-12 lg:pt-10 border-t border-gray-200 shadow-sm">
         <div className="container mx-auto px-4 sm:px-6 lg:px-12 flex flex-col gap-10">
-          
-          {/* Row 1: Logo */}
-          <div className="flex justify-start">
-            <Image
-              src="/images/logo/nacdc_logo_bgr.png"
-              alt="NACDC Logo"
-              width={1500}
-              height={1500}
-              priority
-              quality={100}
-              className="h-[16vh] w-auto object-contain"
-            />
+
+          {/* Row 1: Responsive Logo Grid */}
+          <div className="flex flex-col gap-6">
+            <div className="flex flex-wrap items-center justify-start gap-6 md:gap-8 lg:gap-10">
+
+              {/* First Line (Mobile) / Side-by-Side (Large/Medium) */}
+              <div className="flex items-center gap-6 md:gap-10 lg:gap-12 w-full lg:w-auto justify-start">
+                {/* NACDC Logo */}
+                <Image
+                  src="/images/logo/nacdc_logo_bgr.png"
+                  alt="NACDC Logo"
+                  width={500}
+                  height={500}
+                  priority
+                  className="h-[10vh] md:h-[12vh] lg:h-[14vh] w-auto object-contain"
+                />
+
+                {/* SMART & NOVA - Backgrounds removed and sizes increased for larger screens */}
+                <div className="hidden sm:flex items-center gap-8 md:gap-10 lg:gap-12">
+                  <img
+                    src="/images/logo/smart_society_logo.png"
+                    alt="SMART"
+                    className="h-[6vh] md:h-[8vh] lg:h-[6vh] w-auto object-contain transition-transform hover:scale-105 rounded-md"
+                  />
+                  <img
+                    src="/images/hero/nova_logo.png"
+                    alt="Nova"
+                    className="h-[8vh] md:h-[10vh] lg:h-[8vh] w-auto object-contain transition-transform hover:scale-105 rounded-md border border-gray-300"
+                  />
+                </div>
+              </div>
+
+              {/* Second Line (Mobile Only: SMART & NOVA) */}
+              <div className="flex sm:hidden items-center gap-6 w-full justify-start">
+                <img src="/images/logo/smart_society_logo.png" alt="SMART" className="h-8 w-auto object-contain rounded-md" />
+                <img src="/images/hero/nova_logo.png" alt="Nova" className="h-10 w-auto object-contain rounded-md border border-gray-300" />
+              </div>
+
+              {/* Third Line (Mobile) / Side-by-Side (Large/Medium: UBC, IEM, UEM) */}
+              <div className="flex items-center flex-wrap gap-4 sm:gap-3 md:gap-8 lg:gap-8 w-full lg:w-auto justify-start">
+                <img src="/images/hero/ubc_logo.png" alt="UBC" className="h-[6vh] md:h-[8vh] lg:h-[9vh] w-auto object-contain transition-transform hover:scale-105" />
+                <img src="/images/hero/iem-logo.png" alt="IEM" className="h-[6vh] md:h-[8vh] lg:h-[9vh] w-auto object-contain transition-transform hover:scale-105" />
+                <img src="/images/hero/uem-logo.png" alt="UEM" className="h-[6vh] md:h-[8vh] lg:h-[9vh] w-auto object-contain transition-transform hover:scale-105" />
+              </div>
+
+            </div>
           </div>
 
           {/* Row 2: Details & Links */}
           <div className="flex flex-col lg:flex-row justify-between gap-10">
-            
+
             {/* Column 1: NACDC Details */}
             <div className="lg:w-1/3">
               <div className="text-2xl font-bold text-[#000] mb-3">NACDC 2026</div>
@@ -32,13 +66,13 @@ const Footer = () => {
               </p>
               <p className="text-base text-body-color">
                 📅 August 10-12, 2026<br /><br />
-                📍 Canada
+                📍 University of British Columbia, Vancouver, Canada
               </p>
             </div>
 
             {/* Column 2: Useful Links + Contact */}
             <div className="lg:w-2/3 flex flex-col sm:flex-row lg:justify-around md:justify-start gap-8 md:gap-25 lg:border-l border-gray-200 lg:pl-20">
-              
+
               {/* Useful Links */}
               <div>
                 <h2 className="text-xl font-bold text-[#000] mb-5">Useful Links</h2>

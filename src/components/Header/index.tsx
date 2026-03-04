@@ -84,15 +84,32 @@ const Header = () => {
                 height={580}
                 priority
                 quality={100}
-                className="h-[3vh] sm:h-[3.5vh] md:h-[4vh] lg:h-[4.8vh] xl:h-[5.5vh] w-auto max-w-[5rem] sm:max-w-[6rem] md:max-w-[6.5rem] lg:max-w-[7rem] xl:max-w-[8rem] object-contain rounded-lg"
+                className="hidden sm:block h-[3vh] sm:h-[3.5vh] md:h-[4vh] lg:h-[4.8vh] xl:h-[5.5vh] w-auto max-w-[5rem] sm:max-w-[6rem] md:max-w-[6.5rem] lg:max-w-[7rem] xl:max-w-[8rem] object-contain rounded-md"
               />
-
+              <Image
+                src="/images/hero/nova_logo.png"
+                alt="Nova Logo"
+                width={1500}
+                height={580}
+                priority
+                quality={100}
+                className="lg:ml-3 sm:ml-3 h-[4vh] sm:h-[4vh] md:h-[5.5vh] lg:h-[6vh] xl:h-[6.5vh] w-auto max-w-[7rem] sm:max-w-[6rem] md:max-w-[8rem] lg:max-w-[8rem] xl:max-w-[9rem] object-contain rounded-md border border-gray-300"
+              />
             </Link>
 
             {/* Show IEM and UEM logos beside NACDC on small and medium screens */}
             <div className="flex lg:hidden items-center gap-1 sm:gap-1 pl-1 flex-shrink-0">
               {pathname === "/" && !sticky ? (
                 <>
+                  <Image
+                    src="/images/hero/ubc_logo_bw.png"
+                    alt="UBC Logo BW"
+                    width={1500}
+                    height={1003}
+                    quality={100}
+                    priority
+                    className="hidden sm:block h-[7vh] sm:h-[7vh] md:h-[8vh] w-auto object-contain max-w-[5rem] sm:max-w-[5rem] md:max-w-[6rem]"
+                  />
                   <Image
                     src="/images/hero/iem-logo-bw.png"
                     alt="IEM Logo BW"
@@ -114,6 +131,15 @@ const Header = () => {
                 </>
               ) : (
                 <>
+                  <Image
+                    src="/images/hero/ubc_logo.png"
+                    alt="UBC Logo"
+                    width={1500}
+                    height={1003}
+                    quality={100}
+                    priority
+                    className="hidden sm:block h-[7vh] sm:h-[7vh] md:h-[8vh] w-auto object-contain max-w-[5rem] sm:max-w-[5rem] md:max-w-[6rem]"
+                  />
                   <Image
                     src="/images/hero/iem-logo.png"
                     alt="IEM Logo"
@@ -269,6 +295,15 @@ const Header = () => {
             {pathname === "/" && !sticky ? (
               <>
                 <Image
+                  src="/images/hero/ubc_logo_bw.png"
+                  alt="UBC Logo BW"
+                  width={1500}
+                  height={1003}
+                  quality={100}
+                  priority
+                  className="h-[8vh] lg:h-[9vh] xl:h-[10vh] w-auto object-contain max-w-[7rem] lg:max-w-[8rem]"
+                />
+                <Image
                   src="/images/hero/iem-logo-bw.png"
                   alt="IEM Logo BW"
                   width={1500}
@@ -289,6 +324,15 @@ const Header = () => {
               </>
             ) : (
               <>
+                <Image
+                  src="/images/hero/ubc_logo.png"
+                  alt="UBC Logo"
+                  width={1500}
+                  height={1003}
+                  quality={100}
+                  priority
+                  className="h-[8vh] lg:h-[9vh] xl:h-[10vh] w-auto object-contain max-w-[7rem] lg:max-w-[8rem]"
+                />
                 <Image
                   src="/images/hero/iem-logo.png"
                   alt="IEM Logo"

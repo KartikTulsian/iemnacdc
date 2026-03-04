@@ -1,97 +1,121 @@
-// import Image from 'next/image';
-import Link from 'next/link'
-import React from 'react'
+import React from 'react';
+import { 
+  FileText, 
+  Trophy, 
+  FileStack, 
+  BookOpen, 
+  ArrowRightCircle,
+  DownloadCloud
+} from 'lucide-react';
+// If you are using Next.js, it is better to use the Link component for internal routing
+import Link from 'next/link'; 
+
+const cards = [
+  {
+    title: "EDAS Submission",
+    description: "Submit your research paper through the official EDAS platform for peer review.",
+    icon: <FileText className="w-8 h-8" />,
+    btnGradient: "from-[#059669] to-[#047857]",
+    cardBg: "bg-[#f0fdf4]",
+    iconBg: "bg-[#10b981]",
+    link: "https://edas.info/N34454",
+    buttonText: "Go to EDAS",
+    hasButton: true,
+    isExternal: true,
+    isDownload: false
+  },
+  {
+    title: "Best Paper Award",
+    description: "Outstanding research contributions will be recognized with prestigious awards.",
+    icon: <Trophy className="w-8 h-8" />,
+    cardBg: "bg-[#fff1f2]",
+    iconBg: "bg-[#f43f5e]",
+    hasButton: false,
+  },
+  {
+    title: "10 Pages Minimum",
+    description: "Full-length papers only. Submissions must adhere to the minimum page requirements.",
+    icon: <FileStack className="w-8 h-8" />,
+    cardBg: "bg-[#fffbeb]",
+    iconBg: "bg-[#f59e0b]",
+    hasButton: false,
+  },
+  {
+    title: "Submission Guidelines",
+    description: "Comprehensive guide for authors regarding formatting, citations, and rules.",
+    icon: <BookOpen className="w-8 h-8" />,
+    btnGradient: "from-[#2563eb] to-[#1d4ed8]",
+    cardBg: "bg-[#eff6ff]",
+    iconBg: "bg-[#3b82f6]",
+    link: "https://novapublishers.com/authors-central/",
+    buttonText: "Read Guidelines",
+    hasButton: true,
+    isExternal: true,
+    isDownload: false
+  },
+  {
+    title: "Paper Submission Guidelines",
+    description: "Detailed instructions for authors on how to prepare and submit their manuscripts for review.",
+    icon: <BookOpen className="w-8 h-8" />,
+    btnGradient: "from-[#db2777] to-[#be185d]",
+    cardBg: "bg-[#fdf2f8]",
+    iconBg: "bg-[#ec4899]",
+    link: "/guidelines",
+    buttonText: "Read Guidelines",
+    hasButton: true,
+    isExternal: false,
+    isDownload: false
+  }
+];
 
 export default function PaperDetails() {
   return (
-    <section className="relative py-16 px-4 ">
-      <div className="max-w-4xl mx-auto space-y-12 animate-animate-appear">
-        {/* Submission Section */}
-        <div className="bg-[#fff] p-8 rounded-xl shadow-lg border border-gray-100">
-          <h2 className="text-2xl sm:text-3xl font-bold text-blue-700 mb-6">
-            📤 Paper Submission Instructions
+    <section className="relative py-12 px-4 bg-[#fcfcfd]">
+      <div className="relative max-w-6xl mx-auto">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-bold text-[#111827] tracking-tight sm:text-4xl">
+            Paper <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#2563eb] to-[#4f46e5]">Submission Details</span>
           </h2>
-
-          <ul className="list-disc pl-6 space-y-4 text-gray-700 text-base sm:text-lg">
-            <li>
-              EDAS submission link{' '}
-              <Link
-                className="text-blue-600 hover:text-blue-800 underline transition duration-200"
-                target="_blank"
-                href="https://edas.info/N34454"
-              >
-                here
-              </Link>
-            </li>
-            {/* <li>
-              Springer Paper Submission Guidelines{' '}
-              <Link
-                className="text-blue-600 hover:text-blue-800 underline transition duration-200"
-                target="_blank"
-                href="https://www.springer.com/gp/authors-editors/conference-proceedings/conference-proceedings-guidelines"
-              >
-                here
-              </Link>
-            </li>
-            <li>
-              Download LaTeX Package{' '}
-              <Link
-                className="text-blue-600 hover:text-blue-800 underline transition duration-200"
-                target="_blank"
-                href="/templates/Latex_Package.zip"
-              >
-                here
-              </Link>
-            </li>
-            <li>
-              Download Word Template{' '}
-              <Link
-                className="text-blue-600 hover:text-blue-800 underline transition duration-200"
-                target="_blank"
-                href="/templates/Word_Template.zip"
-              >
-                here
-              </Link>
-            </li> */}
-            <li>
-              <span className="font-semibold">Awards:</span> Best Paper Award will be provided.
-            </li>
-          </ul>
-
-          {/* <div className="mt-6 p-4 bg-red-100 border-l-4 border-red-500 rounded-md">
-            <strong className="text-red-700 text-base sm:text-lg">
-              ⚠ Note:
-            </strong>{' '}
-            Papers should have <strong>preferably 10 pages</strong>. No short papers will be accepted.
-          </div> */}
+          <div className="mt-3 w-16 h-1 bg-[#2563eb] mx-auto rounded-full"></div>
         </div>
 
-        {/* Publication Section */}
-        {/* <div className="bg-blue-100/50 p-8 rounded-xl shadow-lg border border-blue-200 text-center">
-          <h2 className="text-xl sm:text-2xl font-semibold text-blue-800 mb-4 uppercase tracking-wide">
-            📝 Publication & Indexing Details
-          </h2>
+        {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"> */}
+        <div className="flex flex-wrap justify-center gap-6">
+          {cards.map((card, index) => (
+            // <div 
+            //   key={index} 
+            //   className={`group relative ${card.cardBg} border border-[#d5e2ff] rounded-[1.5rem] p-6 transition-all duration-300 hover:shadow-xl shadow-[#d5e2ff] hover:-translate-y-1.5 flex flex-col items-center text-center`}
+            // >
+            <div 
+              key={index} 
+              className={`group relative ${card.cardBg} border border-[#e5e7eb] rounded-[1.5rem] p-6 transition-all duration-300 hover:shadow-xl hover:-translate-y-1.5 flex flex-col items-center text-center w-full md:w-[calc(50%-1.5rem)] lg:w-[calc(33.33%-1.5rem)] min-h-[320px]`}
+            >
+              <div className={`mb-5 p-3.5 rounded-xl ${card.iconBg} text-[#ffffff] shadow-md transform group-hover:scale-110 transition-transform duration-300`}>
+                {card.icon}
+              </div>
+              
+              <h3 className="text-xl font-bold text-[#1f2937] mb-3">
+                {card.title}
+              </h3>
+              
+              <p className="text-[#4b5563] mb-6 leading-relaxed text-sm flex-grow">
+                {card.description}
+              </p>
 
-          <p className="text-lg text-blue-900 mb-4">
-            The conference proceedings will be published in the Springer Book Series:{' '}
-            <span className="font-semibold italic text-blue-800">
-              &quot;Lecture Notes in Networks and Systems&quot;
-            </span>
-          </p>
-
-          <div className="flex justify-center items-center my-6">
-            <Image
-              src="/images/sp.png"
-              width={250}
-              height={80}
-              alt="Springer Logo"
-            />
-          </div>
-
-          <p className="text-base sm:text-lg text-blue-900">
-            <strong>Indexing:</strong> SCOPUS, INSPEC, WTI Frankfurt eG, zbMATH, SCImago
-          </p>
-        </div> */}
+              {card.hasButton && card.link && (
+                <Link 
+                  href={card.link}
+                  target={card.isExternal ? "_blank" : "_self"} 
+                  rel={card.isExternal ? "noopener noreferrer" : undefined}
+                  className={`inline-flex items-center gap-2 w-full justify-center py-2.5 rounded-lg font-bold text-[#ffffff] transition-all duration-300 bg-gradient-to-r ${card.btnGradient} hover:brightness-105 shadow-sm active:scale-95 text-sm`}
+                >
+                  {card.isDownload ? <DownloadCloud size={16} /> : <ArrowRightCircle size={16} />}
+                  {card.buttonText}
+                </Link>
+              )}
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );

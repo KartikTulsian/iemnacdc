@@ -8,12 +8,12 @@ import 'aos/dist/aos.css';
 const CreateTable1 = ({
   datas,
 }: {
-  datas: Array<{ col1: string; col2: string; col3: string; className?: string }>;
+  datas: Array<{ col1: string; col2: string; className?: string }>;
 }) => {
   return (
     <table className="w-full text-md text-left text-gray-700">
       <tbody>
-        {datas.map(({ col1, col2, col3, className }, id) => (
+        {datas.map(({ col1, col2, className }, id) => (
           <tr
             key={id}
             className="odd:bg-[#fff] even:bg-gray-50 border-b border-gray-200 hover:bg-blue-50 hover:scale-[1.01] transition-all duration-300 ease-in-out"
@@ -28,7 +28,7 @@ const CreateTable1 = ({
               {col1}
             </th>
             <td className={twMerge('px-6 py-4 md:text-base text-md', className)}>{col2}</td>
-            <td className={twMerge('px-6 py-4 md:text-base text-md', className)}>{col3}</td>
+            {/* <td className={twMerge('px-6 py-4 md:text-base text-md', className)}>{col3}</td> */}
           </tr>
         ))}
       </tbody>
@@ -124,15 +124,15 @@ export default function RegistrationDetails() {
         <div className="overflow-x-auto rounded-md border border-gray-200 w-full">
           <CreateTable1
             datas={[
-              { col1: 'Category', col2: 'Early Bird (Before & on 25th April 2026)', col3: 'Regular (After 25th April 2026)', className: 'font-semibold' },
-              { col1: 'Academic Authors', col2: '500 CAD', col3: '600 CAD' },
-              { col1: 'Industry Participants', col2: '500 CAD', col3: '600 CAD' },
+              { col1: 'Category', col2: 'Regular', className: 'font-semibold' },
+              { col1: 'Academic Authors', col2: '600 CAD' },
+              { col1: 'Industry Participants', col2: '600 CAD' },
             ]}
           />
         </div>
-        <div className="mt-4 bg-gray-50 border-l-4 border-blue-500 p-4 rounded-md text-gray-700 italic text-sm md:text-base font-semibold">
+        {/* <div className="mt-4 bg-gray-50 border-l-4 border-blue-500 p-4 rounded-md text-gray-700 italic text-sm md:text-base font-semibold">
           Additional Page Charges (per page) : 50 USD
-        </div>
+        </div> */}
       </section>
 
       <section
@@ -145,9 +145,9 @@ export default function RegistrationDetails() {
         <div className="overflow-x-auto rounded-md border border-gray-200 w-full">
           <CreateTable1
             datas={[
-              { col1: 'Category', col2: 'Early Bird (Before & on 25th April 2026)', col3: 'Regular (After 25th April 2026)', className: 'font-bold' },
-              { col1: 'Student Non-Member', col2: '200 CAD', col3: '400 CAD' },
-              { col1: 'General Attendee', col2: '200 CAD', col3: '400 CAD' },
+              { col1: 'Category', col2:  'Regular', className: 'font-bold' },
+              { col1: 'Student Non-Member', col2: '400 CAD' },
+              { col1: 'General Attendee', col2: '400 CAD' },
             ]}
           />
         </div>

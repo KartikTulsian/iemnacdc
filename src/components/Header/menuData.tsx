@@ -74,6 +74,12 @@ const menuData: MenuItem[] = [
         path: "/ethics",
         newTab: false,
       },
+      {
+        id: 64,
+        title: "Paper Submission Guidelines",
+        path: "/guidelines",
+        newTab: false,
+      }
     ],
   },
   // {

@@ -197,7 +197,7 @@ const Hero = () => {
             </p>
 
             <p className="text-[#fff] text-base sm:text-lg md:text-xl mb-4 sm:mb-6 font-light">
-              Canada
+              University of British Columbia, Vancouver, Canada
             </p>
 
             <p className="text-[#fff] text-sm sm:text-base md:text-lg leading-relaxed mb-8 max-w-4xl mx-auto font-medium">

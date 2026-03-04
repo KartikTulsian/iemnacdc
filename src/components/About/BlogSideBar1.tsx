@@ -31,7 +31,7 @@ const BlogSidebar1 = ({ onSelect }: { onSelect: (blog: "blog1" | "blog2" | "blog
 
             <p className="text-lg text-gray-700 leading-relaxed">
               The North American Conference on Computational Intelligence, Data Science and Cloud Computing (NACDC 2026) is an international conference dedicated to bringing together leading academics,
-              researchers, practitioners, and industry experts from across the globe. The conference will be held in hybrid mode from August 10-12, 2026 in Canada.
+              researchers, practitioners, and industry experts from across the globe. The conference will be held in hybrid mode from August 10-12, 2026 in University of British Columbia, Vancouver, Canada.
             </p>
 
             <p className="text-lg text-gray-700 leading-relaxed">
@@ -69,16 +69,16 @@ const BlogSidebar1 = ({ onSelect }: { onSelect: (blog: "blog1" | "blog2" | "blog
                     slug="#"
                   />
                 </li>
-                {/* <li
+                <li
                   onClick={() => onSelect("blog3")}
                   className="border-b border-gray-100 cursor-pointer transition-all duration-300 transform hover:scale-[1.02] hover:shadow-lg rounded-lg hover:bg-blue-50"
                 >
                   <RelatedPost
-                    title="IEM Kolkata"
-                    image="/images/hero/gurukul_image.png"
+                    title="University of British Columbia"
+                    image="/images/hero/hero_image7.png"
                     slug="#"
                   />
-                </li> */}
+                </li>
               </ul>
             </div>
 
@@ -92,7 +92,7 @@ const BlogSidebar1 = ({ onSelect }: { onSelect: (blog: "blog1" | "blog2" | "blog
                 </li>
                 <li className="flex items-center gap-3">
                   <FaMapMarkerAlt className="text-[#4A6CF7]" />
-                  <span>Canada (Venue TBA)</span>
+                  <span>University of British Columbia, Vancouver, Canada</span>
                 </li>
                 {/* <li className="flex items-center gap-3">
                   <FaClock className="text-[#4A6CF7]" />

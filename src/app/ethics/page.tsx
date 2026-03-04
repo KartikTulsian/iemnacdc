@@ -6,7 +6,7 @@ import ListOfEthics from '@/components/Ethics/ListOfEthics';
 
 export const metadata: Metadata = {
   title: "Ethics & Malpractice Statement",
-  description: "This is the guidlines Page for NACDC 2026",
+  description: "This is the guidelines Page for NACDC 2026",
   // other metadata
 };
 
