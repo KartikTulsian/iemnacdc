@@ -39,8 +39,6 @@ export default function PaperSubmissionGuidelines() {
         >
           <GuideItem title="Source Files" text="All images, charts, and graphs (collectively referred to as figures) must be submitted with their original source files." />
           <GuideItem title="Software Charts" text="For figures created using software (e.g., PowerPoint charts), the original .pptx file should be submitted." />
-          <GuideItem title="Color Usage" text="Open Access publications allow unlimited color usage." />
-          <GuideItem title="Filing" text="Each figure must be uploaded to the designated SharePoint folder as a separate electronic file (one figure per file)." />
           <GuideItem title="Maps" text="All maps must be in color." />
           <GuideItem title="Resolution" text="Photographs must be high quality, with a resolution of 350–750 PPI (pixels per inch), also known as DPI." />
           <GuideItem variant="warning" title="Prohibited" text="Screenshots or photos of charts, graphs, or diagrams will not be accepted." />
