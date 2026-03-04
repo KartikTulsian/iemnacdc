@@ -9,7 +9,7 @@ interface SubmissionBlockProps {
   accentColor?: string; 
 }
 
-export default function SubmissionBlock({ icon, title, children, accentColor = "[#4f46e5]" }: SubmissionBlockProps) {
+export default function SubmissionBlock({ icon, title, children }: SubmissionBlockProps) {
   const container = {
     hidden: { opacity: 0 },
     show: {

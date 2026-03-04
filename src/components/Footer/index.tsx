@@ -26,12 +26,16 @@ const Footer = () => {
 
                 {/* SMART & NOVA - Backgrounds removed and sizes increased for larger screens */}
                 <div className="hidden sm:flex items-center gap-8 md:gap-10 lg:gap-12">
-                  <img
+                  <Image
+                    width={1500}
+                height={580}
                     src="/images/logo/smart_society_logo.png"
                     alt="SMART"
                     className="h-[6vh] md:h-[8vh] lg:h-[6vh] w-auto object-contain transition-transform hover:scale-105 rounded-md"
                   />
-                  <img
+                  <Image
+                  width={1500}
+                height={580}
                     src="/images/hero/nova_logo.png"
                     alt="Nova"
                     className="h-[8vh] md:h-[10vh] lg:h-[8vh] w-auto object-contain transition-transform hover:scale-105 rounded-md border border-gray-300"
@@ -41,15 +45,15 @@ const Footer = () => {
 
               {/* Second Line (Mobile Only: SMART & NOVA) */}
               <div className="flex sm:hidden items-center gap-6 w-full justify-start">
-                <img src="/images/logo/smart_society_logo.png" alt="SMART" className="h-8 w-auto object-contain rounded-md" />
-                <img src="/images/hero/nova_logo.png" alt="Nova" className="h-10 w-auto object-contain rounded-md border border-gray-300" />
+                <Image width={1500} height={580} src="/images/logo/smart_society_logo.png" alt="SMART" className="h-8 w-auto object-contain rounded-md" />
+                <Image width={1500} height={580} src="/images/hero/nova_logo.png" alt="Nova" className="h-10 w-auto object-contain rounded-md border border-gray-300" />
               </div>
 
               {/* Third Line (Mobile) / Side-by-Side (Large/Medium: UBC, IEM, UEM) */}
               <div className="flex items-center flex-wrap gap-4 sm:gap-3 md:gap-8 lg:gap-8 w-full lg:w-auto justify-start">
-                <img src="/images/hero/ubc_logo.png" alt="UBC" className="h-[6vh] md:h-[8vh] lg:h-[9vh] w-auto object-contain transition-transform hover:scale-105" />
-                <img src="/images/hero/iem-logo.png" alt="IEM" className="h-[6vh] md:h-[8vh] lg:h-[9vh] w-auto object-contain transition-transform hover:scale-105" />
-                <img src="/images/hero/uem-logo.png" alt="UEM" className="h-[6vh] md:h-[8vh] lg:h-[9vh] w-auto object-contain transition-transform hover:scale-105" />
+                <Image width={1500} height={1003} src="/images/hero/ubc_logo.png" alt="UBC" className="h-[6vh] md:h-[8vh] lg:h-[9vh] w-auto object-contain transition-transform hover:scale-105" />
+                <Image width={1500} height={1003} src="/images/hero/iem-logo.png" alt="IEM" className="h-[6vh] md:h-[8vh] lg:h-[9vh] w-auto object-contain transition-transform hover:scale-105" />
+                <Image width={1500} height={1003} src="/images/hero/uem-logo.png" alt="UEM" className="h-[6vh] md:h-[8vh] lg:h-[9vh] w-auto object-contain transition-transform hover:scale-105" />
               </div>
 
             </div>
