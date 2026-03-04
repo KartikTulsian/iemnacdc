@@ -15,7 +15,7 @@ export default function VenuePage() {
     <div>
       <Breadcrumb 
         pageName='Venue of NACDC 2026'
-        description='Tentative Venue Canada'
+        description='University of British Columbia, Vancouver, Canada'
       />
       <VenueBlock/>
     </div>
