@@ -195,10 +195,6 @@ export default function RegistrationDetails() {
             <p className="font-semibold text-gray-800">Note:</p>
             <ul className="list-disc list-inside mt-2 space-y-1">
               <li>All Fees are in <b>CAD</b> and include all applicable taxes.</li>
-              <li>
-                The minimum page length of each accepted paper is <b>10 pages</b> in
-                LNNS format.
-              </li>
             </ul>
           </div>
 
