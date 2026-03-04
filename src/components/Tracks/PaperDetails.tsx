@@ -1,8 +1,7 @@
 import React from 'react';
 import { 
   FileText, 
-  Trophy, 
-  FileStack, 
+  Trophy,
   BookOpen, 
   ArrowRightCircle,
   DownloadCloud
