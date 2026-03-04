@@ -125,8 +125,8 @@ export default function RegistrationDetails() {
           <CreateTable1
             datas={[
               { col1: 'Category', col2: 'Regular', className: 'font-semibold' },
-              { col1: 'Academic Authors', col2: '600 CAD' },
-              { col1: 'Industry Participants', col2: '600 CAD' },
+              { col1: 'Academic Authors', col2: '400 CAD' },
+              { col1: 'Industry Participants', col2: '400 CAD' },
             ]}
           />
         </div>
@@ -146,8 +146,8 @@ export default function RegistrationDetails() {
           <CreateTable1
             datas={[
               { col1: 'Category', col2:  'Regular', className: 'font-bold' },
-              { col1: 'Student Non-Member', col2: '400 CAD' },
-              { col1: 'General Attendee', col2: '400 CAD' },
+              { col1: 'Student Non-Member', col2: '300 CAD' },
+              { col1: 'General Attendee', col2: '300 CAD' },
             ]}
           />
         </div>
