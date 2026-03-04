@@ -2,7 +2,7 @@ import React from 'react'
 
 import { Metadata } from "next";
 import Breadcrumb from '@/components/Common/Breadcrumb';
-import ComingSoon from '@/components/Common/CommingSoon';
+import VenueBlock from '@/components/Venue/VenueBlock';
 
 export const metadata: Metadata = {
   title: "Venue NACDC",
@@ -17,7 +17,7 @@ export default function VenuePage() {
         pageName='Venue of NACDC 2026'
         description='Tentative Venue Canada'
       />
-      <ComingSoon/>
+      <VenueBlock/>
     </div>
   )
 }
