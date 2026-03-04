@@ -6,13 +6,13 @@ import SectionTitle from "../Common/SectionTitle";
 const committeeList = {
   Committees: {
     "Advisory Committee": [
-      "Brigitte Jaumard, Concordia University, Quebec, Canada",
       "Ramon Lawrence, The University of British Columbia, Kelowna, Canada",
       "Tom Murad, University of Guelph, Ontario, Canada",
       "Walaa Hamouda, Concordia University, Quebec, Canada",
       "Esma Aimeur, University of Montreal, Quebec, Canada",
       "Rim Cherif Fehri, Algonquin College, Ottawa, Ontario, Canada",
       "Blessing Ogbuokiri, Brock University, St. Catharines, ON, Canada",
+      "Brigitte Jaumard, Concordia University, Quebec, Canada",
       "Subhankar Dhar, San Jose State University, California, United States",
       "Kaushik Rajashekara, University of Houston, United States",
       "Vikas Malhotra, Woplli Technologies, United States",
