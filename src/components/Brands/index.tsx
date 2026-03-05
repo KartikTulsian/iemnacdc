@@ -44,7 +44,6 @@ const Brands = () => {
             {[
               "/images/brands/genai_logo.png",
               "/images/brands/innovai_logo.png",
-              "/images/brands/cern_logo.png",
             ].map((src, index) => (
               <div
                 key={index}
