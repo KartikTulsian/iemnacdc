@@ -22,7 +22,7 @@ const Brands = () => {
                 width={300}
                 height={150}
                 alt="Partner 1"
-                className="object-contain h-[80px] md:h-[120px] w-auto group-hover:scale-105 transition-transform duration-300"
+                className="object-contain max-h-[60px] md:max-h-[90px] w-auto group-hover:scale-105 transition-transform duration-300"
               />
             </div>
           </div>

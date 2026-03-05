@@ -82,7 +82,7 @@ export default function RegistrationDetails() {
       </h1>
 
       <div className="mt-4 mb-7 bg-gray-50 px-4 md:px-12 lg:px-20 py-4 rounded-md text-gray-700 text-md md:text-base font-bold text-center">*Registration will be handled electronically via EDAS. It will be updated soon. At least one author of each paper must register at the Author registration rate.
-        For a single paper, a single author registration is required. A attendee/student registration is not an author regsitration.*</div>
+        For a single paper, a single author registration is required. A attendee/student registration is not an author registration.*</div>
 
       {/* Registration Form */}
       {/* <section
