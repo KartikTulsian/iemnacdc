@@ -27,6 +27,7 @@ export default function PaperSubmissionGuidelines() {
           icon={<BookOpen size={28} className="text-indigo-600 md:w-8 md:h-8" />} 
           title="Chapter Preparation Guidelines"
         >
+          <GuideItem title="Abstract" text="The abstract must be within 150 words." />
           <GuideItem title="Length" text="Each chapter must not exceed 10 pages in length." />
           <GuideItem title="Word Limit" text="The maximum word limit is 3500 words per chapter." />
           <GuideItem title="First Author" text="The first author of each chapter must be an M.D., Ph.D., or equivalent." />
