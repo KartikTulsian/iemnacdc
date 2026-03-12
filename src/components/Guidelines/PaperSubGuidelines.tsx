@@ -79,7 +79,7 @@ function GuideItem({ title, text, variant = "default" }: { title: string, text: 
         }
       </div>
       <div>
-        {/* Adjusted font sizes for mobile (text-xs/text-sm) vs desktop (text-md/text-base) */}
+        
         <h3 className="font-bold text-slate-900 text-md sm:text-sm md:text-md uppercase tracking-widest mb-1">
           {title}
         </h3>
