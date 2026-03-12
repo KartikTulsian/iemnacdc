@@ -89,7 +89,7 @@ const committeeList = {
         "Prithwineel Paul, Institute of Engineering and Management, Kolkata, India",
         "Rupayan Das, Institute of Engineering and Management, Kolkata, India",
         "Susovan Jana, Institute of Engineering & Management, Kolkata, India",
-        "Soumyendu Sekhar Bandhopadhyay, Institute of Engineering and Management, Kolkata, India",
+        "Soumyendu Sekhar Bandyopadhyay, Institute of Engineering and Management, Kolkata, India",
         "Soma Das, Institute of Engineering and Management, Kolkata, India",
         "Bavrabi Ghosh, Institute of Engineering and Management, Kolkata, India",
         "Monalisa De, Institute of Engineering and Management, Kolkata, India",
