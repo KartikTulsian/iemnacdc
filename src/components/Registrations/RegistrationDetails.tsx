@@ -5,7 +5,6 @@ import { twMerge } from 'tailwind-merge';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Link from 'next/link';
-import Image from 'next/image';
 
 const CreateTable1 = ({
   datas,
