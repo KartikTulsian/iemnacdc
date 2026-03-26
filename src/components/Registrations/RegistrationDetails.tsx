@@ -98,7 +98,7 @@ export default function RegistrationDetails() {
               Ready to Register?
             </h3>
             <p className="text-[#BFDBFE] mb-8 text-lg max-w-xl font-medium leading-relaxed">
-              Complete your registration today and secure your spot at <span className="text-[#FFFFFF] font-bold">IEM ICDC 2026</span>.
+              Complete your registration today.
             </p>
             
             <Link 
