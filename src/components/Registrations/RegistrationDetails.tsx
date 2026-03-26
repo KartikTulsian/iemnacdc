@@ -4,6 +4,8 @@ import React, { useEffect } from 'react';
 import { twMerge } from 'tailwind-merge';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Link from 'next/link';
+import Image from 'next/image';
 
 const CreateTable1 = ({
   datas,
@@ -82,36 +84,43 @@ export default function RegistrationDetails() {
       </h1>
 
       <div className="mt-4 mb-7 bg-gray-50 px-4 md:px-12 lg:px-20 py-4 rounded-md text-gray-700 text-md md:text-base font-bold text-center">*Registration will be handled electronically via EDAS. It will be updated soon. At least one author of each paper must register at the Author registration rate.
-        For a single paper, a single author registration is required. A attendee/student registration is not an author registration.*</div>
+        For a single paper, a single author registration is requ-blue. A attendee/student registration is not an author registration.*</div>
 
-      {/* Registration Form */}
-      {/* <section
-        className="w-full max-w-4xl bg-[#fff] p-6 md:p-8 rounded-xl shadow-lg mb-10"
-        data-aos="fade-up"
-      >
-        <h2 className="text-xl md:text-2xl font-semibold mb-4 text-gray-800">
-          Registration Form
-        </h2>
-        <p className="text-gray-700 mb-4">
-          Fill out the registration form&nbsp;
-          <Link
-            className="text-blue-600 hover:underline font-medium"
-            href="https://forms.office.com/r/kTHwyVscZ1"
-            target="_blank"
-          >
-            here
-          </Link>
-        </p>
-        <div className="flex justify-center">
-          <Image
-            src="/images/QR.jpeg"
-            width={300}
-            height={300}
-            alt="QR Code"
-            className="rounded-lg border border-gray-200 shadow"
-          />
+      {/* Enhanced Registration CTA Area - NACDC Theme */}
+      <section className="w-full max-w-4xl mb-12 px-4 sm:px-0" data-aos="fade-up">
+        <div className="relative overflow-hidden bg-gradient-to-br from-[#6ea7f8] via-[#1A457B] to-[#2563EB] rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.12)] p-10 md:p-14 text-center border border-[#3B82F6]/30">
+          
+          {/* Subtle background glow effect matching the NACDC digital blue */}
+          <div className="absolute top-0 right-0 -mr-16 -mt-16 w-64 h-64 rounded-full bg-[#60A5FA] opacity-15 blur-3xl"></div>
+          <div className="absolute bottom-0 left-0 -ml-16 -mb-16 w-48 h-48 rounded-full bg-[#3B82F6] opacity-20 blur-2xl"></div>
+
+          <div className="relative z-10 flex flex-col items-center">
+            <h3 className="text-3xl md:text-4xl font-bold text-[#FFFFFF] mb-4 tracking-tight">
+              Ready to Register?
+            </h3>
+            <p className="text-[#BFDBFE] mb-8 text-lg max-w-xl font-medium leading-relaxed">
+              Complete your registration today and secure your spot at <span className="text-[#FFFFFF] font-bold">IEM ICDC 2026</span>.
+            </p>
+            
+            <Link 
+              href="https://edas.info/registerPerson.php?c=34454" 
+              className="group flex items-center gap-2 bg-[#FFFFFF] text-[#1A457B] px-8 py-3.5 rounded-xl font-bold text-lg hover:bg-[#F8FAFC] hover:-translate-y-1 shadow-[0_4px_14px_0_rgba(255,255,255,0.2)] hover:shadow-[0_6px_20px_rgba(255,255,255,0.3)] transition-all duration-300"
+            >
+              Register Here 
+              <svg 
+                xmlns="http://www.w3.org/2000/svg" 
+                className="h-5 w-5 text-[#1A457B] transition-transform duration-300 group-hover:translate-x-1" 
+                fill="none" 
+                viewBox="0 0 24 24" 
+                stroke="currentColor" 
+                strokeWidth={2.5}
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </Link>
+          </div>
         </div>
-      </section> */}
+      </section>
 
       {/* Registration Fees */}
       <section
@@ -198,7 +207,7 @@ export default function RegistrationDetails() {
             </ul>
           </div>
 
-          <div className="bg-red-50 border-l-4 border-red-500 p-4 rounded-md shadow-sm">
+          <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-md shadow-sm">
             <p className="font-semibold text-gray-800">Cancellation Policy:</p>
             <p className="mt-2 italic">
               There will be <b>no cancellation or refund</b> after registration.
