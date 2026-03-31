@@ -44,6 +44,12 @@ const Brands = () => {
             {[
               "/images/brands/genai_logo.png",
               "/images/brands/innovai_logo.png",
+              "/images/brands/gdg_horizontal.png",
+              "/images/brands/logo4.png",
+              "/images/brands/IETE-Logo1.jpg",
+              "/images/brands/IEEE_CS_IEM.jpg",
+              "/images/brands/aenix.jpeg",
+              "/images/brands/iem_rf.jpeg",
             ].map((src, index) => (
               <div
                 key={index}
