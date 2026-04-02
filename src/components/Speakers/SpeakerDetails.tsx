@@ -11,13 +11,13 @@ const speakerData = [
     image: "/images/testimonials/speaker_1.png",
     linkedIn: "https://www.linkedin.com/in/tommurad/",
   },
-  // {
-  //   id: 2,
-  //   name: "Devid Weilium",
-  //   designation: "Founder @UIdeck",
-  //   image: "/images/testimonials/speaker-2.png",
-  //   linkedIn: "#",
-  // },
+  {
+    id: 2,
+    name: "Dr. Arnab Sinha",
+    designation: "Senior Manager of Applied Science at Amazon, Seattle, Washington, United States",
+    image: "/images/testimonials/speaker_2.png",
+    linkedIn: "https://www.linkedin.com/in/arnab-sinha-597a074/",
+  },
   // {
   //   id: 3,
   //   name: "Lethium Frenci",
