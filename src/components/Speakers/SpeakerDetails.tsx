@@ -23,7 +23,7 @@ const speakerData = [
     name: "Swarnamouli Majumdar",
     designation: "CEO & Founder, Zenext AI, Montreal, QC, Canada || Bloomington, IN, USA",
     image: "/images/testimonials/speaker_3.png",
-    linkedIn: "#",
+    linkedIn: "https://www.linkedin.com/in/swarnamouli/",
   },
 ];
 
