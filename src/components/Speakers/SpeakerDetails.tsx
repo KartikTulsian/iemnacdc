@@ -18,13 +18,13 @@ const speakerData = [
     image: "/images/testimonials/speaker_2.png",
     linkedIn: "https://www.linkedin.com/in/arnab-sinha-597a074/",
   },
-  // {
-  //   id: 3,
-  //   name: "Lethium Frenci",
-  //   designation: "Founder @Lineicons",
-  //   image: "/images/testimonials/speaker-3.png",
-  //   linkedIn: "#",
-  // },
+  {
+    id: 3,
+    name: "Swarnamouli Majumdar",
+    designation: "CEO & Founder, Zenext AI, Montreal, QC, Canada || Bloomington, IN, USA",
+    image: "/images/testimonials/speaker_3.png",
+    linkedIn: "#",
+  },
 ];
 
 export default function SpeakerDetails() {
