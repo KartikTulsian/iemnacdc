@@ -50,6 +50,7 @@ const Brands = () => {
               "/images/brands/IEEE_CS_IEM.jpg",
               "/images/brands/aenix.jpeg",
               "/images/brands/iem_rf.jpeg",
+              "/images/brands/coe_logo.png",
             ].map((src, index) => (
               <div
                 key={index}
