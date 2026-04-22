@@ -68,8 +68,8 @@ const committeeList = {
         "Satyajit Chakrabarti, Institute of Engineering & Management, Kolkata, India",
       ],
       "Convenor": [
-        "Moutushi Singh, Institute of Engineering & Management, Kolkata, India",
-        "Baisakhi Das, Institute of Engineering & Management, Kolkata, India",
+        // "Moutushi Singh, Institute of Engineering & Management, Kolkata, India",
+        // "Baisakhi Das, Institute of Engineering & Management, Kolkata, India",
       ],
       "Technical Program Chair": [
         "Rajashree Paul, Institute of Engineering & Management, Kolkata, India"
@@ -79,7 +79,7 @@ const committeeList = {
       ],
       "Publicity Chair": [
         "Amit Kumar Das, Institute of Engineering & Management, Kolkata, India",
-        "Sainik Kumar Mahata, Institute of Engineering & Management, Kolkata, India",
+        // "Sainik Kumar Mahata, Institute of Engineering & Management, Kolkata, India",
       ],
       "Organizing Chair": [
         "Sukanya Mukherjee, Institute of Engineering & Management, Kolkata, India",
