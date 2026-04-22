@@ -67,10 +67,10 @@ const committeeList = {
       "General Chair": [
         "Satyajit Chakrabarti, Institute of Engineering & Management, Kolkata, India",
       ],
-      "Convenor": [
-        // "Moutushi Singh, Institute of Engineering & Management, Kolkata, India",
-        // "Baisakhi Das, Institute of Engineering & Management, Kolkata, India",
-      ],
+      // "Convenor": [
+      //   "Moutushi Singh, Institute of Engineering & Management, Kolkata, India",
+      //   "Baisakhi Das, Institute of Engineering & Management, Kolkata, India",
+      // ],
       "Technical Program Chair": [
         "Rajashree Paul, Institute of Engineering & Management, Kolkata, India"
       ],
