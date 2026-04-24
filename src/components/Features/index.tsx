@@ -1,3 +1,4 @@
+import Announcement from "../Common/Announcement";
 import SectionTitle from "../Common/SectionTitle";
 // import SingleFeature from "./SingleFeature";
 // import featuresData from "./featuresData";
@@ -10,6 +11,12 @@ const Features = () => {
   return (
     <section id="features" className="relative pt-16 pb-6 md:pt-20 md:pb-8 lg:pt-28 bg-[#fff] z-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        {/* Announcement Section - Placed inside the container with bottom margin */}
+        <div className="w-full flex justify-center mb-12 md:mb-16 lg:mb-20">
+          <Announcement/>
+        </div>
+        
         {/* Welcome Section */}
         <div className="mb-16">
           <SectionTitle

@@ -40,7 +40,7 @@ export default function VenueBlock() {
     ];
 
     return (
-        <section className="py-12 md:py-16 px-4 bg-[#f8fafc]">
+        <section id="venue-block" className="py-12 md:py-16 px-4 bg-[#f8fafc]">
             <div className="max-w-6xl mx-auto space-y-8 md:space-y-12">
 
                 {/* Main Venue Card */}

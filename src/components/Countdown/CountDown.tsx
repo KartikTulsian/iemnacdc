@@ -5,7 +5,7 @@ import ImpDates from "./ImpDates";
 
 export default function CountDown() {
   return (
-    <section className="relative z-10 py-16 md:py-17 lg:pb-28 lg:pt-16 bg-gradient-to-br from-[#fdfbff] to-[#f2f4ff]">
+    <section id="countdown" className="relative z-10 py-16 md:py-17 lg:pb-28 lg:pt-16 bg-gradient-to-br from-[#fdfbff] to-[#f2f4ff]">
       <div className="container mx-auto px-4 flex flex-col gap-6 md:gap-10">
         {/* <SectionTitle
           title="📅 Important Dates"
