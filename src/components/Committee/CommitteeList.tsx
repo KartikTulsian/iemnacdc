@@ -6,7 +6,6 @@ import SectionTitle from "../Common/SectionTitle";
 const committeeList = {
   Committees: {
     "Advisory Committee": [
-      "Ramon Lawrence, The University of British Columbia, Kelowna, Canada",
       "Tom Murad, University of Guelph, Ontario, Canada",
       "Walaa Hamouda, Concordia University, Quebec, Canada",
       "Esma Aimeur, University of Montreal, Quebec, Canada",
