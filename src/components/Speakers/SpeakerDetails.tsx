@@ -4,22 +4,22 @@ import SectionTitle from '../Common/SectionTitle';
 
 // Mock data taken from your index.tsx
 const speakerData = [
+  // {
+  //   id: 1,
+  //   name: "Dr. Tom Murad",
+  //   designation: "Experienced Board Director; C - Level Engineering & Technology Leader; Past President & Board member at IEEE Canada, and University Adjunct Professor.",
+  //   image: "/images/testimonials/speaker_1.png",
+  //   linkedIn: "https://www.linkedin.com/in/tommurad/",
+  // },
   {
     id: 1,
-    name: "Dr. Tom Murad",
-    designation: "Experienced Board Director; C - Level Engineering & Technology Leader; Past President & Board member at IEEE Canada, and University Adjunct Professor.",
-    image: "/images/testimonials/speaker_1.png",
-    linkedIn: "https://www.linkedin.com/in/tommurad/",
-  },
-  {
-    id: 2,
     name: "Dr. Arnab Sinha",
     designation: "Senior Manager of Applied Science at Amazon, Seattle, Washington, United States",
     image: "/images/testimonials/speaker_2.png",
     linkedIn: "https://www.linkedin.com/in/arnab-sinha-597a074/",
   },
   {
-    id: 3,
+    id: 2,
     name: "Swarnamouli Majumdar",
     designation: "CEO & Founder, Zenext AI, Montreal, QC, Canada || Bloomington, IN, USA",
     image: "/images/testimonials/speaker_3.png",
