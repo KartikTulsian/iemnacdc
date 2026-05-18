@@ -22,7 +22,7 @@ export default function Announcement() {
                         <span className="text-xs font-bold uppercase tracking-[0.18em] text-blue-600">Update</span>
                         <span className="hidden sm:block w-px h-4 bg-gray-300"></span>
                         <span className="text-base font-semibold text-gray-800 group-hover:text-blue-700 transition-colors duration-200">
-                            Date Extended till 16th May 2026
+                            Date Extended till 31st May 2026
                         </span>
                     </span>
                 </div>
