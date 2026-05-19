@@ -25,6 +25,13 @@ const speakerData = [
     image: "/images/testimonials/speaker_3.png",
     linkedIn: "https://www.linkedin.com/in/swarnamouli/",
   },
+  {
+    id: 3,
+    name: "Baljeet Malhotra",
+    designation: "Founder & CEO at TeejLab Inc.",
+    image: "/images/testimonials/speaker_4.png",
+    linkedIn: "https://www.linkedin.com/in/baljeetmalhotra/",
+  },
 ];
 
 export default function SpeakerDetails() {
