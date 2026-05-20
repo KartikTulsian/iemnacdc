@@ -13,7 +13,7 @@ const speakerData = [
   // },
   {
     id: 1,
-    name: "Dr. Arnab Sinha",
+    name: "Arnab Sinha",
     designation: "Senior Manager of Applied Science at Amazon, Seattle, Washington, United States",
     image: "/images/testimonials/speaker_2.png",
     linkedIn: "https://www.linkedin.com/in/arnab-sinha-597a074/",
