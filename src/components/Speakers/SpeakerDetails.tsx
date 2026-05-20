@@ -34,7 +34,7 @@ const speakerData = [
   },
   {
     id: 4,
-    name: "Dr. Avimanyou Vatsa",
+    name: "Avimanyou Vatsa",
     designation: "Associate Professor, Department of Computer Science, Fairleigh Dickinson University, Teaneck, New Jersey",
     image: "/images/testimonials/speaker_5.png",
     linkedIn: "https://www.linkedin.com/in/avimanyou/",
