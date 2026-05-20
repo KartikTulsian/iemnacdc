@@ -28,7 +28,7 @@ const speakerData = [
   {
     id: 3,
     name: "Baljeet Malhotra",
-    designation: "Founder & CEO at TeejLab Inc.",
+    designation: "Founder & CEO at TeejLab Inc. and Adjunct Professor, University of Victoria, Canada",
     image: "/images/testimonials/speaker_4.png",
     linkedIn: "https://www.linkedin.com/in/baljeetmalhotra/",
   },
