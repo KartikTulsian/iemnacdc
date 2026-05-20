@@ -32,6 +32,13 @@ const speakerData = [
     image: "/images/testimonials/speaker_4.png",
     linkedIn: "https://www.linkedin.com/in/baljeetmalhotra/",
   },
+  {
+    id: 4,
+    name: "Dr. Avimanyou Vatsa",
+    designation: "Associate Professor, Department of Computer Science, Fairleigh Dickinson University, Teaneck, New Jersey",
+    image: "/images/testimonials/speaker_5.png",
+    linkedIn: "https://www.linkedin.com/in/avimanyou/",
+  },
 ];
 
 export default function SpeakerDetails() {
