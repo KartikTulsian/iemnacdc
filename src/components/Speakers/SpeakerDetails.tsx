@@ -13,38 +13,38 @@ const speakerData = [
   // },
   {
     id: 1,
+    name: "Marcelo Caiado",
+    designation: "Cybersecurity Leader, Digital Forensics Expert in Ministério Público Federal and Adjunct Professor, New York Institute of Technology, Vancouver, Canada",
+    image: "/images/testimonials/speaker_6.png",
+    linkedIn: "https://www.linkedin.com/in/caiado/",
+  },
+  {
+    id: 2,
     name: "Arnab Sinha",
     designation: "Senior Manager of Applied Science at Amazon, Seattle, Washington, United States",
     image: "/images/testimonials/speaker_2.png",
     linkedIn: "https://www.linkedin.com/in/arnab-sinha-597a074/",
   },
   {
-    id: 2,
+    id: 3,
     name: "Swarnamouli Majumdar",
     designation: "CEO & Founder, Zenext AI, Montreal, QC, Canada || Bloomington, IN, USA",
     image: "/images/testimonials/speaker_3.png",
     linkedIn: "https://www.linkedin.com/in/swarnamouli/",
   },
   {
-    id: 3,
+    id: 4,
     name: "Baljeet Malhotra",
     designation: "Founder & CEO at TeejLab Inc. and Adjunct Professor, University of Victoria, Canada",
     image: "/images/testimonials/speaker_4.png",
     linkedIn: "https://www.linkedin.com/in/baljeetmalhotra/",
   },
   {
-    id: 4,
+    id: 5,
     name: "Avimanyou Vatsa",
     designation: "Associate Professor, Department of Computer Science, Fairleigh Dickinson University, Teaneck, New Jersey",
     image: "/images/testimonials/speaker_5.png",
     linkedIn: "https://www.linkedin.com/in/avimanyou/",
-  },
-  {
-    id: 5,
-    name: "Marcelo Caiado",
-    designation: "Cybersecurity Leader, Digital Forensics Expert in Ministério Público Federal and Adjunct Professor, New York Institute of Technology, Vancouver, Canada",
-    image: "/images/testimonials/speaker_6.png",
-    linkedIn: "https://www.linkedin.com/in/caiado/",
   },
 ];
 
