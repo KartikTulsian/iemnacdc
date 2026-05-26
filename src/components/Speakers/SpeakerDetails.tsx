@@ -39,6 +39,13 @@ const speakerData = [
     image: "/images/testimonials/speaker_5.png",
     linkedIn: "https://www.linkedin.com/in/avimanyou/",
   },
+  {
+    id: 5,
+    name: "Marcelo Caiado",
+    designation: "Cybersecurity Leader, Digital Forensics Expert in Ministério Público Federal and Adjunct Professor, New York Institute of Technology, Vancouver, Canada",
+    image: "/images/testimonials/speaker_6.png",
+    linkedIn: "https://www.linkedin.com/in/caiado/",
+  },
 ];
 
 export default function SpeakerDetails() {
