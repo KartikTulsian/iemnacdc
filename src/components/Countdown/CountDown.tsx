@@ -1,5 +1,4 @@
 import React from "react";
-// import SectionTitle from "../Common/SectionTitle";
 import Timer from "./timer";
 import ImpDates from "./ImpDates";
 
@@ -15,7 +14,6 @@ export default function CountDown() {
         <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-[#4A6CF7] text-center leading-tight tracking-tight px-4 md:px-10 mb-6">
           📅 Important Dates
         </h1>
-
 
         {/* Dates table already includes spacing */}
         <ImpDates />
