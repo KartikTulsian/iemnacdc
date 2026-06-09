@@ -93,6 +93,7 @@ const committeeList = {
         "Soma Das, Institute of Engineering and Management, Kolkata, India",
         "Bavrabi Ghosh, Institute of Engineering and Management, Kolkata, India",
         "Monalisa De, Institute of Engineering and Management, Kolkata, India",
+        "Anindita Das Bhattacharjee, Institute of Engineering and Management, Kolkata, India"
       ],
     },
   }
