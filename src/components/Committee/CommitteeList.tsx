@@ -74,7 +74,8 @@ const committeeList = {
         "Rajashree Paul, Institute of Engineering & Management, Kolkata, India"
       ],
       "Technical Program Co-Chair": [
-        "Anupam Mondal , Institute of Engineering & Management, Kolkata, India",
+        "Anupam Mondal, Institute of Engineering & Management, Kolkata, India",
+        "Sudipta Basu Pal, Institute of Engineering & Management, New Town, Kolkata, India"
       ],
       "Publicity Chair": [
         "Amit Kumar Das, Institute of Engineering & Management, Kolkata, India",
@@ -93,7 +94,8 @@ const committeeList = {
         "Soma Das, Institute of Engineering and Management, Kolkata, India",
         "Bavrabi Ghosh, Institute of Engineering and Management, Kolkata, India",
         "Monalisa De, Institute of Engineering and Management, Kolkata, India",
-        "Anindita Das Bhattacharjee, Institute of Engineering and Management, Kolkata, India"
+        "Anindita Das Bhattacharjee, Institute of Engineering and Management, Kolkata, India",
+        "Ankur Biswas, Institute of Engineering & Management, New Town, Kolkata, India"
       ],
     },
   }
