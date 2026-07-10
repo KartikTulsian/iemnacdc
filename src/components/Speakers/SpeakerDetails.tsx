@@ -11,13 +11,13 @@ const speakerData = [
   //   image: "/images/testimonials/speaker_1.png",
   //   linkedIn: "https://www.linkedin.com/in/tommurad/",
   // },
-  {
-    id: 1,
-    name: "Marcelo Caiado",
-    designation: "Cybersecurity Leader, Digital Forensics Expert in Ministério Público Federal and Adjunct Professor, New York Institute of Technology, Vancouver, Canada",
-    image: "/images/testimonials/speaker_6.png",
-    linkedIn: "https://www.linkedin.com/in/caiado/",
-  },
+  // {
+  //   id: 1,
+  //   name: "Marcelo Caiado",
+  //   designation: "Cybersecurity Leader, Digital Forensics Expert in Ministério Público Federal and Adjunct Professor, New York Institute of Technology, Vancouver, Canada",
+  //   image: "/images/testimonials/speaker_6.png",
+  //   linkedIn: "https://www.linkedin.com/in/caiado/",
+  // },
   {
     id: 2,
     name: "Arnab Sinha",
