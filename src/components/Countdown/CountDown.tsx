@@ -1,5 +1,5 @@
 import React from "react";
-import Timer from "./timer";
+// import Timer from "./timer";
 import ImpDates from "./ImpDates";
 
 export default function CountDown() {
@@ -19,7 +19,7 @@ export default function CountDown() {
         <ImpDates />
 
         {/* Timer with built-in spacing */}
-        <Timer launchDate="2026-06-23T23:59:59" />
+        {/* <Timer launchDate="2026-06-23T23:59:59" /> */}
       </div>
     </section>
 

@@ -69,13 +69,19 @@ const menuData: MenuItem[] = [
         newTab: false,
       },
       {
-        id: 63,
+        id: 64,
+        title: "Workshop",
+        path: "/workshop",
+        newTab: false,
+      },
+      {
+        id: 65,
         title: "Ethics & Malpractice Statement",
         path: "/ethics",
         newTab: false,
       },
       {
-        id: 64,
+        id: 66,
         title: "Paper Submission Guidelines",
         path: "/guidelines",
         newTab: false,

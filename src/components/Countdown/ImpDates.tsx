@@ -2,7 +2,6 @@
 
 import React, { useEffect } from 'react';
 import AOS from 'aos';
-import 'aos/dist/aos.css';
 import { twMerge } from 'tailwind-merge';
 import {
   CalendarDays,
@@ -67,7 +66,14 @@ const CreateTable = ({
             </th>
 
             <td className="px-3 py-2 sm:px-4 sm:py-3 text-gray-800 font-medium text-sm break-words whitespace-normal">
-              <span className="inline-block px-2 py-1 bg-yellow-50 text-yellow-900 rounded-md shadow-sm">
+              <span
+                className={twMerge(
+                  "inline-block px-2 py-1 rounded-md shadow-sm",
+                  col2 === "Closed"
+                    ? "bg-red-50 text-red-600 font-bold"
+                    : "bg-yellow-50 text-yellow-900"
+                )}
+              >
                 {col2}
               </span>
             </td>
@@ -101,7 +107,7 @@ export default function ImpDates() {
         <div className="overflow-x-auto:hidden rounded-md border border-gray-200 shadow-sm">
           <CreateTable
             datas={[
-              { col1: 'Full Paper Submission (Extended):', col2: '25th June 2026' },
+              { col1: 'Full Paper Submission:', col2: 'Closed' },
               // { col1: 'Acceptance Notification:', col2: '20th June 2026' },
               { col1: 'Deadline for Paper Registration:', col2: '30th June 2026' },
               { col1: 'Final/Camera-ready Paper Submission:', col2: '10th July 2026' },
