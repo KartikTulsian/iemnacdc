@@ -45,6 +45,19 @@ const cards = [
   //   hasButton: false,
   // },
   {
+    title: "Presentation Template",
+    description: "Download the official presentation template for your paper.",
+    icon: <MonitorPlay className="w-8 h-8" />,
+    btnGradient: "from-[#F97316] to-[#FB923C]",
+    cardBg: "bg-[#FFF7ED]",
+    iconBg: "bg-[#EA580C]",
+    link: "https://docs.google.com/presentation/d/1EqZTwXTl6rbhb6T3meLCJVv6iyHDC9fF/edit?usp=drivesdk&ouid=103301009156057410609&rtpof=true&sd=true",
+    buttonText: "Download Template",
+    hasButton: true,
+    isExternal: true,
+    isDownload: false
+  },
+  {
     title: "Sample Chapter Format",
     description: "Authors can refer to the sample chapter format provided by Nova Publishers for manuscript preparation.",
     icon: <BookOpen className="w-8 h-8" />,
