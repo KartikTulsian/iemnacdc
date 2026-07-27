@@ -4,7 +4,8 @@ import {
   Trophy,
   BookOpen, 
   ArrowRightCircle,
-  DownloadCloud
+  DownloadCloud,
+  MonitorPlay
 } from 'lucide-react';
 // If you are using Next.js, it is better to use the Link component for internal routing
 import Link from 'next/link'; 
