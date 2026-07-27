@@ -83,7 +83,7 @@ const cards = [
 
 export default function PaperDetails() {
   return (
-    <section className="relative py-12 px-4 bg-[#fcfcfd]">
+    <section id="paperdetails" className="relative py-12 px-4 bg-[#fcfcfd]">
       <div className="relative max-w-6xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-[#111827] tracking-tight sm:text-4xl">
