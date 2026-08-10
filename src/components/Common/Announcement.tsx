@@ -22,7 +22,7 @@ export default function Announcement() {
                         <span className="text-[11px] font-bold uppercase tracking-wider text-blue-600 mb-0.5">Now Available</span>
                         <span className="text-sm font-semibold text-gray-800 group-hover:text-blue-700 transition-colors duration-200 leading-snug">
                             Conference Schedule
-                            <span className="block text-[11px] font-medium text-slate-500 mt-0.5">March 16-18, 2026</span>
+                            <span className="block text-[11px] font-medium text-slate-500 mt-0.5">August 10-12, 2026</span>
                         </span>
                     </div>
                 </div>
